@@ -192,7 +192,7 @@ export default async function BlogPost({
         <Navigation />
 
         <article className="pt-20 sm:pt-24 pb-12 sm:pb-16">
-          <div className="section-container max-w-4xl">
+          <div className="section-container max-w-6xl">
             {/* Breadcrumbs */}
             <nav aria-label="Breadcrumb" className="mb-4 sm:mb-6">
               <ol className="flex items-center gap-2 text-sm text-text-tertiary flex-wrap">
@@ -350,7 +350,7 @@ export default async function BlogPost({
             )}
 
             {/* Article Content Grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_280px] gap-8 lg:gap-12 mb-12 sm:mb-16">
+            <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_300px] gap-8 xl:gap-16 mb-12 sm:mb-16">
               {/* Main Content - USING REACTMARKDOWN */}
               <div className="min-w-0">
                 <div
@@ -476,7 +476,7 @@ export default async function BlogPost({
           {/* Related Posts */}
           {relatedPosts.length > 0 && (
             <div className="bg-linear-to-b from-background-light to-white py-10 sm:py-16">
-              <div className="section-container max-w-4xl">
+              <div className="section-container max-w-6xl">
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-text-primary mb-5 sm:mb-8 flex items-center gap-2 sm:gap-3">
                   <FiArrowRight className="w-6 h-6 sm:w-8 sm:h-8 text-primary-teal shrink-0" />
                   Continue Reading
