@@ -305,6 +305,50 @@ export default async function BlogPost({
               </div>
             </div>
 
+            {/* Mobile-only CTA (sidebar is hidden below lg) */}
+            <div className="lg:hidden mb-6">
+              <div className="bg-background-light border-2 border-border-light rounded-2xl p-5 flex flex-col sm:flex-row sm:items-center gap-4">
+                <div className="flex items-center gap-3 flex-1">
+                  <div className="w-9 h-9 bg-indigo-600 rounded-lg flex items-center justify-center text-white shrink-0">
+                    <FiZap className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-bold text-text-primary">Try VoxWel Free</p>
+                    <p className="text-xs text-text-secondary">Anonymous reporting — live in 24 hours</p>
+                  </div>
+                </div>
+                <Link
+                  href="/demo"
+                  className="shrink-0 inline-flex items-center justify-center gap-2 bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-xl hover:bg-indigo-700 transition-colors shadow-sm"
+                >
+                  Book a Demo <FiArrowRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Lead Magnet CTA — mid-post placement */}
+            {post.leadMagnet && (post.leadMagnet.placement === "mid-post" || post.leadMagnet.placement === "both") && (
+              <div className="mb-8 bg-background-light border-2 border-border-light rounded-2xl p-6 sm:p-8">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-primary-teal rounded-xl flex items-center justify-center text-white shrink-0">
+                    <FiBookmark className="w-5 h-5" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-xs font-bold text-primary-teal uppercase tracking-wider mb-1">Free Resource</p>
+                    <h3 className="text-base sm:text-lg font-bold text-text-primary mb-2">{post.leadMagnet.title}</h3>
+                    <p className="text-sm text-text-secondary mb-4 leading-relaxed">{post.leadMagnet.description}</p>
+                    <Link
+                      href="/demo"
+                      className="inline-flex items-center gap-2 bg-primary-teal text-white text-sm font-semibold px-5 py-2.5 rounded-xl hover:opacity-90 transition-opacity shadow-sm"
+                    >
+                      {post.leadMagnet.ctaText}
+                      <FiArrowRight className="w-4 h-4" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            )}
+
             {/* Article Content Grid */}
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_280px] gap-8 lg:gap-12 mb-12 sm:mb-16">
               {/* Main Content - USING REACTMARKDOWN */}
@@ -316,13 +360,13 @@ export default async function BlogPost({
                     prose-h2:text-xl sm:prose-h2:text-2xl md:prose-h2:text-3xl prose-h2:mt-8 md:prose-h2:mt-16 prose-h2:mb-4 md:prose-h2:mb-6 prose-h2:pb-3 md:prose-h2:pb-4 prose-h2:border-b-2 prose-h2:border-primary-teal/20 prose-h2:font-extrabold prose-h2:leading-snug
                     prose-h3:text-lg sm:prose-h3:text-xl md:prose-h3:text-2xl prose-h3:mt-6 md:prose-h3:mt-12 prose-h3:mb-3 md:prose-h3:mb-5 prose-h3:text-primary-navy prose-h3:font-bold prose-h3:leading-snug
                     prose-h4:text-base sm:prose-h4:text-lg md:prose-h4:text-xl prose-h4:mt-5 md:prose-h4:mt-8 prose-h4:mb-3 md:prose-h4:mb-4 prose-h4:text-text-primary prose-h4:font-bold
-                    prose-p:text-text-secondary prose-p:leading-[1.8] prose-p:mb-4 md:prose-p:mb-6 prose-p:font-normal
+                    prose-p:text-text-primary prose-p:leading-[1.8] prose-p:mb-4 md:prose-p:mb-6 prose-p:font-normal
                     prose-a:text-primary-teal prose-a:no-underline prose-a:font-semibold prose-a:border-b-2 prose-a:border-primary-teal/50 hover:prose-a:border-primary-teal hover:prose-a:bg-primary-teal/5 prose-a:transition-all prose-a:duration-200 prose-a:px-1
                     prose-strong:text-text-primary prose-strong:font-bold
                     prose-em:text-text-primary prose-em:italic prose-em:font-medium
                     prose-ul:my-5 md:prose-ul:my-8 prose-ul:space-y-2 md:prose-ul:space-y-4 prose-ul:pl-5 md:prose-ul:pl-6
                     prose-ol:my-5 md:prose-ol:my-8 prose-ol:space-y-2 md:prose-ol:space-y-4 prose-ol:pl-5 md:prose-ol:pl-6
-                    prose-li:text-text-secondary prose-li:leading-[1.7] prose-li:pl-2 md:prose-li:pl-3 prose-li:mb-2 md:prose-li:mb-3
+                    prose-li:text-text-primary prose-li:leading-[1.7] prose-li:pl-2 md:prose-li:pl-3 prose-li:mb-2 md:prose-li:mb-3
                     prose-li::marker:text-primary-teal prose-li::marker:font-bold
                     prose-blockquote:border-l-4 prose-blockquote:border-primary-teal prose-blockquote:bg-linear-to-r prose-blockquote:from-primary-teal/10 prose-blockquote:to-primary-teal/5 prose-blockquote:pl-4 md:prose-blockquote:pl-8 prose-blockquote:pr-4 md:prose-blockquote:pr-6 prose-blockquote:py-4 md:prose-blockquote:py-8 prose-blockquote:my-6 md:prose-blockquote:my-10 prose-blockquote:italic prose-blockquote:text-text-primary prose-blockquote:rounded-r-xl prose-blockquote:shadow-lg prose-blockquote:font-medium
                     prose-code:text-text-primary prose-code:bg-primary-teal/5 prose-code:border prose-code:border-primary-teal/20 prose-code:px-1.5 md:prose-code:px-2 prose-code:py-0.5 md:prose-code:py-1 prose-code:rounded-md prose-code:font-mono prose-code:font-semibold prose-code:before:content-[''] prose-code:after:content-['']
@@ -330,7 +374,7 @@ export default async function BlogPost({
                     prose-hr:border-border-light prose-hr:my-8 md:prose-hr:my-16 prose-hr:border-2
                     prose-table:w-full prose-table:border-collapse prose-table:my-5 md:prose-table:my-8
                     prose-th:bg-primary-teal/10 prose-th:border prose-th:border-border-light prose-th:p-2 md:prose-th:p-4 prose-th:text-left prose-th:font-bold prose-th:text-text-primary
-                    prose-td:border prose-td:border-border-light prose-td:p-2 md:prose-td:p-4 prose-td:text-text-secondary
+                    prose-td:border prose-td:border-border-light prose-td:p-2 md:prose-td:p-4 prose-td:text-text-primary
                     prose-img:rounded-xl prose-img:shadow-xl prose-img:my-6 md:prose-img:my-10"
                 >
                   <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw, rehypeSlug]}>
@@ -345,22 +389,22 @@ export default async function BlogPost({
                   <TableOfContents headings={extractHeadings(post.content)} />
 
                   {/* Sidebar CTA */}
-                  <div className="bg-linear-to-br from-indigo-50 to-white border-2 border-indigo-100 rounded-2xl p-6 shadow-lg">
+                  <div className="bg-background-light border-2 border-border-light rounded-2xl p-6 shadow-sm">
                     <div className="flex items-center gap-2 mb-3">
                       <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white">
                         <FiZap className="w-4 h-4" />
                       </div>
-                      <h3 className="text-sm font-bold text-indigo-900 uppercase tracking-wide">
+                      <h3 className="text-sm font-bold text-text-primary uppercase tracking-wide">
                         Try VoxWel Free
                       </h3>
                     </div>
-                    <p className="text-sm text-slate-600 mb-4 leading-relaxed">
+                    <p className="text-sm text-text-secondary mb-4 leading-relaxed">
                       Set up your anonymous reporting channel in 24 hours. No credit card required.
                     </p>
                     <ul className="space-y-2 mb-5">
                       {["AES-256 encrypted", "EU Directive compliant", "$1/employee/month"].map((item) => (
-                        <li key={item} className="flex items-center gap-2 text-xs text-slate-600">
-                          <FiCheckCircle className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
+                        <li key={item} className="flex items-center gap-2 text-xs text-text-secondary">
+                          <FiCheckCircle className="w-3.5 h-3.5 text-primary-teal shrink-0" />
                           {item}
                         </li>
                       ))}
@@ -375,6 +419,29 @@ export default async function BlogPost({
                 </div>
               </div>
             </div>
+
+            {/* Lead Magnet CTA — end-of-post placement */}
+            {post.leadMagnet && (post.leadMagnet.placement === "end-of-post" || post.leadMagnet.placement === "both") && (
+              <div className="mb-8 bg-background-light border-2 border-border-light rounded-2xl p-6 sm:p-8">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-primary-teal rounded-xl flex items-center justify-center text-white shrink-0">
+                    <FiBookmark className="w-5 h-5" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-xs font-bold text-primary-teal uppercase tracking-wider mb-1">Free Resource</p>
+                    <h3 className="text-base sm:text-lg font-bold text-text-primary mb-2">{post.leadMagnet.title}</h3>
+                    <p className="text-sm text-text-secondary mb-4 leading-relaxed">{post.leadMagnet.description}</p>
+                    <Link
+                      href="/demo"
+                      className="inline-flex items-center gap-2 bg-primary-teal text-white text-sm font-semibold px-5 py-2.5 rounded-xl hover:opacity-90 transition-opacity shadow-sm"
+                    >
+                      {post.leadMagnet.ctaText}
+                      <FiArrowRight className="w-4 h-4" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            )}
 
             {/* Post-Article CTA */}
             <div className="bg-linear-to-r from-primary-teal/5 to-indigo-50 border-2 border-primary-teal/10 rounded-2xl p-6 sm:p-8 md:p-10 mb-10 sm:mb-14">
@@ -396,7 +463,7 @@ export default async function BlogPost({
                     <FiArrowRight className="w-4 h-4" />
                   </Link>
                   <Link
-                    href="/"
+                    href="/#pricing"
                     className="inline-flex items-center justify-center gap-2 bg-white text-indigo-600 text-sm font-semibold px-6 py-3 rounded-xl border-2 border-indigo-200 hover:bg-indigo-50 transition-colors"
                   >
                     See Pricing
