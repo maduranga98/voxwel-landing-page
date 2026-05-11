@@ -127,6 +127,21 @@ export default function Footer() {
                 <FaXTwitter className="w-4 h-4" />
               </a>
             </div>
+
+            {/* Trust signal */}
+            <a
+              href="https://saasbrowser.com/en/saas/1458861/voxwel"
+              target="_blank"
+              rel="noopener"
+              className="mt-5 inline-flex"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="https://static-files.saasbrowser.com/saas-browser-badge-15.svg"
+                alt="VoxWel - SaaS discovery platform"
+                width="200"
+              />
+            </a>
           </div>
 
           {/* Columns 2–4 */}
