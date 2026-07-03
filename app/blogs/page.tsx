@@ -92,7 +92,7 @@ export default function BlogsPage() {
       name: "VoxWel",
       logo: {
         "@type": "ImageObject",
-        url: "https://voxwel.com/icon.png",
+        url: "https://voxwel.com/logo.png",
       },
     },
     blogPost: blogPosts.map((post) => ({

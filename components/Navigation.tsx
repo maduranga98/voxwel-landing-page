@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import AnchoraLogo from "@/components/AnchoraLogo";
+import VoxwelLogo from "@/components/VoxwelLogo";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
@@ -94,7 +94,7 @@ export default function Navigation() {
         <div className="flex items-center h-16">
           {/* Logo */}
           <div className="flex items-center gap-2 shrink-0">
-            <AnchoraLogo size="small" />
+            <VoxwelLogo size="small" />
             <Link
               href="/"
               className="text-lg font-bold text-slate-900 hover:text-slate-700 transition-colors"

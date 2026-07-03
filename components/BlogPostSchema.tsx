@@ -30,7 +30,7 @@ export default function BlogPostSchema({ post }: { post: BlogPost }) {
       name: "VoxWel",
       logo: {
         "@type": "ImageObject",
-        url: "https://voxwel.com/voxwel.svg",
+        url: "https://voxwel.com/logo.png",
       },
     },
     mainEntityOfPage: {

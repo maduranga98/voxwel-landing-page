@@ -11,7 +11,7 @@ import {
 } from "react-icons/fi";
 import Link from "next/link";
 import Script from "next/script";
-import AnchoraLogo from "@/components/AnchoraLogo";
+import VoxwelLogo from "@/components/VoxwelLogo";
 
 export default function DemoPage() {
   const [formData, setFormData] = useState({
@@ -295,7 +295,7 @@ export default function DemoPage() {
       <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <AnchoraLogo size="default" />
+            <VoxwelLogo size="default" />
             <span className="text-base sm:text-lg md:text-xl font-bold bg-gradient-to-r from-white to-primary-teal bg-clip-text text-transparent">
               VoxWel
             </span>
@@ -844,7 +844,7 @@ export default function DemoPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-2">
-              <AnchoraLogo size="small" />
+              <VoxwelLogo size="small" />
               <span className="text-base sm:text-lg md:text-xl font-bold bg-gradient-to-r from-white to-primary-teal bg-clip-text text-transparent">
                 VoxWel
               </span>

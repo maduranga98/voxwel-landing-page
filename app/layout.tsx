@@ -124,9 +124,9 @@ export default function RootLayout({
     url: siteUrl,
     logo: {
       "@type": "ImageObject",
-      url: `${siteUrl}/voxwel1.avif`,
-      width: 512,
-      height: 512,
+      url: `${siteUrl}/logo.png`,
+      width: 862,
+      height: 862,
     },
     description:
       "VoxWel is an anonymous employee reporting platform that gives employees a confidential, AES-256 encrypted channel to report workplace harassment, fraud, and safety violations. GDPR compliant, EU Whistleblowing Directive ready, live in 24 hours.",

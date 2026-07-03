@@ -50,11 +50,10 @@
    - See `/public/OG-IMAGE-TODO.md` for detailed instructions
    - Test with Facebook Debugger and Twitter Card Validator
 
-2. **Optimize Logo Files**:
-   - Logo.svg is currently 361KB - should be optimized to <20KB
-   - Consider using SVGO: `npx svgo public/logo.svg -o public/logo-optimized.svg`
-   - Logo.png (222KB) should be converted to WebP format
-   - Command: `npx sharp-cli --input public/logo.png --output public/logo.webp --webp`
+2. **Optimize Logo Files**: ✅ DONE
+   - logo.svg optimized to ~13KB
+   - logo.png (and app/icon.png) quantized to ~10KB
+   - Duplicate voxwel.png / voxwel.svg / voxwel.avif removed
 
 3. **Environment Variables**:
    - Verify all EmailJS environment variables are set in production:
@@ -122,7 +121,7 @@ Before deploying to production:
 - [ ] Run `npm run build` - should complete successfully
 - [ ] Test the build locally with `npx serve out`
 - [ ] Create and add OG image
-- [ ] Optimize logo files
+- [x] Optimize logo files
 - [ ] Verify environment variables in Firebase
 - [ ] Test contact form in production
 - [ ] Run Lighthouse audit

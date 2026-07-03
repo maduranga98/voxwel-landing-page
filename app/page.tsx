@@ -54,7 +54,7 @@ export default function Home() {
     operatingSystem: "Web Browser, iOS, Android",
     softwareVersion: "2.0",
     screenshot: "https://voxwel.com/screenshots/problems-wall.avif",
-    logo: "https://voxwel.com/voxwel1.avif",
+    logo: "https://voxwel.com/logo.png",
     offers: {
       "@type": "Offer",
       price: "1.00",

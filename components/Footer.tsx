@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import AnchoraLogo from "./AnchoraLogo";
+import VoxwelLogo from "./VoxwelLogo";
 import { FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -69,7 +69,7 @@ export default function Footer() {
           {/* Column 1 — Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <AnchoraLogo size="small" />
+              <VoxwelLogo size="small" />
               <span className="text-lg font-bold text-white">VoxWel</span>
             </div>
             <p className="text-white text-sm font-medium leading-snug mb-1">
