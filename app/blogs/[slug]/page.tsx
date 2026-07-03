@@ -137,7 +137,7 @@ export default async function BlogPost({
       name: "VoxWel",
       logo: {
         "@type": "ImageObject",
-        url: "https://voxwel.com/voxwel1.avif",
+        url: "https://voxwel.com/logo.png",
       },
     },
     image: `https://voxwel.com/blogs_images/${slug}.png`,
