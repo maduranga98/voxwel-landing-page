@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { FiCheck } from "react-icons/fi";
 
 // ── Feature list (2-column pairs) ────────────────────────────────────────────
@@ -221,6 +222,15 @@ export default function SimplePricing() {
               </tbody>
             </table>
           </div>
+          <p className="text-center text-sm text-slate-500 mt-4">
+            Already comparing vendors?{" "}
+            <Link
+              href="/blogs/voxwel-vs-navex"
+              className="text-indigo-600 font-semibold hover:underline"
+            >
+              See how VoxWel stacks up against NAVEX EthicsPoint →
+            </Link>
+          </p>
         </div>
 
         {/* Enterprise CTA */}

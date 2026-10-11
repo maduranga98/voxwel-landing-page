@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { FiArrowRight, FiClock, FiCalendar } from "react-icons/fi";
-import { blogPosts } from "@/data/blogPosts";
+import { blogPosts, type BlogPost } from "@/data/blogPosts";
 
 /** Map blog categories to light-mode colored pills */
 function categoryPill(category: string) {
@@ -19,17 +19,20 @@ function categoryPill(category: string) {
   }
 }
 
-// High-traffic posts to feature on homepage (by SEO priority)
+// Posts to feature on the homepage. Picked for real buyer intent and real
+// search clicks (GSC, Oct 2026) rather than raw impression volume — the old
+// list surfaced exactly the three pages that get cited by AI answer engines
+// but have never produced a click, while these three already convert.
 const FEATURED_SLUGS = [
-  "best-eu-directive-compliant-whistleblowing-software",
-  "best-whistleblowing-software",
-  "whistleblowing-software-pricing-comparison",
+  "best-navex-alternative",
+  "what-is-compliance-hotline",
+  "anonymous-employee-reporting-software-guide",
 ];
 
 export default function BlogTeaseStrip() {
   const featuredBlogs = FEATURED_SLUGS.map((slug) =>
     blogPosts.find((p) => p.slug === slug)
-  ).filter(Boolean);
+  ).filter((post): post is BlogPost => post !== undefined);
 
   return (
     <section className="bg-slate-50 py-20 px-6">

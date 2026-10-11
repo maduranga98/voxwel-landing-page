@@ -7,6 +7,7 @@ import HowItWorks from "@/components/HowItWorks";
 import ProductTourSection from "@/components/ProductTourSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import AdminDashboardSection from "@/components/AdminDashboardSection";
+import SecuritySection from "@/components/SecuritySection";
 import SimplePricing from "@/components/SimplePricing";
 import { FAQSection } from "@/components/FAQSection";
 import BlogTeaseStrip from "@/components/BlogTeaseStrip";
@@ -54,7 +55,6 @@ export default function Home() {
     operatingSystem: "Web Browser, iOS, Android",
     softwareVersion: "2.0",
     screenshot: "https://voxwel.com/screenshots/problems-wall.avif",
-    logo: "https://voxwel.com/logo.png",
     offers: {
       "@type": "Offer",
       price: "1.00",
@@ -103,13 +103,14 @@ export default function Home() {
       "@type": "Organization",
       name: "Lumora Ventures",
       url: "https://voxwel.com",
-    },
-    contactPoint: {
-      "@type": "ContactPoint",
-      contactType: "Customer Support",
-      email: "maduranga@voxwel.com",
-      telephone: "+94766206555",
-      availableLanguage: ["English"],
+      logo: "https://voxwel.com/logo.png",
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "Customer Support",
+        email: "maduranga@voxwel.com",
+        telephone: "+94766206555",
+        availableLanguage: ["English"],
+      },
     },
   };
 
@@ -175,6 +176,9 @@ export default function Home() {
         <FeaturesSection />
         {/* Section 8 — Admin Dashboard */}
         <AdminDashboardSection />
+        {/* Section 8b — Security & Compliance (also fixes Footer's /#security link,
+            which pointed at a section that was never rendered on the page) */}
+        <SecuritySection />
         {/* Section 9 — Pricing (calculator logic preserved) */}
         <SimplePricing />
         {/* Section 10 — FAQ */}

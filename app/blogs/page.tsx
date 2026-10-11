@@ -410,6 +410,28 @@ export default function BlogsPage() {
               </div>
             )}
 
+            {/* Full Article Index — always rendered in static HTML (unlike the
+                paginated grid above, which is gated behind client-side state
+                and onClick handlers search engines won't trigger) so every
+                single post gets a real, crawlable internal link from this
+                hub page instead of relying solely on sitemap.xml inclusion. */}
+            <div className="mb-12 sm:mb-14 md:mb-16">
+              <h2 className="text-lg sm:text-xl font-bold text-white mb-5 sm:mb-6">
+                Browse All Articles
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-2.5">
+                {blogPosts.map((post) => (
+                  <Link
+                    key={post.slug}
+                    href={`/blogs/${post.slug}`}
+                    className="text-sm text-gray-400 hover:text-teal-400 hover:underline leading-snug transition-colors"
+                  >
+                    {post.title}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
             {/* Newsletter Signup */}
             <div
               className={`bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-sm rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 border-2 border-slate-700/50 shadow-2xl mb-10 sm:mb-12 md:mb-14 transition-all duration-1000 delay-700 ${
