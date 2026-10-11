@@ -7,10 +7,6 @@ export const metadata: Metadata = {
   title: "About Lumora Ventures",
   description:
     "Lumora Ventures - Building innovative workplace solutions that empower employees and protect organizations. Learn about the company behind VoxWel and our mission for workplace transparency.",
-  robots: {
-    index: false,
-    follow: false,
-  },
   openGraph: {
     title: "About Lumora Ventures | VoxWel",
     description:

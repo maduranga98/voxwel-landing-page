@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Book a Free Demo - See VoxWel in Action | 15 Minutes, No Credit Card",
+  title: "Book a Free VoxWel Demo | 15 Minutes",
   description:
     "Book your free 15-minute VoxWel demo. See our anonymous workplace reporting platform in action. No credit card required. Live dashboard walkthrough included.",
   keywords: [

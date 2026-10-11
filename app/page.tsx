@@ -55,7 +55,6 @@ export default function Home() {
     operatingSystem: "Web Browser, iOS, Android",
     softwareVersion: "2.0",
     screenshot: "https://voxwel.com/screenshots/problems-wall.avif",
-    logo: "https://voxwel.com/logo.png",
     offers: {
       "@type": "Offer",
       price: "1.00",
@@ -104,13 +103,14 @@ export default function Home() {
       "@type": "Organization",
       name: "Lumora Ventures",
       url: "https://voxwel.com",
-    },
-    contactPoint: {
-      "@type": "ContactPoint",
-      contactType: "Customer Support",
-      email: "maduranga@voxwel.com",
-      telephone: "+94766206555",
-      availableLanguage: ["English"],
+      logo: "https://voxwel.com/logo.png",
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "Customer Support",
+        email: "maduranga@voxwel.com",
+        telephone: "+94766206555",
+        availableLanguage: ["English"],
+      },
     },
   };
 

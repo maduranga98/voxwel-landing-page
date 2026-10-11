@@ -12,7 +12,7 @@ import {
 } from "react-icons/fi";
 
 export const metadata: Metadata = {
-  title: "About VoxWel — Anonymous Workplace Reporting Platform | Lumora Ventures",
+  title: "About VoxWel | Anonymous Workplace Reporting",
   description:
     "VoxWel was built to bridge the gap between what employees see and what companies know. Learn about our mission to protect every employee voice with military-grade AES-256 encryption.",
   alternates: {
@@ -87,13 +87,13 @@ export default function AboutPage() {
 
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-sm font-bold text-primary-teal uppercase tracking-wide mb-4">
+            <p className="text-sm font-bold text-primary-teal uppercase tracking-wide mb-4">
               About VoxWel
-            </h2>
-            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary mb-6 leading-tight">
+            </p>
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary mb-6 leading-tight">
               Your Partner in{" "}
               <span className="text-primary-teal">Workplace Safety</span>
-            </h3>
+            </h1>
             <p className="text-base md:text-lg lg:text-xl text-text-secondary max-w-4xl mx-auto">
               Born from the reality that employees see problems every day but
               fear speaking up. We created VoxWel to bridge that gap,protecting

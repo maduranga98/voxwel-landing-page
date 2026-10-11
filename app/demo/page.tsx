@@ -836,6 +836,75 @@ export default function DemoPage() {
               </div>
             </div>
           </div>
+
+          {/* Demo FAQ */}
+          <div className="max-w-4xl mx-auto mt-16 mb-12">
+            <h3 className="text-3xl font-bold text-text-primary text-center mb-4">
+              Demo Questions, Answered
+            </h3>
+            <p className="text-text-secondary text-center max-w-2xl mx-auto mb-10">
+              A VoxWel demo is a focused, 15-minute walkthrough with a real
+              person on our team — not a recorded sales video. Here&apos;s
+              what to expect before you book.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                <h4 className="font-bold text-text-primary mb-2">
+                  Who should attend the demo?
+                </h4>
+                <p className="text-text-secondary text-sm">
+                  Typically an HR Director, Compliance Officer, or founder
+                  evaluating anonymous reporting software. We tailor the
+                  walkthrough to whichever workplace issues (harassment,
+                  fraud, safety, culture) matter most to your team. Read more
+                  about the problem VoxWel solves on{" "}
+                  <Link href="/about" className="text-primary-teal font-semibold hover:underline">
+                    our About page
+                  </Link>
+                  .
+                </p>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                <h4 className="font-bold text-text-primary mb-2">
+                  Do I need to prepare anything?
+                </h4>
+                <p className="text-text-secondary text-sm">
+                  No. Just show up with your biggest workplace-reporting
+                  question. If you already know your employee count, we can
+                  give you an exact monthly price on the spot — see{" "}
+                  <Link href="/#pricing" className="text-primary-teal font-semibold hover:underline">
+                    how pricing works
+                  </Link>{" "}
+                  in advance if you&apos;d like.
+                </p>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                <h4 className="font-bold text-text-primary mb-2">
+                  Is there any obligation after the demo?
+                </h4>
+                <p className="text-text-secondary text-sm">
+                  None. No credit card is required to book, and there&apos;s
+                  no pressure to sign anything on the call. Most companies use
+                  the 14-day trial to pilot VoxWel with a single department
+                  before rolling it out company-wide.
+                </p>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                <h4 className="font-bold text-text-primary mb-2">
+                  What about data protection and compliance?
+                </h4>
+                <p className="text-text-secondary text-sm">
+                  We&apos;ll walk through VoxWel&apos;s AES-256 encryption and
+                  zero-knowledge architecture live. For the full technical and
+                  legal detail ahead of the call, see our{" "}
+                  <Link href="/gdpr" className="text-primary-teal font-semibold hover:underline">
+                    GDPR compliance page
+                  </Link>
+                  .
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

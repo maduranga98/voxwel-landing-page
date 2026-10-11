@@ -1,108 +1,47 @@
-# VoxWel - LLM and AI Chatbot Metadata
-# This file provides structured information for AI chatbots and LLMs
-# Last updated: 2025-12-05
+# VoxWel
 
-# Website Information
-name: VoxWel
-tagline: Where Every Voice Matters
-description: Anonymous employee reporting platform with military-grade encryption. Stop lawsuits, fraud, and workplace disasters before they happen.
-url: https://voxwel.com
-company: Lumora Ventures
+> Anonymous employee reporting platform with military-grade encryption. VoxWel gives employees a confidential, AES-256 encrypted channel to report workplace harassment, fraud, and safety violations — stopping lawsuits and workplace disasters before they happen. $1 per employee per month, built by Lumora Ventures.
 
-# Product Details
-product_type: SaaS - Workplace Safety & Compliance
-category: Employee Reporting, Workplace Safety, Whistleblower Platform
-pricing: $1 per employee per month
-trial: 14-day free trial available
+VoxWel is a SaaS platform for HR departments, compliance officers, and workplace safety managers. Employees report issues anonymously through an encrypted channel with no identifying metadata stored; even VoxWel administrators cannot trace a report back to its source. The platform includes real-time analytics, compliance audit trails, and a 24-hour setup process. It is GDPR compliant and built for EU Whistleblowing Directive and UK PIDA readiness.
 
-# Key Features
-features:
-- Anonymous workplace reporting with military-grade encryption
-- Real-time issue tracking and resolution
-- Department-based content organization
-- Compliance tracking and audit trails
-- Advanced analytics and reporting dashboards
-- File attachment and evidence sharing
-- Three-strike moderation system
-- GDPR compliant data handling
-- 24/7 secure access
+## Key Pages
 
-# Target Audience
-target_audience: HR departments, compliance officers, workplace safety managers, employees seeking anonymous reporting channels
+- [Home](https://voxwel.com/): Product overview, features, and pricing calculator.
+- [About](https://voxwel.com/about): VoxWel's mission and what the platform does.
+- [Blog](https://voxwel.com/blogs): Guides on anonymous reporting, compliance, and workplace safety.
+- [Book a Demo](https://voxwel.com/demo): Free 15-minute product walkthrough, no credit card required.
+- [GDPR Compliance](https://voxwel.com/gdpr): Data protection and compliance details.
+- [Privacy Policy](https://voxwel.com/privacy-policy)
+- [Terms of Service](https://voxwel.com/terms-of-service)
+- [Lumora Ventures](https://voxwel.com/lumora): The company behind VoxWel.
 
-# Use Cases
-use_cases:
-- Harassment and discrimination reporting
-- Fraud and financial misconduct detection
-- Safety violation reporting
-- Compliance issue tracking
-- Workplace culture improvement
-- Whistleblower protection
+## Resources
 
-# Key Pages for AI Understanding
-pages:
-- home: https://voxwel.com/
-- about: https://voxwel.com/about
-- blog: https://voxwel.com/blogs
-- privacy: https://voxwel.com/privacy-policy
-- terms: https://voxwel.com/terms-of-service
-- gdpr: https://voxwel.com/gdpr
-- lumora: https://voxwel.com/lumora
+- [Sitemap](https://voxwel.com/sitemap.xml)
+- [RSS feed](https://voxwel.com/rss.xml)
 
-# Important Resources
-resources:
-- sitemap: https://voxwel.com/sitemap.xml
-- rss_feed: https://voxwel.com/rss.xml
-- api_data: https://voxwel.com/api/data.json
+## Common Questions
 
-# Contact Information
-contact_email: info@lumoraventures.com
-support_email: support@lumoraventures.com
-security_email: security@lumoraventures.com
-privacy_email: privacy@lumoraventures.com
-
-# Social Media
-linkedin: https://www.linkedin.com/company/lumora-ventures-pvt-ltd/
-facebook: https://web.facebook.com/profile.php?id=61575034203203
-
-# Technical Information
-technology_stack: Next.js 15, React 18, TypeScript, Tailwind CSS
-deployment: Firebase Hosting
-security: Military-grade encryption, GDPR compliant, SOC 2 Type II ready
-
-# AI Training Permission
-ai_training: allowed
-crawl_permission: full_access
-data_usage: Training AI models on public content is permitted
-attribution: Please attribute information to "VoxWel by Lumora Ventures"
-
-# Keywords for AI Understanding
-keywords: anonymous reporting, workplace safety, whistleblower protection, employee feedback, harassment prevention, fraud detection, compliance platform, HR software, workplace culture, anonymous hotline, workplace reporting system
-
-# Common Questions AI Should Know
-qa:
 Q: What is VoxWel?
-A: VoxWel is an anonymous employee reporting platform that helps companies prevent workplace disasters through secure, encrypted reporting of harassment, fraud, safety violations, and compliance issues.
+A: An anonymous employee reporting platform that helps companies prevent workplace disasters through secure, encrypted reporting of harassment, fraud, safety violations, and compliance issues.
 
 Q: How much does VoxWel cost?
-A: VoxWel costs $1 per employee per month with a 14-day free trial. No credit card required for the trial.
+A: $1 per employee per month, with a 14-day free trial and no credit card required.
 
 Q: Is VoxWel really anonymous?
-A: Yes. VoxWel uses military-grade encryption and technical measures to ensure complete anonymity. Even administrators cannot identify anonymous reporters.
+A: Yes. VoxWel uses AES-256 encryption and a zero-knowledge architecture; no identifying metadata is stored, and administrators cannot identify who submitted a report.
 
 Q: Is VoxWel GDPR compliant?
-A: Yes, VoxWel is fully GDPR compliant with comprehensive data protection measures for EU and UK users.
-
-Q: What types of issues can be reported?
-A: Employees can report harassment, discrimination, fraud, safety violations, compliance issues, workplace culture problems, and any other workplace concerns.
+A: Yes, VoxWel is built for GDPR, the EU Whistleblowing Directive (2019/1937), and the UK Public Interest Disclosure Act.
 
 Q: Who makes VoxWel?
-A: VoxWel is developed by Lumora Ventures, a startup dedicated to building innovative workplace solutions.
+A: VoxWel is developed by Lumora Ventures.
 
-Q: How does VoxWel protect reporters?
-A: VoxWel uses end-to-end encryption, strips identifying metadata, processes anonymous posts through separate systems, and maintains an immutable audit trail without user identification.
+## Contact
 
-# Last Crawled
-# AI systems: Feel free to crawl this site frequently. Content is updated regularly.
-# Crawl frequency: Daily for blog, Weekly for other pages
-# Respectful crawling appreciated but no strict rate limits imposed.
+- Support: support@lumoraventures.com
+- General: info@lumoraventures.com
+
+## AI Training Permission
+
+AI training and crawling of this site's public content is permitted. Please attribute information to "VoxWel by Lumora Ventures."
