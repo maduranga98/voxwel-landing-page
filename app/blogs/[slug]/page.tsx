@@ -28,9 +28,11 @@ import FAQSchema from "@/components/FAQSchema";
 import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import BlogImage from "@/components/BlogImage";
+import MidPostCTA from "@/components/MidPostCTA";
 import rehypeRaw from "rehype-raw";
 import rehypeSlug from "rehype-slug";
 import remarkGfm from "remark-gfm";
+import { Fragment } from "react";
 
 // Icon mapping for blog posts
 const iconMap: { [key: string]: React.ComponentType<{ className?: string }> } =
@@ -377,9 +379,16 @@ export default async function BlogPost({
                     prose-td:border prose-td:border-border-light prose-td:p-2 md:prose-td:p-4 prose-td:text-text-primary
                     prose-img:rounded-xl prose-img:shadow-xl prose-img:my-6 md:prose-img:my-10"
                 >
-                  <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw, rehypeSlug]}>
-                    {post.content}
-                  </ReactMarkdown>
+                  {splitContentAtH2(post.content).map((chunk, i) => (
+                    <Fragment key={i}>
+                      <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw, rehypeSlug]}>
+                        {chunk}
+                      </ReactMarkdown>
+                      {post.midPostCTAs
+                        ?.filter((cta) => cta.position === i)
+                        .map((cta, j) => <MidPostCTA key={j} cta={cta} />)}
+                    </Fragment>
+                  ))}
                 </div>
               </div>
 
@@ -543,6 +552,26 @@ export default async function BlogPost({
       </main>
     </>
   );
+}
+
+// Split post content into chunks at each H2 heading, so mid-post CTAs
+// (post.midPostCTAs[].position counts H2 sections, 1-indexed) can be
+// interleaved between them. chunk[0] is the intro before the first H2.
+function splitContentAtH2(content: string): string[] {
+  const lines = content.split("\n");
+  const chunks: string[] = [];
+  let current: string[] = [];
+
+  for (const line of lines) {
+    if (/^##\s+/.test(line)) {
+      if (current.length) chunks.push(current.join("\n"));
+      current = [line];
+    } else {
+      current.push(line);
+    }
+  }
+  if (current.length) chunks.push(current.join("\n"));
+  return chunks;
 }
 
 // Extract headings from markdown for table of contents
