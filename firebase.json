@@ -108,6 +108,16 @@
           "source": "/blogs/workplace-harassment-statistics-2025",
           "destination": "/blogs/workplace-harassment-statistics",
           "type": 301
+        },
+        {
+          "source": "/blogs/anonymous-reporting-channel-vs-whistleblower-hotline",
+          "destination": "/blogs/what-is-a-whistleblower-hotline",
+          "type": 301
+        },
+        {
+          "source": "/blogs/anonymous-tip-saved-250k",
+          "destination": "/blogs/anonymous-tip-saved-company-250k",
+          "type": 301
         }
       ],
       "rewrites": []
