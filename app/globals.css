@@ -40,6 +40,27 @@
   }
 }
 
+/* Form controls: keep readable text on a light background regardless of the OS
+   color scheme. Base layer, so explicit utility classes (e.g. dark search boxes) still win. */
+@layer base {
+  input,
+  select,
+  textarea {
+    background-color: #ffffff;
+    color: #0f172a;
+    color-scheme: light;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    color: #94a3b8;
+    opacity: 1;
+  }
+  select option {
+    background-color: #ffffff;
+    color: #0f172a;
+  }
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

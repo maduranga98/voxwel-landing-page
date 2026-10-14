@@ -7,7 +7,25 @@ const spacemailUser = defineSecret('SPACEMAIL_USER');
 const spacemailPass = defineSecret('SPACEMAIL_PASS');
 const meetLink = defineSecret('GOOGLE_MEET_LINK');
 
-const corsHandler = cors({ origin: ['https://voxwel.com', 'http://localhost:3000'] });
+const corsHandler = cors({
+  origin: [
+    'https://voxwel.com',
+    'https://www.voxwel.com',
+    'https://voxwel-web.web.app',
+    'https://voxwel-web.firebaseapp.com',
+    'http://localhost:3000',
+  ],
+});
+
+const escapeHtml = (value: unknown): string =>
+  String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export const sendDemoBooking = functions
   .runWith({ secrets: ['SPACEMAIL_USER', 'SPACEMAIL_PASS', 'GOOGLE_MEET_LINK'] })
@@ -29,18 +47,23 @@ export const sendDemoBooking = functions
           },
         });
 
-        const {
-          name,
-          email,
-          company,
-          companySize,
-          meetingDate,
-          meetingTime,
-          timezone,
-          message,
-        } = req.body;
+        const body = req.body || {};
+        const email = String(body.email || '').trim();
+        if (!EMAIL_RE.test(email)) {
+          res.status(400).json({ error: 'Invalid email address' });
+          return;
+        }
 
-        const resolvedMeetLink = meetLink.value();
+        const name = escapeHtml(body.name);
+        const company = escapeHtml(body.company);
+        const companySize = escapeHtml(body.companySize);
+        const meetingDate = escapeHtml(body.meetingDate);
+        const meetingTime = escapeHtml(body.meetingTime);
+        const timezone = escapeHtml(body.timezone);
+        const message = escapeHtml(body.message);
+        const safeEmail = escapeHtml(email);
+
+        const resolvedMeetLink = meetLink.value().trim();
 
         // Email 1: Confirmation to prospect
         await transporter.sendMail({
@@ -114,7 +137,7 @@ export const sendDemoBooking = functions
                   </tr>
                   <tr>
                     <td style="padding: 8px 0; color: #64748b; font-size: 14px;">Email</td>
-                    <td style="padding: 8px 0;"><a href="mailto:${email}" style="color: #1abc9c;">${email}</a></td>
+                    <td style="padding: 8px 0;"><a href="mailto:${safeEmail}" style="color: #1abc9c;">${safeEmail}</a></td>
                   </tr>
                   <tr>
                     <td style="padding: 8px 0; color: #64748b; font-size: 14px;">Company</td>
