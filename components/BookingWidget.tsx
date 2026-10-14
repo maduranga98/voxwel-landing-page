@@ -522,7 +522,7 @@ export default function BookingWidget() {
                     value={formData.name}
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-1 transition-all ${
+                    className={`w-full bg-white text-slate-900 placeholder:text-slate-400 disabled:bg-slate-100 disabled:text-slate-500 px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-1 transition-all ${
                       fieldErrors.name && touched.name
                         ? "border-red-500 focus:ring-red-500 focus:border-red-500"
                         : !fieldErrors.name && touched.name && formData.name
@@ -556,7 +556,7 @@ export default function BookingWidget() {
                     value={formData.email}
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-1 transition-all ${
+                    className={`w-full bg-white text-slate-900 placeholder:text-slate-400 disabled:bg-slate-100 disabled:text-slate-500 px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-1 transition-all ${
                       fieldErrors.email && touched.email
                         ? "border-red-500 focus:ring-red-500 focus:border-red-500"
                         : !fieldErrors.email && touched.email && formData.email
@@ -590,7 +590,7 @@ export default function BookingWidget() {
                     value={formData.company}
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-1 transition-all ${
+                    className={`w-full bg-white text-slate-900 placeholder:text-slate-400 disabled:bg-slate-100 disabled:text-slate-500 px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-1 transition-all ${
                       fieldErrors.company && touched.company
                         ? "border-red-500 focus:ring-red-500 focus:border-red-500"
                         : !fieldErrors.company &&
@@ -629,7 +629,7 @@ export default function BookingWidget() {
                     value={formData.companySize}
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-1 transition-all appearance-none bg-white ${
+                    className={`w-full bg-white text-slate-900 placeholder:text-slate-400 disabled:bg-slate-100 disabled:text-slate-500 px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-1 transition-all appearance-none ${
                       fieldErrors.companySize && touched.companySize
                         ? "border-red-500 focus:ring-red-500 focus:border-red-500"
                         : !fieldErrors.companySize &&
@@ -673,7 +673,7 @@ export default function BookingWidget() {
                   max={maxDateStr}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2
+                  className={`w-full bg-white text-slate-900 placeholder:text-slate-400 disabled:bg-slate-100 disabled:text-slate-500 px-4 py-3 border rounded-lg focus:outline-none focus:ring-2
                     focus:ring-offset-1 transition-all bg-white ${
                     fieldErrors.meetingDate && touched.meetingDate
                       ? 'border-red-500 focus:ring-red-500'
@@ -698,7 +698,7 @@ export default function BookingWidget() {
                   value={formData.meetingTime}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2
+                  className={`w-full bg-white text-slate-900 placeholder:text-slate-400 disabled:bg-slate-100 disabled:text-slate-500 px-4 py-3 border rounded-lg focus:outline-none focus:ring-2
                     focus:ring-offset-1 transition-all bg-white ${
                     fieldErrors.meetingTime && touched.meetingTime
                       ? 'border-red-500 focus:ring-red-500'
@@ -732,7 +732,7 @@ export default function BookingWidget() {
                   value={formData.message}
                   onChange={handleChange}
                   rows={3}
-                  className="w-full px-4 py-3 border border-border-medium rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-teal focus:border-primary-teal transition-all resize-none"
+                  className="w-full bg-white text-slate-900 placeholder:text-slate-400 disabled:bg-slate-100 disabled:text-slate-500 px-4 py-3 border border-border-medium rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-teal focus:border-primary-teal transition-all resize-none"
                   placeholder="Any specific topics you'd like to discuss?"
                 />
               </div>

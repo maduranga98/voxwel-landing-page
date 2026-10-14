@@ -501,7 +501,7 @@ export default function DemoPage() {
                       value={formData.name}
                       onChange={handleChange}
                       onBlur={handleBlur}
-                      className={`w-full px-4 py-4 border-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-1 transition-all text-lg ${
+                      className={`w-full bg-white text-slate-900 placeholder:text-slate-400 disabled:bg-slate-100 disabled:text-slate-500 px-4 py-4 border-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-1 transition-all text-lg ${
                         fieldErrors.name && touched.name
                           ? "border-red-500 focus:ring-red-500 focus:border-red-500"
                           : !fieldErrors.name && touched.name && formData.name
@@ -540,7 +540,7 @@ export default function DemoPage() {
                       value={formData.email}
                       onChange={handleChange}
                       onBlur={handleBlur}
-                      className={`w-full px-4 py-4 border-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-1 transition-all text-lg ${
+                      className={`w-full bg-white text-slate-900 placeholder:text-slate-400 disabled:bg-slate-100 disabled:text-slate-500 px-4 py-4 border-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-1 transition-all text-lg ${
                         fieldErrors.email && touched.email
                           ? "border-red-500 focus:ring-red-500 focus:border-red-500"
                           : !fieldErrors.email &&
@@ -581,7 +581,7 @@ export default function DemoPage() {
                       value={formData.company}
                       onChange={handleChange}
                       onBlur={handleBlur}
-                      className={`w-full px-4 py-4 border-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-1 transition-all text-lg ${
+                      className={`w-full bg-white text-slate-900 placeholder:text-slate-400 disabled:bg-slate-100 disabled:text-slate-500 px-4 py-4 border-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-1 transition-all text-lg ${
                         fieldErrors.company && touched.company
                           ? "border-red-500 focus:ring-red-500 focus:border-red-500"
                           : !fieldErrors.company &&
@@ -623,7 +623,7 @@ export default function DemoPage() {
                       value={formData.companySize}
                       onChange={handleChange}
                       onBlur={handleBlur}
-                      className={`w-full px-4 py-4 border-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-1 transition-all text-lg appearance-none bg-white ${
+                      className={`w-full bg-white text-slate-900 placeholder:text-slate-400 disabled:bg-slate-100 disabled:text-slate-500 px-4 py-4 border-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-1 transition-all text-lg appearance-none ${
                         fieldErrors.companySize && touched.companySize
                           ? "border-red-500 focus:ring-red-500 focus:border-red-500"
                           : !fieldErrors.companySize &&
@@ -666,8 +666,8 @@ export default function DemoPage() {
                     onChange={handleChange}
                     onBlur={handleBlur}
                     disabled={status === "submitting"}
-                    className={`w-full px-4 py-4 border-2 rounded-xl focus:outline-none focus:ring-2
-                      focus:ring-offset-1 transition-all text-lg bg-white ${
+                    className={`w-full bg-white text-slate-900 placeholder:text-slate-400 disabled:bg-slate-100 disabled:text-slate-500 px-4 py-4 border-2 rounded-xl focus:outline-none focus:ring-2
+                      focus:ring-offset-1 transition-all text-lg ${
                       fieldErrors.meetingDate && touched.meetingDate
                         ? 'border-red-500 focus:ring-red-500 focus:border-red-500'
                         : !fieldErrors.meetingDate && touched.meetingDate && formData.meetingDate
@@ -696,8 +696,8 @@ export default function DemoPage() {
                     onChange={handleChange}
                     onBlur={handleBlur}
                     disabled={status === "submitting"}
-                    className={`w-full px-4 py-4 border-2 rounded-xl focus:outline-none focus:ring-2
-                      focus:ring-offset-1 transition-all text-lg appearance-none bg-white ${
+                    className={`w-full bg-white text-slate-900 placeholder:text-slate-400 disabled:bg-slate-100 disabled:text-slate-500 px-4 py-4 border-2 rounded-xl focus:outline-none focus:ring-2
+                      focus:ring-offset-1 transition-all text-lg appearance-none ${
                       fieldErrors.meetingTime && touched.meetingTime
                         ? 'border-red-500 focus:ring-red-500 focus:border-red-500'
                         : !fieldErrors.meetingTime && touched.meetingTime && formData.meetingTime
@@ -733,7 +733,7 @@ export default function DemoPage() {
                     rows={4}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-4 border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-primary-teal focus:border-primary-teal transition-all resize-none text-lg"
+                    className="w-full bg-white text-slate-900 placeholder:text-slate-400 disabled:bg-slate-100 disabled:text-slate-500 px-4 py-4 border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-primary-teal focus:border-primary-teal transition-all resize-none text-lg"
                     placeholder="Any specific features you'd like to see in the demo?"
                     disabled={status === "submitting"}
                   />
