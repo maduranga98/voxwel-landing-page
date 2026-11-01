@@ -81,10 +81,12 @@ export default function BookingWidget() {
 
   useEffect(() => {
     const today = new Date();
-    setTodayStr(today.toISOString().split("T")[0]);
+    const toLocalISO = (d: Date) =>
+      `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+    setTodayStr(toLocalISO(today));
     const max = new Date();
     max.setDate(max.getDate() + 60);
-    setMaxDateStr(max.toISOString().split("T")[0]);
+    setMaxDateStr(toLocalISO(max));
     setUserTimezone(Intl.DateTimeFormat().resolvedOptions().timeZone);
   }, []);
 
@@ -270,12 +272,14 @@ export default function BookingWidget() {
             meetingDate: formatDateForEmail(formData.meetingDate),
             meetingTime: formatTimeForEmail(formData.meetingTime),
             timezone: userTimezone,
-            meetLink: process.env.NEXT_PUBLIC_GOOGLE_MEET_LINK!,
             message: formData.message,
           }),
         }
       );
       if (!response.ok) throw new Error('Failed to send booking');
+      const result = await response.json().catch(() => ({}));
+      const meetLink: string =
+        result.meetLink || process.env.NEXT_PUBLIC_GOOGLE_MEET_LINK || '';
 
       // Track conversion with Google Analytics
       if (typeof window !== "undefined" && (window as any).gtag) {
@@ -299,7 +303,7 @@ export default function BookingWidget() {
       setConfirmedDetails({
         date: formatDateForEmail(formData.meetingDate),
         time: formatTimeForEmail(formData.meetingTime),
-        meetLink: process.env.NEXT_PUBLIC_GOOGLE_MEET_LINK!,
+        meetLink,
         email: formData.email,
       });
     } catch (error) {
@@ -413,7 +417,7 @@ export default function BookingWidget() {
               <div>
                 <h2 className="text-2xl font-bold">Book Your Demo</h2>
                 <p className="text-sm text-white/90 mt-1">
-                  See how Anchora can transform your HR operations
+                  See how VoxWel can help you build a safer workplace
                 </p>
               </div>
               <button
