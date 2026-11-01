@@ -54,6 +54,15 @@ export const sendDemoBooking = functions
           return;
         }
 
+        if (
+          !String(body.name || '').trim() ||
+          !String(body.meetingDate || '').trim() ||
+          !String(body.meetingTime || '').trim()
+        ) {
+          res.status(400).json({ error: 'Name, date and time are required' });
+          return;
+        }
+
         const name = escapeHtml(body.name);
         const company = escapeHtml(body.company);
         const companySize = escapeHtml(body.companySize);
@@ -63,7 +72,8 @@ export const sendDemoBooking = functions
         const message = escapeHtml(body.message);
         const safeEmail = escapeHtml(email);
 
-        const resolvedMeetLink = meetLink.value().trim();
+        const rawMeetLink = meetLink.value().trim();
+        const resolvedMeetLink = /^https:\/\//.test(rawMeetLink) ? rawMeetLink : '';
 
         // Email 1: Confirmation to prospect
         await transporter.sendMail({
@@ -94,7 +104,7 @@ export const sendDemoBooking = functions
                   </tr>
                   <tr>
                     <td style="padding: 8px 0; color: #64748b; font-size: 14px;">⏱ Duration</td>
-                    <td style="padding: 8px 0; color: #0f172a; font-weight: 600;">20 minutes</td>
+                    <td style="padding: 8px 0; color: #0f172a; font-weight: 600;">15 minutes</td>
                   </tr>
                 </table>
               </div>
@@ -166,7 +176,7 @@ export const sendDemoBooking = functions
           `,
         });
 
-        res.status(200).json({ success: true });
+        res.status(200).json({ success: true, meetLink: resolvedMeetLink });
 
       } catch (error) {
         console.error('Email send error:', error);

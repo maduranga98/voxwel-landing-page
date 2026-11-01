@@ -57,10 +57,12 @@ export default function DemoPage() {
 
   useEffect(() => {
     const today = new Date();
-    setTodayStr(today.toISOString().split("T")[0]);
+    const toLocalISO = (d: Date) =>
+      `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+    setTodayStr(toLocalISO(today));
     const max = new Date();
     max.setDate(max.getDate() + 60);
-    setMaxDateStr(max.toISOString().split("T")[0]);
+    setMaxDateStr(toLocalISO(max));
     setUserTimezone(Intl.DateTimeFormat().resolvedOptions().timeZone);
   }, []);
 
@@ -192,6 +194,26 @@ export default function DemoPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    const errors = {
+      name: validateField("name", formData.name),
+      email: validateField("email", formData.email),
+      company: validateField("company", formData.company),
+      companySize: validateField("companySize", formData.companySize),
+      meetingDate: validateField("meetingDate", formData.meetingDate),
+      meetingTime: validateField("meetingTime", formData.meetingTime),
+    };
+    setFieldErrors(errors);
+    setTouched({
+      name: true,
+      email: true,
+      company: true,
+      companySize: true,
+      meetingDate: true,
+      meetingTime: true,
+    });
+    if (Object.values(errors).some(Boolean)) return;
+
     setStatus("submitting");
     setErrorMessage("");
 
@@ -209,18 +231,21 @@ export default function DemoPage() {
             meetingDate: formatDateForEmail(formData.meetingDate),
             meetingTime: formatTimeForEmail(formData.meetingTime),
             timezone: userTimezone,
-            meetLink: process.env.NEXT_PUBLIC_GOOGLE_MEET_LINK!,
             message: formData.message,
           }),
         }
       );
       if (!response.ok) throw new Error('Failed to send booking');
+      const result = await response.json().catch(() => ({}));
+      const meetLink: string =
+        result.meetLink || process.env.NEXT_PUBLIC_GOOGLE_MEET_LINK || '';
 
+      setStatus("idle");
       setBookingConfirmed(true);
       setConfirmedDetails({
         date: formatDateForEmail(formData.meetingDate),
         time: formatTimeForEmail(formData.meetingTime),
-        meetLink: process.env.NEXT_PUBLIC_GOOGLE_MEET_LINK!,
+        meetLink,
         email: formData.email,
       });
 
@@ -253,8 +278,7 @@ export default function DemoPage() {
       console.error("Error booking demo:", error);
       setStatus("error");
       setErrorMessage(
-        error.text ||
-          "Failed to book demo. Please try again or email us directly at info@lumoraventures.com",
+        "Failed to book demo. Please try again or email us directly at info@lumoraventures.com",
       );
 
       setTimeout(() => {
@@ -483,7 +507,7 @@ export default function DemoPage() {
                 </div>
               )}
 
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} noValidate className="space-y-6">
                 {/* Name */}
                 <div>
                   <label
