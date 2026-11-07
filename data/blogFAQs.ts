@@ -1,4 +1,29 @@
 export const blogFAQs: Record<string, { question: string; answer: string }[]> = {
+  "whistleblowing-case-management-software-workflow": [
+    { question: "What is the difference between a whistleblowing channel and case management software?", answer: "A channel receives the report. Case management supports the work that follows, including triage, assignment, investigation, evidence, decisions, actions and closure." },
+    { question: "Should every HR employee be able to view every report?", answer: "Usually not. Access should be limited to people who need it for their assigned responsibilities, with special handling for conflicts of interest and highly sensitive cases." },
+    { question: "Does case management software investigate a complaint automatically?", answer: "No. It organizes workflow and records. Qualified people must assess evidence, conduct interviews, evaluate credibility and make decisions." },
+  ],
+  "eu-hosting-whistleblowing-software-data-residency": [
+    { question: "Does EU hosting automatically mean a whistleblowing platform is GDPR compliant?", answer: "No. GDPR compliance depends on all processing activities, legal bases, transparency, minimisation, security, processor contracts, retention and any international transfers." },
+    { question: "Can EU-hosted software be accessed by support staff outside the EEA?", answer: "Potentially, depending on the service design and contractual arrangements. Ask the vendor to disclose remote access and identify the applicable transfer safeguards." },
+    { question: "What is more important: hosting location or encryption?", answer: "Both address different risks. Hosting location concerns where data is processed and transferred. Encryption helps protect data from unauthorized access. Neither replaces governance, access control and proper retention." },
+  ],
+  "whistleblowing-software-implementation-plan": [
+    { question: "Can whistleblowing software be deployed in one day?", answer: "A basic channel may be technically activated quickly. A responsible rollout also requires policy, access, escalation, privacy, testing and employee communication decisions." },
+    { question: "What usually delays implementation?", answer: "Unclear ownership, late legal review, multiple entities, language requirements, integrations, data migration and unresolved decisions about who investigates sensitive cases." },
+    { question: "Should employees be told before the channel launches?", answer: "Yes. Explain the purpose, confidentiality limits, access arrangements, reporting options and expected follow-up before asking employees to use the channel." },
+  ],
+  "verify-eu-whistleblowing-software-compliance": [
+    { question: "Does the EU Whistleblowing Directive require anonymous reporting?", answer: "Not universally. The Directive requires confidentiality protections and leaves Member States room to decide whether organizations must accept and follow up anonymous reports, subject to other applicable EU law and national rules." },
+    { question: "Does buying compliant software make a company compliant?", answer: "No. The employer still needs appropriate policies, trained impartial handlers, clear employee information, secure procedures and diligent follow-up." },
+    { question: "What deadlines should a platform support?", answer: "The Directive includes an acknowledgement period of seven days and a feedback timeframe not exceeding three months for internal channels, subject to the conditions in Article 9 and national implementation." },
+  ],
+  "compare-eu-whistleblowing-software-vendors": [
+    { question: "What is the most important factor when comparing whistleblowing platforms?", answer: "Start with confidentiality, independent follow-up and case handling. A reporting form is only the entry point. The organization must also control access, investigate fairly, document actions and protect personal data." },
+    { question: "Should a company choose a platform that is already certified as EU Directive compliant?", answer: "Treat certification or compliance claims as evidence to investigate, not as a final answer. Ask what standard or legal requirement is being assessed, who assessed it, what is in scope and whether the relevant national law has been considered." },
+    { question: "How many vendors should we evaluate?", answer: "A shortlist of three to five vendors is often manageable. Use the same scenarios and scorecard for each so the comparison is fair." },
+  ],
   "whistleblower-hotline-cost": [
     { question: "How much does a whistleblower hotline cost?", answer: "Whistleblower hotline costs range from $1 to $15 per employee per month. Traditional phone hotlines cost $3–$8/employee/month. Modern digital platforms like VoxWel cost $1/employee/month with no setup fees." },
     { question: "What is the cheapest whistleblowing software?", answer: "GlobaLeaks is free open-source software but requires self-hosting. Among commercial platforms, VoxWel at $1/employee/month is the most affordable fully-managed solution with EU Directive compliance." },
