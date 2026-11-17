@@ -8,11 +8,11 @@ Location: UK & Sri Lanka
 Thanks to all the open-source contributors whose work made this possible.
 
 /* SITE */
-Last update: 2025-12-05
-Standards: HTML5, CSS3, TypeScript, React, Next.js 15
+Last update: 2026-11-17
+Standards: HTML5, CSS3, TypeScript, React, Next.js 16
 Components: Tailwind CSS, React Icons
 Software: Visual Studio Code, Git
-Security: Military-grade encryption, GDPR compliant
+Security: AES-256 encryption, GDPR compliant
 
 /* VoxWel */
 VoxWel is a product of Lumora Ventures

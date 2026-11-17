@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description:
       "Understand how VoxWel uses cookies and similar technologies to improve your experience and protect your data.",
     url: "https://voxwel.com/cookie-policy",
+    images: [{ url: "https://voxwel.com/og-image.png", width: 1200, height: 630, alt: "VoxWel anonymous employee reporting platform" }],
   },
   alternates: {
     canonical: "https://voxwel.com/cookie-policy",
@@ -502,10 +503,10 @@ export default function CookiePolicy() {
                 <p className="text-text-secondary">
                   Email:{" "}
                   <a
-                    href="mailto:privacy@lumoraventures.com"
+                    href="mailto:info@lumoraventures.com"
                     className="text-primary-teal hover:underline"
                   >
-                    privacy@lumoraventures.com
+                    info@lumoraventures.com
                   </a>
                 </p>
                 <p className="text-text-secondary">

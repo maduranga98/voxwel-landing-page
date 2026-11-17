@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://voxwel.com/og-demo.jpg",
+        url: "https://voxwel.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "VoxWel Demo Booking",

@@ -6,10 +6,9 @@ const siteUrl = "https://voxwel.com";
 const pageUrl = `${siteUrl}/fr/logiciel-lancement-alerte`;
 
 export const metadata: Metadata = {
-  title:
-    "Logiciel de Lancement d'Alerte Conforme Directive 2019/1937 | VoxWel France",
+  title: "Logiciel de Lancement d'Alerte Conforme 2019/1937",
   description:
-    "Logiciel de lancement d'alerte conforme à la Directive 2019/1937 et à la Loi Sapin II. Conformité CNIL/RGPD. Mise en place en 24 h. À partir de 0,92 €/employé/mois. Idéal pour les PME françaises de 50 à 500 salariés.",
+    "Logiciel de lancement d'alerte conforme à la Directive 2019/1937 et à la Loi Sapin II, RGPD/CNIL. Mise en place en 24 h, dès 0,92 €/employé/mois.",
   keywords: [
     "logiciel lancement alerte",
     "logiciel alerte professionnelle",
@@ -26,16 +25,16 @@ export const metadata: Metadata = {
     canonical: pageUrl,
     languages: {
       fr: pageUrl,
-      "x-default": `${siteUrl}/blogs/whistleblower-hotline-cost`,
     },
   },
   openGraph: {
     title:
-      "Logiciel de Lancement d'Alerte Conforme Directive 2019/1937 | VoxWel",
+      "Logiciel de Lancement d'Alerte Conforme 2019/1937 | VoxWel",
     description:
       "Conforme Directive 2019/1937, Loi Sapin II et CNIL/RGPD. Canal de signalement interne sécurisé pour PME françaises. Mise en place en 24 h.",
     url: pageUrl,
     locale: "fr_FR",
+    images: [{ url: "https://voxwel.com/og-image.png", width: 1200, height: 630, alt: "VoxWel anonymous employee reporting platform" }],
     type: "website",
     siteName: "VoxWel",
   },

@@ -12,12 +12,11 @@ const siteUrl = "https://voxwel.com";
 export const metadata: Metadata = {
   metadataBase: new URL("https://voxwel.com"),
   title: {
-    default:
-      "VoxWel — Anonymous Employee Reporting Software | Whistleblower Platform",
+    default: "VoxWel: Anonymous Reporting & Whistleblowing Software",
     template: "%s | VoxWel",
   },
   description:
-    "VoxWel gives employees an encrypted, anonymous channel to report harassment, fraud, and safety violations. GDPR compliant. EU Whistleblowing Directive ready. Setup in 24 hours. $1/employee/month.",
+    "VoxWel gives employees an encrypted, anonymous channel to report harassment, fraud and safety issues. GDPR compliant, EU Directive ready. $1/employee/month.",
   keywords: [
     "anonymous employee reporting software",
     "whistleblower platform",
@@ -75,7 +74,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@voxwel",
+    site: "@voxwel36916",
     title: "VoxWel — Anonymous Employee Reporting Software",
     description:
       "Give every employee a safe voice. Anonymous encrypted workplace reporting. GDPR compliant. $1/employee/month.",

@@ -20,9 +20,9 @@ import { WebVitals } from "./web-vitals";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "VoxWel — Anonymous Employee Reporting Software | Whistleblower Platform",
+  title: { absolute: "VoxWel: Anonymous Reporting & Whistleblowing Software" },
   description:
-    "VoxWel gives employees a confidential, AES-256 encrypted channel to report workplace harassment, fraud, and safety violations anonymously. GDPR compliant. EU Whistleblowing Directive ready. Setup in 24 hours. $1/employee/month.",
+    "VoxWel gives employees an encrypted, anonymous channel to report harassment, fraud and safety issues. GDPR compliant, EU Directive ready. $1/employee/month.",
   alternates: {
     canonical: "https://voxwel.com",
   },
@@ -73,13 +73,6 @@ export default function Home() {
         priceCurrency: "USD",
         unitText: "per employee per month",
       },
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      ratingCount: "12",
-      bestRating: "5",
-      worstRating: "1",
     },
     featureList: [
       "100% anonymous employee reporting",

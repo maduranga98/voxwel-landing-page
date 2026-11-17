@@ -3,6 +3,9 @@ import { blogPosts } from "@/data/blogPosts";
 
 export const dynamic = "force-static";
 
+// Fixed date: avoids reporting every static page as modified on each build.
+const SITE_UPDATED = new Date("2026-11-17");
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://voxwel.com";
 
@@ -10,61 +13,67 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
     {
       url: baseUrl,
-      lastModified: new Date(),
+      lastModified: SITE_UPDATED,
       changeFrequency: "weekly" as const,
       priority: 1,
     },
     {
       url: `${baseUrl}/about`,
-      lastModified: new Date(),
+      lastModified: SITE_UPDATED,
       changeFrequency: "monthly" as const,
       priority: 0.8,
     },
     {
       url: `${baseUrl}/demo`,
-      lastModified: new Date(),
+      lastModified: SITE_UPDATED,
       changeFrequency: "monthly" as const,
       priority: 0.9,
     },
     {
       url: `${baseUrl}/blogs`,
-      lastModified: new Date(),
+      lastModified: SITE_UPDATED,
       changeFrequency: "daily" as const,
       priority: 0.9,
     },
     {
       url: `${baseUrl}/de/hinweisgebersoftware-preise`,
-      lastModified: new Date(),
+      lastModified: SITE_UPDATED,
       changeFrequency: "monthly" as const,
       priority: 0.9,
     },
     {
       url: `${baseUrl}/fr/logiciel-lancement-alerte`,
-      lastModified: new Date(),
+      lastModified: SITE_UPDATED,
       changeFrequency: "monthly" as const,
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/lumora`,
+      lastModified: SITE_UPDATED,
+      changeFrequency: "yearly" as const,
+      priority: 0.4,
+    },
+    {
       url: `${baseUrl}/privacy-policy`,
-      lastModified: new Date(),
+      lastModified: SITE_UPDATED,
       changeFrequency: "yearly" as const,
       priority: 0.4,
     },
     {
       url: `${baseUrl}/terms-of-service`,
-      lastModified: new Date(),
+      lastModified: SITE_UPDATED,
       changeFrequency: "yearly" as const,
       priority: 0.4,
     },
     {
       url: `${baseUrl}/cookie-policy`,
-      lastModified: new Date(),
+      lastModified: SITE_UPDATED,
       changeFrequency: "yearly" as const,
       priority: 0.3,
     },
     {
       url: `${baseUrl}/gdpr`,
-      lastModified: new Date(),
+      lastModified: SITE_UPDATED,
       changeFrequency: "yearly" as const,
       priority: 0.4,
     },

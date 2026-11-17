@@ -14,7 +14,7 @@ import {
 export const metadata: Metadata = {
   title: "About VoxWel | Anonymous Workplace Reporting",
   description:
-    "VoxWel was built to bridge the gap between what employees see and what companies know. Learn about our mission to protect every employee voice with military-grade AES-256 encryption.",
+    "VoxWel bridges the gap between what employees see and what companies know. Learn about our mission to protect every employee voice.",
   alternates: {
     canonical: "https://voxwel.com/about",
   },
@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     description:
       "Built to bridge the gap between what employees see and what companies know. Protecting every employee voice with military-grade encryption.",
     url: "https://voxwel.com/about",
+    images: [{ url: "https://voxwel.com/og-image.png", width: 1200, height: 630, alt: "VoxWel anonymous employee reporting platform" }],
   },
 };
 

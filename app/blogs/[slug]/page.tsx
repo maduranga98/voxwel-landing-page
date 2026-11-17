@@ -67,12 +67,16 @@ export async function generateMetadata({
     };
   }
 
-  const seoTitle = post.metaTitle || post.title;
+  // Normalise: strip any brand suffix, then re-add it only if the full title
+  // stays within ~60 chars so Google does not truncate the key phrase.
+  const seoTitle = (post.metaTitle || post.title).replace(/\s*\|\s*VoxWel\s*$/i, "");
+  const serpTitle =
+    seoTitle.length + 9 <= 60 ? `${seoTitle} | VoxWel` : seoTitle;
   const seoDescription = post.metaDescription || post.excerpt;
   const blogImageUrl = `https://voxwel.com/blogs_images/${slug}.png`;
 
   return {
-    title: seoTitle,
+    title: { absolute: serpTitle },
     description: seoDescription,
     keywords: post.tags.join(", "),
     authors: [{ name: post.author.name }],
@@ -90,8 +94,8 @@ export async function generateMetadata({
       images: [
         {
           url: blogImageUrl,
-          width: 1200,
-          height: 630,
+          width: 1376,
+          height: 768,
           alt: seoTitle,
         },
       ],
@@ -124,7 +128,7 @@ export default async function BlogPost({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: post.metaTitle || post.title,
+    headline: post.title.slice(0, 110),
     description: post.excerpt,
     url: `https://voxwel.com/blogs/${post.slug}`,
     datePublished: new Date(post.date).toISOString(),
@@ -337,7 +341,7 @@ export default async function BlogPost({
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="text-xs font-bold text-primary-teal uppercase tracking-wider mb-1">Free Resource</p>
-                    <h3 className="text-base sm:text-lg font-bold text-text-primary mb-2">{post.leadMagnet.title}</h3>
+                    <p className="text-base sm:text-lg font-bold text-text-primary mb-2">{post.leadMagnet.title}</p>
                     <p className="text-sm text-text-secondary mb-4 leading-relaxed">{post.leadMagnet.description}</p>
                     <Link
                       href="/demo"
@@ -403,9 +407,9 @@ export default async function BlogPost({
                       <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white">
                         <FiZap className="w-4 h-4" />
                       </div>
-                      <h3 className="text-sm font-bold text-text-primary uppercase tracking-wide">
+                      <p className="text-sm font-bold text-text-primary uppercase tracking-wide">
                         Try VoxWel Free
-                      </h3>
+                      </p>
                     </div>
                     <p className="text-sm text-text-secondary mb-4 leading-relaxed">
                       Set up your anonymous reporting channel in 24 hours. No credit card required.
@@ -438,7 +442,7 @@ export default async function BlogPost({
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="text-xs font-bold text-primary-teal uppercase tracking-wider mb-1">Free Resource</p>
-                    <h3 className="text-base sm:text-lg font-bold text-text-primary mb-2">{post.leadMagnet.title}</h3>
+                    <p className="text-base sm:text-lg font-bold text-text-primary mb-2">{post.leadMagnet.title}</p>
                     <p className="text-sm text-text-secondary mb-4 leading-relaxed">{post.leadMagnet.description}</p>
                     <Link
                       href="/demo"
@@ -456,9 +460,9 @@ export default async function BlogPost({
             <div className="bg-linear-to-r from-primary-teal/5 to-indigo-50 border-2 border-primary-teal/10 rounded-2xl p-6 sm:p-8 md:p-10 mb-10 sm:mb-14">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
                 <div>
-                  <h3 className="text-lg sm:text-xl font-bold text-text-primary mb-2">
+                  <p className="text-lg sm:text-xl font-bold text-text-primary mb-2">
                     Ready to protect your workplace?
-                  </h3>
+                  </p>
                   <p className="text-sm sm:text-base text-text-secondary max-w-lg">
                     Join 500+ companies using VoxWel for anonymous reporting. Setup takes 24 hours. No IT project required.
                   </p>

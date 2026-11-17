@@ -39,7 +39,7 @@ A: VoxWel is developed by Lumora Ventures.
 
 ## Contact
 
-- Support: support@lumoraventures.com
+- Support: info@lumoraventures.com
 - General: info@lumoraventures.com
 
 ## AI Training Permission
