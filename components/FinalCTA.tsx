@@ -235,16 +235,24 @@ export default function FinalCTA() {
             email: formData.email,
             company: formData.company,
             companySize: formData.companySize,
+            meetingDateISO: formData.meetingDate,
+            meetingTimeISO: formData.meetingTime,
             meetingDate: formatDateForEmail(formData.meetingDate),
             meetingTime: formatTimeForEmail(formData.meetingTime),
             timezone: userTimezone,
-            meetLink: process.env.NEXT_PUBLIC_GOOGLE_MEET_LINK!,
             message: "",
           }),
         }
       );
 
+      if (response.status === 409) {
+        setSubmitError("That time was just taken. Please choose another slot.");
+        return;
+      }
       if (!response.ok) throw new Error("Failed to send booking");
+      const result = await response.json().catch(() => ({}));
+      const meetLink: string =
+        result.meetLink || process.env.NEXT_PUBLIC_GOOGLE_MEET_LINK || "";
 
       if (typeof window !== "undefined" && (window as any).gtag) {
         (window as any).gtag("event", "demo_booking_submitted", {
@@ -265,7 +273,7 @@ export default function FinalCTA() {
       setConfirmedDetails({
         date: formatDateForEmail(formData.meetingDate),
         time: formatTimeForEmail(formData.meetingTime),
-        meetLink: process.env.NEXT_PUBLIC_GOOGLE_MEET_LINK!,
+        meetLink,
         email: formData.email,
       });
     } catch {

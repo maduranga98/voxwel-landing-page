@@ -269,6 +269,8 @@ export default function BookingWidget() {
             email: formData.email,
             company: formData.company,
             companySize: formData.companySize,
+            meetingDateISO: formData.meetingDate,
+            meetingTimeISO: formData.meetingTime,
             meetingDate: formatDateForEmail(formData.meetingDate),
             meetingTime: formatTimeForEmail(formData.meetingTime),
             timezone: userTimezone,
@@ -276,6 +278,13 @@ export default function BookingWidget() {
           }),
         }
       );
+      if (response.status === 409) {
+        setSubmitStatus({
+          type: "error",
+          message: "That time was just taken. Please choose another slot.",
+        });
+        return;
+      }
       if (!response.ok) throw new Error('Failed to send booking');
       const result = await response.json().catch(() => ({}));
       const meetLink: string =
