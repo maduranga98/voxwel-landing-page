@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | VoxWel",
+  title: "Terms of Service",
   description:
     "Terms of service for VoxWel's anonymous employee reporting platform. Read our usage terms, data handling commitments, and service agreements.",
   openGraph: {
@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description:
       "Terms of service for VoxWel's anonymous employee reporting platform. Read our usage terms and service agreements.",
     url: "https://voxwel.com/terms-of-service",
+    images: [{ url: "https://voxwel.com/og-image.png", width: 1200, height: 630, alt: "VoxWel anonymous employee reporting platform" }],
   },
   alternates: {
     canonical: "https://voxwel.com/terms-of-service",
@@ -388,7 +389,7 @@ export default function TermsOfService() {
               </h3>
               <p className="text-text-secondary mb-4">
                 Before filing a formal dispute, you agree to contact us at
-                legal@lumoraventures.com to attempt to resolve the issue
+                info@lumoraventures.com to attempt to resolve the issue
                 informally.
               </p>
 
@@ -477,10 +478,10 @@ export default function TermsOfService() {
                 <p className="text-text-secondary">
                   Email:{" "}
                   <a
-                    href="mailto:legal@lumoraventures.com"
+                    href="mailto:info@lumoraventures.com"
                     className="text-primary-teal hover:underline"
                   >
-                    legal@lumoraventures.com
+                    info@lumoraventures.com
                   </a>
                 </p>
                 <p className="text-text-secondary">

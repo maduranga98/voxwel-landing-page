@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | VoxWel Anonymous Employee Reporting",
+  title: "Privacy Policy",
   description:
     "VoxWel's privacy policy. Learn how we protect employee anonymity, handle data, and comply with GDPR and EU Whistleblowing Directive requirements.",
   robots: {
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     description:
       "Learn how VoxWel protects employee anonymity, handles data, and complies with GDPR requirements.",
     url: "https://voxwel.com/privacy-policy",
+    images: [{ url: "https://voxwel.com/og-image.png", width: 1200, height: 630, alt: "VoxWel anonymous employee reporting platform" }],
   },
   alternates: {
     canonical: "https://voxwel.com/privacy-policy",
@@ -317,10 +318,10 @@ export default function PrivacyPolicy() {
               <p className="text-text-secondary mt-4">
                 To exercise these rights, contact us at{" "}
                 <a
-                  href="mailto:privacy@lumoraventures.com"
+                  href="mailto:info@lumoraventures.com"
                   className="text-primary-teal hover:underline"
                 >
-                  privacy@lumoraventures.com
+                  info@lumoraventures.com
                 </a>
               </p>
             </section>
@@ -400,10 +401,10 @@ export default function PrivacyPolicy() {
                 <p className="text-text-secondary">
                   Email:{" "}
                   <a
-                    href="mailto:privacy@lumoraventures.com"
+                    href="mailto:info@lumoraventures.com"
                     className="text-primary-teal hover:underline"
                   >
-                    privacy@lumoraventures.com
+                    info@lumoraventures.com
                   </a>
                 </p>
                 <p className="text-text-secondary">
@@ -425,10 +426,10 @@ export default function PrivacyPolicy() {
                 <p className="text-text-secondary">
                   Email:{" "}
                   <a
-                    href="mailto:dpo@voxwel.com"
+                    href="mailto:info@lumoraventures.com"
                     className="text-primary-teal hover:underline"
                   >
-                    dpo@voxwel.com
+                    info@lumoraventures.com
                   </a>
                 </p>
               </div>

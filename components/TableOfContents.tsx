@@ -25,10 +25,10 @@ export default function TableOfContents({ headings }: TableOfContentsProps) {
 
   return (
     <div className="bg-linear-to-br from-background-light to-white border-2 border-border-light rounded-2xl p-6 shadow-lg">
-      <h3 className="text-sm font-bold text-primary-teal uppercase tracking-wide mb-4 flex items-center gap-2">
+      <p className="text-sm font-bold text-primary-teal uppercase tracking-wide mb-4 flex items-center gap-2">
         <FiFileText className="w-4 h-4" />
         Table of Contents
-      </h3>
+      </p>
       <nav className="space-y-2">
         {headings.map((heading, index) => (
           <a

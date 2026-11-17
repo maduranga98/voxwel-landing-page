@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Workplace Compliance Blog — HR & Whistleblower Resources",
+  title: "Whistleblower & Workplace Compliance Blog",
   description:
     "Expert guides on anonymous employee reporting, workplace harassment prevention, GDPR compliance, and whistleblower platform best practices for HR teams.",
   keywords: [

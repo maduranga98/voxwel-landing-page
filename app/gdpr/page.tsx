@@ -12,9 +12,9 @@ import {
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "GDPR Compliance | VoxWel Anonymous Reporting Platform",
+  title: "GDPR Compliance for Anonymous Reporting",
   description:
-    "VoxWel is fully GDPR compliant and meets EU Whistleblowing Directive 2019/1937 requirements. Learn how we protect employee data and ensure regulatory compliance.",
+    "How VoxWel meets GDPR and EU Whistleblowing Directive 2019/1937 requirements, and how we protect employee data.",
   alternates: {
     canonical: "https://voxwel.com/gdpr",
   },
@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     description:
       "VoxWel is fully GDPR compliant and meets EU Whistleblowing Directive 2019/1937 requirements. Learn how we protect employee data.",
     url: "https://voxwel.com/gdpr",
+    images: [{ url: "https://voxwel.com/og-image.png", width: 1200, height: 630, alt: "VoxWel anonymous employee reporting platform" }],
   },
 };
 
@@ -315,10 +316,10 @@ export default function GDPR() {
                       Email our Data Protection Officer at:
                     </p>
                     <a
-                      href="mailto:dpo@lumoraventures.com"
+                      href="mailto:info@lumoraventures.com"
                       className="text-primary-teal font-semibold hover:underline text-lg"
                     >
-                      dpo@lumoraventures.com
+                      info@lumoraventures.com
                     </a>
                     <p className="text-text-secondary mt-3 text-sm">
                       Include "GDPR Request" in the subject line and specify
@@ -515,10 +516,10 @@ export default function GDPR() {
                 <p className="text-text-secondary">
                   Email:{" "}
                   <a
-                    href="mailto:dpo@lumoraventures.com"
+                    href="mailto:info@lumoraventures.com"
                     className="text-primary-teal hover:underline"
                   >
-                    dpo@lumoraventures.com
+                    info@lumoraventures.com
                   </a>
                 </p>
                 <p className="text-text-secondary">

@@ -3,7 +3,9 @@
     {
       "source": "functions",
       "codebase": "default",
-      "predeploy": ["npm --prefix \"$RESOURCE_DIR\" run build"],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run build"
+      ],
       "ignore": [
         "node_modules",
         ".git",
@@ -18,7 +20,11 @@
       "cleanUrls": true,
       "trailingSlash": false,
       "public": "out",
-      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
       "headers": [
         {
           "source": "**",
@@ -109,10 +115,24 @@
           "source": "/blogs/workplace-harassment-statistics-2025",
           "destination": "/blogs/workplace-harassment-statistics",
           "type": 301
+        },
+        {
+          "source": "/blogs/voxwel-whistleblowing-software-pricing-comparison",
+          "destination": "/blogs/whistleblowing-software-pricing-comparison",
+          "type": 301
+        },
+        {
+          "source": "/blogs/sarbanes-Oxley-whistleblower-requirements",
+          "destination": "/blogs/sarbanes-oxley-whistleblower-requirements",
+          "type": 301
+        },
+        {
+          "source": "/blogs/best-whistleblower-hotline-software",
+          "destination": "/blogs/best-whistleblowing-software",
+          "type": 301
         }
       ],
       "rewrites": []
-
     }
   ]
 }

@@ -6,12 +6,13 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Lumora Ventures",
   description:
-    "Lumora Ventures - Building innovative workplace solutions that empower employees and protect organizations. Learn about the company behind VoxWel and our mission for workplace transparency.",
+    "Lumora Ventures builds workplace solutions that empower employees and protect organizations. Learn about the company behind VoxWel.",
   openGraph: {
     title: "About Lumora Ventures | VoxWel",
     description:
       "Discover Lumora Ventures, the innovative startup behind VoxWel workplace reporting platform.",
     url: "https://voxwel.com/lumora",
+    images: [{ url: "https://voxwel.com/og-image.png", width: 1200, height: 630, alt: "VoxWel anonymous employee reporting platform" }],
   },
   alternates: {
     canonical: "https://voxwel.com/lumora",

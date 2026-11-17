@@ -2,10 +2,20 @@ import * as functions from 'firebase-functions';
 import { defineSecret } from 'firebase-functions/params';
 import * as nodemailer from 'nodemailer';
 import * as cors from 'cors';
+import {
+  createDemoEvent,
+  InvalidSlotError,
+  isValidTimeZone,
+  SlotTakenError,
+} from './calendar';
 
 const spacemailUser = defineSecret('SPACEMAIL_USER');
 const spacemailPass = defineSecret('SPACEMAIL_PASS');
+// Fallback room, only used if the Calendar API call fails for a non-conflict reason.
 const meetLink = defineSecret('GOOGLE_MEET_LINK');
+const googleClientId = defineSecret('GOOGLE_CLIENT_ID');
+const googleClientSecret = defineSecret('GOOGLE_CLIENT_SECRET');
+const googleRefreshToken = defineSecret('GOOGLE_REFRESH_TOKEN');
 
 const corsHandler = cors({
   origin: [
@@ -28,7 +38,16 @@ const escapeHtml = (value: unknown): string =>
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export const sendDemoBooking = functions
-  .runWith({ secrets: ['SPACEMAIL_USER', 'SPACEMAIL_PASS', 'GOOGLE_MEET_LINK'] })
+  .runWith({
+    secrets: [
+      'SPACEMAIL_USER',
+      'SPACEMAIL_PASS',
+      'GOOGLE_MEET_LINK',
+      'GOOGLE_CLIENT_ID',
+      'GOOGLE_CLIENT_SECRET',
+      'GOOGLE_REFRESH_TOKEN',
+    ],
+  })
   .https.onRequest((req, res) => {
     corsHandler(req, res, async () => {
       if (req.method !== 'POST') {
@@ -72,7 +91,61 @@ export const sendDemoBooking = functions
         const message = escapeHtml(body.message);
         const safeEmail = escapeHtml(email);
 
-        const rawMeetLink = meetLink.value().trim();
+        // Create a calendar event with its own Google Meet room. The browser sends the
+        // slot as ISO strings (meetingDateISO / meetingTimeISO) in the visitor's time zone.
+        const dateISO = String(body.meetingDateISO || '').trim();
+        const timeHHMM = String(body.meetingTimeISO || '').trim();
+        const timeZone = String(body.timezone || '').trim();
+        let calendarMeetLink = '';
+        let calendarEventUrl = '';
+        let calendarNote = '';
+
+        if (dateISO && timeHHMM) {
+          if (!isValidTimeZone(timeZone)) {
+            res.status(400).json({ error: 'Invalid time zone' });
+            return;
+          }
+          try {
+            const event = await createDemoEvent(
+              {
+                clientId: googleClientId.value(),
+                clientSecret: googleClientSecret.value(),
+                refreshToken: googleRefreshToken.value(),
+                calendarId: process.env.GOOGLE_CALENDAR_ID,
+              },
+              {
+                name: String(body.name).trim(),
+                email,
+                company: String(body.company || '').trim(),
+                companySize: String(body.companySize || '').trim(),
+                message: String(body.message || '').trim(),
+                dateISO,
+                timeHHMM,
+                timeZone,
+              },
+            );
+            calendarMeetLink = event.meetLink;
+            calendarEventUrl = event.eventUrl;
+          } catch (calendarError) {
+            if (calendarError instanceof SlotTakenError) {
+              res.status(409).json({
+                error: 'slot_unavailable',
+                message: 'That time is no longer available. Please choose another slot.',
+              });
+              return;
+            }
+            if (calendarError instanceof InvalidSlotError) {
+              res.status(400).json({ error: calendarError.message });
+              return;
+            }
+            // Do not lose the lead: log, fall back to the static room, and flag it to the owner.
+            console.error('Calendar event creation failed:', calendarError);
+            calendarNote =
+              'Calendar event was NOT created (see function logs). Add this meeting to your calendar manually.';
+          }
+        }
+
+        const rawMeetLink = (calendarMeetLink || meetLink.value()).trim();
         const resolvedMeetLink = /^https:\/\//.test(rawMeetLink) ? rawMeetLink : '';
 
         // Email 1: Confirmation to prospect
@@ -171,7 +244,9 @@ export const sendDemoBooking = functions
                   </tr>
                 </table>
               </div>
+              ${calendarNote ? `<p style="color:#b91c1c;font-weight:600;">⚠️ ${escapeHtml(calendarNote)}</p>` : ''}
               <a href="${resolvedMeetLink}" style="color: #1abc9c;">🔗 Meet Link</a>
+              ${calendarEventUrl ? `<br/><a href="${escapeHtml(calendarEventUrl)}" style="color: #1abc9c;">📆 Open calendar event</a>` : ''}
             </div>
           `,
         });

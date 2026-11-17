@@ -6,25 +6,22 @@ const siteUrl = "https://voxwel.com";
 const pageUrl = `${siteUrl}/de/hinweisgebersoftware-preise`;
 
 export const metadata: Metadata = {
-  title:
-    "Hinweisgebersoftware Preise 2026: Was kostet ein HinSchG-konformes System? | VoxWel",
+  title: "Hinweisgebersoftware Preise 2026: Was kostet sie?",
   description:
-    "Hinweisgebersoftware kostet zwischen 1 € und 25 € pro Mitarbeiter im Monat. Vollständiger Preisvergleich aller Optionen – HinSchG-konform, DSGVO-sicher – bevor Sie einen Anbieter kontaktieren.",
+    "Hinweisgebersoftware kostet 1 € bis 25 € pro Mitarbeiter und Monat. Preisvergleich aller Optionen: HinSchG-konform, DSGVO-sicher.",
   alternates: {
     canonical: pageUrl,
     languages: {
       de: pageUrl,
-      en: `${siteUrl}/blogs/whistleblower-hotline-cost`,
-      "x-default": `${siteUrl}/blogs/whistleblower-hotline-cost`,
     },
   },
   openGraph: {
-    title:
-      "Hinweisgebersoftware Preise 2026: Was kostet ein HinSchG-konformes System? | VoxWel",
+    title: "Hinweisgebersoftware Preise 2026: Was kostet sie? | VoxWel",
     description:
       "Vollständiger Preisvergleich für Hinweisgebersoftware in Deutschland.",
     url: pageUrl,
     locale: "de_DE",
+    images: [{ url: "https://voxwel.com/og-image.png", width: 1200, height: 630, alt: "VoxWel anonymous employee reporting platform" }],
     type: "website",
     siteName: "VoxWel",
   },

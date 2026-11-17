@@ -109,10 +109,10 @@ export async function GET() {
     },
     contact: {
       general: "info@lumoraventures.com",
-      support: "support@lumoraventures.com",
-      security: "security@lumoraventures.com",
-      privacy: "privacy@lumoraventures.com",
-      dpo: "dpo@voxwel.com",
+      support: "info@lumoraventures.com",
+      security: "info@lumoraventures.com",
+      privacy: "info@lumoraventures.com",
+      dpo: "info@lumoraventures.com",
     },
     social: {
       linkedin: "https://www.linkedin.com/company/lumora-ventures-pvt-ltd/",
