@@ -18,7 +18,7 @@ import {
   FiChevronLeft,
   FiChevronRight,
 } from "react-icons/fi";
-import { blogPosts } from "@/data/blogPosts";
+import { blogPosts, getBlogImagePath, getBlogImageUrl } from "@/data/blogPosts";
 
 const POSTS_PER_PAGE = 9;
 
@@ -108,7 +108,7 @@ export default function BlogsPage() {
       url: `https://voxwel.com/blogs/${post.slug}`,
       keywords: post.tags.join(", "),
       articleSection: post.category,
-      image: `https://voxwel.com/blogs_images/${post.slug}.png`,
+      image: getBlogImageUrl(post),
     })),
   };
 
@@ -258,7 +258,7 @@ export default function BlogsPage() {
                         {/* Thumbnail */}
                         <div className="relative h-36 sm:h-40 overflow-hidden bg-slate-700">
                           <img
-                            src={`/blogs_images/${post.slug}.png`}
+                            src={getBlogImagePath(post)}
                             alt={post.title}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                             onError={(e) => {

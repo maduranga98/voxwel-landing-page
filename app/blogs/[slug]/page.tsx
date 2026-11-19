@@ -22,6 +22,8 @@ import {
   getBlogPostBySlug,
   getAllBlogSlugs,
   getRelatedPosts,
+  getBlogImagePath,
+  getBlogImageUrl,
 } from "@/data/blogPosts";
 import { blogFAQs } from "@/data/blogFAQs";
 import FAQSchema from "@/components/FAQSchema";
@@ -73,7 +75,7 @@ export async function generateMetadata({
   const serpTitle =
     seoTitle.length + 9 <= 60 ? `${seoTitle} | VoxWel` : seoTitle;
   const seoDescription = post.metaDescription || post.excerpt;
-  const blogImageUrl = `https://voxwel.com/blogs_images/${slug}.png`;
+  const blogImageUrl = getBlogImageUrl(post);
 
   return {
     title: { absolute: serpTitle },
@@ -146,7 +148,7 @@ export default async function BlogPost({
         url: "https://voxwel.com/logo.png",
       },
     },
-    image: `https://voxwel.com/blogs_images/${slug}.png`,
+    image: getBlogImageUrl(post),
     keywords: post.tags.join(", "),
     articleSection: post.category,
     mainEntityOfPage: {
@@ -304,7 +306,7 @@ export default async function BlogPost({
             <div className="mb-8 sm:mb-10 md:mb-12">
               <div className="relative rounded-2xl overflow-hidden shadow-xl border-2 border-border-light bg-slate-100 aspect-[2/1] max-h-[360px]">
                 <BlogImage
-                  src={`/blogs_images/${slug}.png`}
+                  src={getBlogImagePath(post)}
                   alt={post.title}
                   className="w-full h-full object-cover"
                 />
@@ -507,7 +509,7 @@ export default async function BlogPost({
                           {/* Thumbnail Image */}
                           <div className="relative h-36 sm:h-40 overflow-hidden bg-slate-100">
                             <BlogImage
-                              src={`/blogs_images/${relatedPost.slug}.png`}
+                              src={getBlogImagePath(relatedPost)}
                               alt={relatedPost.title}
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                             />

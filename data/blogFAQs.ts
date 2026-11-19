@@ -1,4 +1,63 @@
 export const blogFAQs: Record<string, { question: string; answer: string }[]> = {
+  "grievance-management-app-features-benefits": [
+    { question: "What is the purpose of a grievance management app?", answer: "A grievance management app helps organizations collect, record, track, and resolve employee complaints through a structured digital process. It improves visibility, communication, and accountability." },
+    { question: "What are the most important features of grievance management software?", answer: "Important features include digital submission forms, automatic ticket generation, role-based access control, case communication, grievance history, administrator dashboards, and status tracking." },
+    { question: "Can employees track their submitted grievances?", answer: "Yes. Applications with employee-facing grievance history and status tracking allow employees to review previous submissions, available administrator responses, and case progress." },
+    { question: "Is a grievance management app the same as whistleblowing software?", answer: "No. Grievance management generally focuses on workplace complaints and employee concerns. Whistleblowing software focuses on reporting suspected misconduct, fraud, corruption, and other serious wrongdoing. Some systems support both, but their confidentiality and workflow requirements may differ." },
+    { question: "Is the Grievance Management App by Dhyey Consulting available on Microsoft Marketplace?", answer: "Yes. Dhyey Consulting Services Pvt. Ltd. lists its Grievance Management App on Microsoft Marketplace. It is built using Microsoft Power Apps and SharePoint and includes grievance submission, ticket generation, chat, history tracking, and an administrator dashboard." },
+    { question: "Does every grievance management app support anonymous complaints?", answer: "No. Anonymous reporting must be specifically supported by the application. Organizations should verify whether employees can submit concerns without identifying themselves and whether administrators can communicate with anonymous reporters without compromising their identity." },
+    { question: "Why should organizations move from manual grievance management to software?", answer: "Digital software centralizes complaints, makes tracking easier, supports consistent communication, and provides structured records. It can reduce administrative effort and help organizations respond more systematically." },
+  ],
+  "who-investigates-complaints-against-hr-or-senior-management": [
+    { question: "Can HR investigate a complaint against the HR Director?", answer: "It may create a conflict. The organization should use an independent recipient or investigator with no reporting or personal conflict involving the subject of the complaint." },
+    { question: "Should the board investigate a complaint about the CEO?", answer: "The board or an authorized independent committee may oversee the response, often with external investigative support. The exact process depends on corporate governance documents and applicable law." },
+    { question: "Can whistleblowing software solve a conflict of interest?", answer: "Software can route cases, restrict access and record decisions, but it cannot create independence by itself. The organization must appoint the right people and define an escalation policy." },
+  ],
+  "handle-unverified-anonymous-workplace-complaint": [
+    { question: "Can an organization close an anonymous complaint as inconclusive?", answer: "Yes, where reasonable enquiries have been made and the evidence is insufficient to reach a reliable conclusion. The rationale and steps taken should be documented." },
+    { question: "Is an unsubstantiated complaint a false complaint?", answer: "No. \"Unsubstantiated\" describes the evidence outcome. A knowingly false report is a different question and should require evidence of intentional dishonesty." },
+    { question: "Should the accused employee be told who submitted the complaint?", answer: "Not automatically. Share only information that is necessary for a fair process and permitted by applicable law. Protect the reporter's identity and third-party information to the extent possible." },
+  ],
+  "whistleblowing-report-retention-period-gdpr": [
+    { question: "Does GDPR specify a fixed retention period for whistleblowing reports?", answer: "No. GDPR storage limitation requires retention to be tied to purpose and necessity. Sector-specific, employment, national and litigation rules may affect the appropriate period." },
+    { question: "Can a company retain a report after an investigation closes?", answer: "Potentially, where a lawful and necessary purpose remains, such as a legal obligation or a properly documented legal hold. The reason and duration should be reviewed." },
+    { question: "Should anonymous reports be deleted sooner?", answer: "Not automatically. Retention should be based on the information, purpose and legal requirements, not simply on whether the reporter provided a name." },
+  ],
+  "what-happens-after-employee-workplace-report": [
+    { question: "How long does it take to investigate a workplace complaint?", answer: "There is no universal timeline. It depends on the seriousness, evidence, number of witnesses, legal requirements and complexity. Organizations should set realistic updates and avoid unexplained silence." },
+    { question: "Will HR tell the employee the result?", answer: "The organization should provide appropriate feedback under its policy and applicable law, but it may not be able to disclose confidential personnel details or every investigative finding." },
+    { question: "Can an anonymous employee receive updates?", answer: "Only if the reporting process provides a way to communicate without revealing identity. Employers should test and clearly explain this capability." },
+  ],
+  "what-to-include-in-an-anonymous-workplace-report": [
+    { question: "Do I need evidence before submitting an anonymous report?", answer: "No. Share the facts you know and identify records or witnesses that may help. Do not try to obtain evidence through unauthorized access or risky actions." },
+    { question: "Should I include the names of witnesses?", answer: "Where relevant, identify people who may have direct information. Avoid including unrelated personal details or asking others to coordinate accounts." },
+    { question: "What if I do not remember the exact date?", answer: "Give an approximate date, time range or related event. Be clear that the detail is approximate rather than guessing." },
+  ],
+  "enterprise-ethics-investigation-software-total-cost": [
+    { question: "What determines the cost of enterprise ethics investigation software?", answer: "Common factors include employee count, case-handler seats, legal entities, modules, reporting channels, language coverage, implementation, integrations, support, hosting and data-retention needs." },
+    { question: "Is a flat fee better than per-employee pricing?", answer: "It depends on the organization's size, growth, entity structure and included features. Compare the three-year cost under the same assumptions rather than relying on the pricing label." },
+    { question: "Should investigation services be included in the software budget?", answer: "Yes, at least as a separate planning line. The platform organizes the process, while trained employees or external specialists perform the investigation and make decisions." },
+  ],
+  "all-in-one-vs-integrated-whistleblowing-software": [
+    { question: "Does whistleblowing software need HRIS integration?", answer: "Not always. Many organizations can operate a reporting channel without importing a full employee directory. Integrate only when there is a clear operational purpose." },
+    { question: "Can single sign-on make anonymous reporting unsafe?", answer: "It can, if the reporter is required to authenticate through a named account or if identity data is attached to a report. Case-handler authentication and anonymous employee reporting should be assessed separately." },
+    { question: "Is an all-in-one platform more secure?", answer: "Not automatically. It may reduce data transfers, but security still depends on access controls, architecture, contracts, operations and independent testing." },
+  ],
+  "whistleblowing-software-demo-checklist-questions": [
+    { question: "What is the most important whistleblowing software demo test?", answer: "Test a report involving a senior leader or administrator. This quickly reveals whether the platform supports independent escalation and meaningful access restrictions." },
+    { question: "Should IT Security attend the demo?", answer: "Yes, especially for questions about identity data, logs, hosting, subprocessors, authentication, encryption, audit records and incident response." },
+    { question: "Can a demo prove legal compliance?", answer: "No. A demo shows product behavior. Legal compliance also depends on local law, policy, operating procedures, contracts and how the organization uses the platform." },
+  ],
+  "investigate-anonymous-workplace-complaints": [
+    { question: "Can HR investigate a complaint if the reporter does not provide a name?", answer: "Yes. HR can test the allegations against documents, system records, witness accounts and other independent information. The scope depends on the detail and seriousness of the report." },
+    { question: "Should an anonymous complaint always be investigated?", answer: "It should be assessed under the organization's policy and applicable law. Credible, specific or high-risk information may justify follow-up even when the source is unknown." },
+    { question: "Does an inconclusive investigation mean the report was malicious?", answer: "No. An inconclusive finding means the available evidence did not allow a reliable conclusion. Intentional false reporting is a separate issue and should not be assumed." },
+  ],
+  "whistleblowing-software-mid-sized-companies-250-employees": [
+    { question: "Does a company with 250 employees need whistleblowing software?", answer: "The legal requirement depends on the applicable jurisdictions, entity structure and sector. In the EU, the Directive's general private-sector threshold is 50 or more workers, subject to exceptions and national law. Software is one way to operate a channel, but employers should assess their legal duties." },
+    { question: "Should a mid-sized company buy the same platform as a multinational?", answer: "Not necessarily. A mid-sized employer may need strong confidentiality and case workflows but not every integration, hotline or analytics module offered by an enterprise suite." },
+    { question: "How many people should administer the platform?", answer: "There is no universal number. Define enough trained recipients and investigators to avoid bottlenecks while maintaining independence, segregation of duties and restricted access." },
+  ],
   "whistleblowing-case-management-software-workflow": [
     { question: "What is the difference between a whistleblowing channel and case management software?", answer: "A channel receives the report. Case management supports the work that follows, including triage, assignment, investigation, evidence, decisions, actions and closure." },
     { question: "Should every HR employee be able to view every report?", answer: "Usually not. Access should be limited to people who need it for their assigned responsibilities, with special handling for conflicts of interest and highly sensitive cases." },
