@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { FiArrowRight, FiClock, FiCalendar } from "react-icons/fi";
-import { blogPosts, type BlogPost } from "@/data/blogPosts";
+import { blogPosts, getBlogImagePath, type BlogPost } from "@/data/blogPosts";
 
 /** Map blog categories to light-mode colored pills */
 function categoryPill(category: string) {
@@ -61,7 +61,7 @@ export default function BlogTeaseStrip() {
               {/* Thumbnail Image */}
               <div className="relative h-44 sm:h-48 overflow-hidden bg-slate-100">
                 <img
-                  src={`/blogs_images/${blog.slug}.png`}
+                  src={getBlogImagePath(blog)}
                   alt={blog.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   onError={(e) => {
