@@ -138,10 +138,10 @@ export default function RootLayout({
     foundingDate: "2024",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Office 4157, 58 Peregrine Road, Hainault",
-      addressLocality: "Ilford",
-      addressRegion: "Essex",
-      postalCode: "IG6 3SZ",
+      streetAddress: "61 Bridge Street",
+      addressLocality: "Kington",
+      addressRegion: "England",
+      postalCode: "HR5 3DJ",
       addressCountry: "GB",
     },
     contactPoint: {
