@@ -498,7 +498,7 @@ export default async function BlogPost({
                     Ready to protect your workplace?
                   </p>
                   <p className="text-sm sm:text-base text-text-secondary max-w-lg">
-                    Join 500+ companies using VoxWel for anonymous reporting. Setup takes 24 hours. No IT project required.
+                    Encrypted anonymous reporting and case management for $1 per employee per month. Setup takes 24 hours. No IT project required.
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-3 shrink-0">

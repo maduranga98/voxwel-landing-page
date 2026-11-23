@@ -2114,209 +2114,6 @@ Start your free trial at [voxwel.com](/demo).
     `,
   },
   {
-    slug: "case-study-manufacturing-fraud-detection",
-    title:
-      "Case Study: How a 500-Employee Manufacturer Caught $2.3M in Expense Fraud in 48 Hours",
-    metaTitle: "Case Study: $2.3M Fraud Caught in 48 Hours | VoxWel",
-    metaDescription:
-      "How a manufacturer caught a $2.3M expense fraud scheme in 48 hours using VoxWel's anonymous reporting: full timeline and ROI breakdown.",
-    excerpt:
-      "Most fraud schemes run for 14 months before detection. This manufacturer caught a $2.3M expense fraud ring in 48 hours — because one employee felt safe enough to report anonymously. Here's the full case study with metrics, timeline, and ROI.",
-    category: "Case Study",
-    date: "2026-04-15",
-    readTime: "8 min",
-    author: { name: "VoxWel Team", role: "Workplace Safety Advocates" },
-    tags: [
-      "fraud case study",
-      "expense fraud detection",
-      "anonymous reporting ROI",
-      "manufacturing compliance",
-      "VoxWel case study",
-      "fraud detection metrics",
-    ],
-    icon: "FiAlertTriangle",
-    color: "from-red-500 to-red-700",
-    leadMagnet: {
-      title: "Fraud Response Playbook: The Exact 48-Hour Protocol",
-      description:
-        "The step-by-step protocol this manufacturer used to investigate and resolve the fraud in 48 hours — including investigation sequence, legal actions, and communication templates.",
-      fileType: "PDF",
-      ctaText: "Download the Fraud Response Playbook",
-      placement: "both",
-    },
-    midPostCTAs: [
-      {
-        position: 2,
-        type: "lead-magnet",
-        content:
-          "**📥 Download the exact 48-hour fraud response protocol** this manufacturer used — investigation sequence, legal actions, and communication templates. [Get the playbook →](/demo)",
-      },
-      {
-        position: 4,
-        type: "trial",
-        content:
-          "**Your next fraud scheme is probably running right now.** The median detection time without anonymous reporting is 14 months. With VoxWel, it's 48 hours. [Start your 14-day free trial →](/demo)",
-      },
-    ],
-    content: `
-**Company:** Midwest Precision Manufacturing (name changed for confidentiality)
-**Industry:** Automotive parts manufacturing
-**Employees:** 523
-**Annual Revenue:** $84M
-**Fraud Type:** Collusive expense reimbursement and vendor kickback scheme
-**Amount Detected:** $2.34M over 18 months
-**Detection Time:** 48 hours from first anonymous report to confirmed findings
-
----
-
-## The Background
-
-Midwest Precision Manufacturing had operated for 12 years with no formal whistleblowing program. Like many mid-market manufacturers, they relied on a combination of annual external audits, managerial oversight, and an "open door" HR policy.
-
-The company had grown rapidly -- from 180 employees to 523 in four years -- following a major contract with an automotive OEM. The finance team was stretched thin. The controller had been with the company for 9 years and was implicitly trusted.
-
-What nobody knew: the controller had built a collusive fraud scheme involving three direct reports and two external vendors.
-
----
-
-## The Fraud Scheme
-
-The scheme operated across three interconnected channels:
-
-### 1. Fictitious Vendor Invoices
-The controller created two shell companies -- "MPM Logistics Services" and "Quality Control Solutions LLC" -- both registered to addresses in neighboring counties. Between January 2024 and June 2025, these vendors submitted 147 invoices totaling $1.89M for services that were never performed.
-
-### 2. Inflated Expense Reimbursements
-Three department managers submitted inflated expense reports for "client entertainment" and "supplier relationship management." Individual claims ranged from $800 to $4,200, always just below the $5,000 threshold requiring secondary approval. Total: $340K over 18 months.
-
-### 3. Kickbacks on Real Vendor Contracts
-The controller directed $2.1M in legitimate tooling contracts to a preferred supplier in exchange for 8% cash kickbacks on each invoice. Kickback total: $168K.
-
-**Combined fraud exposure: $2.34M**
-
----
-
-## How It Was Detected
-
-### Tuesday, 9:47 AM -- The Anonymous Report
-
-A senior accounts payable clerk -- we'll call her "M.R." -- submitted a report through VoxWel's anonymous channel. She had noticed something that didn't add up:
-
-> "The vendor 'MPM Logistics Services' has submitted 23 invoices in the last 6 months for $284,000. I've worked here 7 years and I've never seen a single truck from them. The invoices always come on Tuesdays, always have the same formatting, and the purchase orders are always approved by the same person -- the controller. I don't want to cause trouble but this doesn't feel right."
-
-### Tuesday, 10:15 AM -- Automated Acknowledgment
-The report was automatically acknowledged through VoxWel's two-way messaging system. The CFO -- designated as the primary case handler -- received an immediate alert.
-
-### Tuesday, 11:30 AM -- Initial Triage
-The CFO reviewed the report and flagged it as high priority. The specificity of the allegation -- named vendor, dollar amount, named individual, behavioral pattern -- made it immediately actionable.
-
-### Tuesday, 2:00 PM -- Anonymous Follow-Up
-Using VoxWel's two-way messaging, the CFO asked two clarifying questions without knowing the reporter's identity:
-
-* "Can you tell us the date range of the most recent invoices from this vendor?"
-* "Are there any other vendors that follow this same pattern?"
-
-M.R. responded within 30 minutes with specific invoice numbers and flagged a second vendor -- "Quality Control Solutions LLC."
-
-### Wednesday, 9:00 AM -- Document Collection
-The internal audit team pulled all invoices from both vendors for the preceding 24 months. They cross-referenced with shipping logs, visitor records, and project management systems. No evidence of services rendered was found.
-
-### Wednesday, 3:00 PM -- Controller Confrontation
-The controller was placed on administrative leave. During an initial interview, presented with the documentation, the controller resigned and agreed to cooperate with the investigation.
-
-### Wednesday, 4:30 PM -- Full Confession
-In exchange for limited legal exposure, the controller confessed to the full scope of the scheme, named the three manager accomplices, and provided documentation of the kickback arrangement.
-
-**Total elapsed time from first report to confirmed findings: 48 hours.**
-
----
-
-## The Financial Outcome
-
-| Category | Amount | Recovery Status |
-| :--- | :--- | :--- |
-| Fictitious vendor invoices | $1,890,000 | 73% recovered via insurance and legal settlement |
-| Inflated expense reimbursements | $340,000 | 61% recovered from terminated managers |
-| Kickback scheme | $168,000 | 0% -- cash kickbacks unrecoverable |
-| **Total fraud exposure** | **$2,398,000** | **68% net recovery** |
-| Investigation and legal costs | $87,000 | N/A |
-| **Net loss after recovery** | **$853,000** | N/A |
-
-Without the anonymous report, the scheme was projected to continue for at least another 12 months at the same velocity, adding an estimated $1.56M in additional losses before external audit detection.
-
----
-
-## Why Traditional Detection Failed
-
-The company had undergone two external audits during the 18-month fraud period. Neither auditor flagged the scheme. Here's why:
-
-**External audits sample, they don't investigate.** The fraudulent invoices had proper approval signatures, supporting documentation (fabricated but complete), and fell within normal business parameters. Auditors tested 25 invoices from each vendor. All 25 appeared legitimate on paper.
-
-**The controller controlled the narrative.** As the person responsible for vendor relationships and invoice approval, the controller could redirect questions, provide plausible explanations, and control what documentation auditors saw.
-
-**Employees knew something was wrong but had no safe channel.** Post-investigation interviews revealed that at least four other employees had observed suspicious patterns. None had reported through the "open door" HR policy because the controller was a senior, trusted figure with direct influence over career advancement in the finance department.
-
----
-
-## The Role of Anonymous Reporting
-
-M.R. later disclosed her identity voluntarily after the investigation concluded. In her statement:
-
-> "I noticed the pattern six months ago. I almost reported it three times but I kept stopping myself. The controller signs my performance reviews. His office is 20 feet from mine. If I was wrong, or if he found out it was me, my career here would be over. The anonymous channel is the only reason I said anything. I literally would not have reported this any other way."
-
-This is the critical insight: **the fraud was not detected by better auditing. It was detected by better reporting infrastructure.**
-
----
-
-## ROI Analysis: What This Case Tells Us About Anonymous Reporting Investment
-
-| Metric | Value |
-| :--- | :--- |
-| VoxWel annual cost (500 employees) | $6,000/year |
-| Fraud detected and prevented | $2.34M + $1.56M projected additional = $3.9M total |
-| Investigation and legal costs | $87,000 |
-| Net fraud prevented | $3.81M |
-| **ROI on VoxWel investment** | **63,400%** |
-| Payback period | Under 6 hours |
-
-Even using conservative estimates -- if we assume only 10% of the fraud would have been detected through other means within 24 months -- the net value of early detection still exceeds $380,000. Against a $6,000 annual platform cost, the ROI is 6,233%.
-
----
-
-## What This Company Changed After the Investigation
-
-1. **Mandatory anonymous reporting channel.** VoxWel was rolled out company-wide within 72 hours of the controller's resignation. QR codes posted in every break room, warehouse, and office floor.
-2. **Segregation of duties overhaul.** No single individual can now approve vendor onboarding, authorize invoices, and reconcile accounts.
-3. **Mandatory vacation policy.** All finance employees must take 10 consecutive days of leave annually, during which their functions are covered by others.
-4. **Random audit sampling.** Internal audit now performs unannounced deep-dives on 5% of all vendor relationships quarterly.
-
----
-
-## What You Should Take From This Case
-
-The most important metric in this case is not the $2.34M fraud amount. It's the **48-hour detection window.**
-
-Organizations without anonymous reporting channels detect fraud in a median of 14 months (ACFE data). By that point, median losses are $117,000, the fraud has often become culturally embedded, and recovery rates are significantly lower.
-
-Organizations with trusted anonymous reporting channels detect fraud faster because employees feel safe reporting anomalies while they're still anomalies -- before they become established patterns, before they compound, and before they reach catastrophic scale.
-
-The question is not whether your organization can afford a $1/employee/month anonymous reporting platform.
-
-**The question is whether you can afford not to have one.**
-
----
-
-*Want the exact 48-hour fraud response protocol this manufacturer used? Download the free Fraud Response Playbook above -- it includes the investigation sequence, legal action templates, and internal communication scripts.*
-
-**[Start your 14-day free trial of VoxWel](/demo)** and deploy anonymous reporting across your organization in under 24 hours.
-
----
-
-*VoxWel is an anonymous employee reporting platform. Case study published with client permission (identifying details changed). Explore [VoxWel, whistleblowing software for growing teams](/).*
-
-    `,
-  },
-  {
     slug: "voxwel-implementation-guide-48-hours",
     title:
       "The VoxWel Implementation Playbook: From Zero to Full Compliance in Under 48 Hours",
@@ -4296,7 +4093,7 @@ Setup in under 24 hours. 14-day free trial at [voxwel.com](/demo).
         position: 5,
         type: "email-capture",
         content:
-          "**Want quarterly harassment statistics updates?** Join 2,400+ HR Directors who receive our quarterly data brief with the latest EEOC, SHRM, and Gallup findings. **[Subscribe to the data brief →](/demo)**",
+          "**Want quarterly harassment statistics updates?** Get our quarterly data brief with the latest EEOC, SHRM, and Gallup findings. **[Subscribe to the data brief →](/demo)**",
       },
     ],
     content: `
@@ -4890,7 +4687,7 @@ The organizations that prevent violence are not those with the most security cam
         position: 4,
         type: "email-capture",
         content:
-          "**Get quarterly legal updates for HR professionals.** Join 3,100+ HR leaders who receive our case law brief with the latest rulings affecting workplace compliance. **[Subscribe →](/demo)**",
+          "**Get quarterly legal updates for HR professionals.** Get our case law brief with the latest rulings affecting workplace compliance. **[Subscribe →](/demo)**",
       },
     ],
     content: `
@@ -5362,7 +5159,7 @@ Encouraging anonymous reporting is not a communication campaign -- it is an orga
         position: 5,
         type: "trial",
         content:
-          "**VoxWel is $1/employee/month — no setup fees, no hidden costs, cancel anytime.** See why 2,000+ organizations switched from $5–10/employee legacy hotlines. [Start free trial →](/demo)",
+          "**VoxWel is $1/employee/month — no setup fees, no hidden costs, cancel anytime.** Compare that with $5–10/employee for legacy hotlines. [Start free trial →](/demo)",
       },
     ],
     content: `
@@ -6647,17 +6444,17 @@ Seeking input and then visibly ignoring it is worse than not seeking input at al
   },
   {
     slug: "anonymous-tip-saved-company-250k",
-    title: "How an Anonymous Tip Saved a Company $250,000: A Case Study",
-    metaTitle: "Anonymous Tip Saved Company $250K: Case Study",
+    title: "How an Anonymous Tip Can Stop a $250,000 Fraud: An Illustrative Scenario",
+    metaTitle: "How an Anonymous Tip Stops a $250K Vendor Fraud",
     metaDescription:
-      "A real-world case study showing how an anonymous tip led to early fraud detection, saving a company $250,000 in prevented losses.",
+      "An illustrative procurement-fraud scenario: how one anonymous tip about vendor invoices can surface a $250,000 scheme early, step by step.",
     excerpt:
-      "An anonymous tip about unusual vendor payments led to the discovery of a $250,000 procurement fraud scheme. This case study details the timeline, investigation, and organizational response that turned a single report into significant loss prevention.",
-    category: "Case Studies",
+      "An anonymous tip about unusual vendor payments led to the discovery of a $250,000 procurement fraud scheme. This illustrative scenario walks through the timeline, investigation, and organizational response that turned a single report into significant loss prevention.",
+    category: "Best Practices",
     date: "2025-05-01",
     readTime: "7 min",
     author: { name: "VoxWel Team", role: "Workplace Safety Advocates" },
-    tags: ["Case Study", "Fraud Prevention", "Anonymous Reporting", "ROI"],
+    tags: ["Fraud Prevention", "Anonymous Reporting", "Procurement Fraud", "ROI"],
     icon: "FiDollarSign",
     color: "from-green-600 to-green-800",
     midPostCTAs: [
@@ -6665,12 +6462,12 @@ Seeking input and then visibly ignoring it is worse than not seeking input at al
         position: 2,
         type: "trial",
         content:
-          "**This company's $250K save cost them $1,200/year in reporting infrastructure.** What's your organization's potential loss prevention? [Start free trial →](/demo)",
+          "**An anonymous channel for 100 employees costs $1,200/year with VoxWel.** What could one early tip save your organization? [Start free trial →](/demo)",
       },
     ],
     content: `
 \n
-*Company and individual names have been changed to protect confidentiality.*
+*This is an illustrative scenario based on common procurement-fraud patterns. The company, people and figures are fictional, and it is not a VoxWel customer story.*
 
 ---
 
