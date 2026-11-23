@@ -94,7 +94,7 @@ A SOX-compliant reporting program requires four elements working together:
 
 ## VoxWel for SOX Compliance
 
-VoxWel provides the anonymous reporting channel that is the foundation of SOX Section 301 compliance. Anonymous submissions, automated acknowledgment, two-way messaging for follow-up, and a full audit trail that retains every complaint and response.
+[VoxWel](/) is whistleblowing software that provides the anonymous reporting channel that is the foundation of SOX Section 301 compliance. Anonymous submissions, automated acknowledgment, two-way messaging for follow-up, and a full audit trail that retains every complaint and response.
 
 For public companies that want their reporting channel to serve both SOX requirements and EU Whistleblowing Directive compliance in a single platform, VoxWel handles both.
 

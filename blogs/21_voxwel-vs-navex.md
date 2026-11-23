@@ -33,7 +33,7 @@ EthicsPoint is designed for enterprise organizations — typically 1,000+ employ
 
 ## VoxWel: What It Is
 
-VoxWel is an anonymous employee reporting platform designed for HR Directors and Compliance Officers who need a professional, compliance-grade reporting channel without enterprise complexity or enterprise pricing.
+[VoxWel](/) is anonymous whistleblowing software designed for HR Directors and Compliance Officers who need a professional, compliance-grade reporting channel without enterprise complexity or enterprise pricing.
 
 Employees report via QR code or web link with zero-knowledge encryption. No account. No phone call required. Two-way anonymous messaging. Automated acknowledgment. Seven-stage case workflow with full audit trail. EU Whistleblowing Directive compliance documentation built in. GDPR-compliant data handling. Employee Happiness Indicator analytics.
 

@@ -184,7 +184,7 @@ A single reporting channel — one that meets both PIDA best practice and EU Dir
 
 ## VoxWel: Built for UK Employers
 
-VoxWel was designed with UK and EU compliance requirements at its core. The platform satisfies PIDA best practice — genuine technical anonymity, accessible reporting, documented workflow, and audit trail — while meeting all six requirements of the EU Whistleblowing Directive for organizations with EU operations.
+[VoxWel's whistleblowing software](/) was designed with UK and EU compliance requirements at its core. The platform satisfies PIDA best practice — genuine technical anonymity, accessible reporting, documented workflow, and audit trail — while meeting all six requirements of the EU Whistleblowing Directive for organizations with EU operations.
 
 For UK employers with employees across multiple EU jurisdictions, VoxWel provides a single reporting platform that covers both regulatory frameworks.
 

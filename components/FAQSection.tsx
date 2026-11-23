@@ -4,6 +4,11 @@ import { useState } from "react";
 
 const faqs = [
   {
+    question: "What is whistleblowing software?",
+    answer:
+      "Whistleblowing software is a secure online channel where employees, contractors and suppliers can report misconduct such as harassment, fraud, bribery or safety risks without fear of retaliation, combined with a case management system that lets HR and compliance teams investigate, respond to reporters and keep an audit trail. VoxWel is whistleblowing software built for small and mid-sized organisations, priced at $1 per employee per month.",
+  },
+  {
     question: "How can VoxWel guarantee 100% anonymity for employees?",
     answer:
       "VoxWel uses AES-256 end-to-end encryption and a zero-knowledge architecture. When an employee submits a report, no identifying metadata is stored — not their IP address, device fingerprint, or session data. Even VoxWel's own administrators cannot identify who submitted a report. Anonymity is architectural, not just a policy.",
@@ -58,7 +63,7 @@ export function FAQSection() {
         {/* Header */}
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
-            Frequently asked questions
+            Whistleblowing software FAQs
           </h2>
         </div>
 

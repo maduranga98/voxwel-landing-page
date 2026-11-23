@@ -151,7 +151,7 @@ Organizations should explain this in the privacy notice: anonymous reports canno
 
 ## How VoxWel Supports GDPR Compliance
 
-VoxWel implements zero-knowledge encryption — reports are encrypted client-side before leaving the reporter's device, meaning VoxWel holds only encrypted data that cannot be accessed without the decryption keys held by your organization. This is the highest standard of technical protection available.
+[VoxWel's whistleblowing software](/) implements zero-knowledge encryption — reports are encrypted client-side before leaving the reporter's device, meaning VoxWel holds only encrypted data that cannot be accessed without the decryption keys held by your organization. This is the highest standard of technical protection available.
 
 Data retention is configurable by case type. Cases are automatically flagged for review at the retention period you define. Access controls ensure that only designated administrators can view specific cases. Every access event is logged in the audit trail.
 

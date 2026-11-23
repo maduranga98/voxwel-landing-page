@@ -97,7 +97,7 @@ That is the complete small business anonymous reporting program. The complexity 
 
 ## VoxWel for Small Business
 
-VoxWel was designed to be as straightforward for a 15-person company as it is for a 500-person organization. The platform features are the same. The pricing is per-employee with no minimum. Setup takes under 24 hours.
+[VoxWel's whistleblowing software](/) was designed to be as straightforward for a 15-person company as it is for a 500-person organization. The platform features are the same. The pricing is per-employee with no minimum. Setup takes under 24 hours.
 
 Start a 14-day free trial at voxwel.com. No enterprise contract required.
 

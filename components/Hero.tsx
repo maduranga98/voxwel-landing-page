@@ -41,7 +41,7 @@ export default function Hero() {
               className="inline-flex items-center gap-2 bg-indigo-50 text-indigo-700 text-xs font-semibold px-3 py-1.5 rounded-full mb-6 border border-indigo-100"
             >
               <span className="w-1.5 h-1.5 bg-indigo-600 rounded-full pulse-ring"></span>
-              Anonymous Employee Reporting Platform
+              Anonymous Reporting &amp; Case Management
             </motion.div>
 
             {/* H1 */}
@@ -49,15 +49,9 @@ export default function Hero() {
               variants={fadeUp}
               className="text-3xl sm:text-4xl md:text-[2.75rem] lg:text-5xl xl:text-6xl font-extrabold text-slate-900 leading-[1.1] tracking-tight mb-6"
             >
-              Give every employee a{" "}
-              <span className="text-indigo-600">safe voice</span> before
-              problems become lawsuits.
+              Whistleblowing software that gives every employee a{" "}
+              <span className="text-indigo-600">safe voice</span>
             </motion.h1>
-            <p className="sr-only">
-              VoxWel anonymous employee reporting software — GDPR compliant
-              whistleblower platform for HR Directors and Compliance Officers.
-              AES-256 encrypted. EU Whistleblowing Directive ready.
-            </p>
 
             {/* Sub-headline */}
             <motion.p
@@ -65,8 +59,9 @@ export default function Hero() {
               className="text-base md:text-lg text-slate-600 leading-relaxed mb-8 max-w-xl"
             >
               VoxWel gives employees a confidential, encrypted channel to report
-              harassment, fraud, and safety violations so you can act before it
-              escalates into a crisis, a lawsuit, or a headline.
+              harassment, fraud, and safety violations, and gives HR the case
+              management to act before it becomes a lawsuit or a headline. EU
+              Whistleblowing Directive and GDPR ready.
             </motion.p>
 
             {/* CTA buttons */}

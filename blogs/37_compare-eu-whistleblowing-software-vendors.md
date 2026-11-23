@@ -14,7 +14,7 @@ icon: "FiShield"
 color: "from-blue-500 to-blue-700"
 ---
 
-A whistleblowing software demonstration can make every platform look capable. Most vendors show a reporting form, a dashboard and a case list. The differences become visible only when a buyer tests what happens after a sensitive report arrives: who can see it, who follows it up, how the reporter is protected, what evidence is retained and how the organization proves that it acted.
+A [whistleblowing software](/) demonstration can make every platform look capable. Most vendors show a reporting form, a dashboard and a case list. The differences become visible only when a buyer tests what happens after a sensitive report arrives: who can see it, who follows it up, how the reporter is protected, what evidence is retained and how the organization proves that it acted.
 
 **Direct answer:** Compare vendors against the same documented scenarios and evidence, not against feature lists or broad claims such as "EU compliant". A useful evaluation covers legal scope, confidentiality, anonymous reporting, case management, access controls, audit records, data protection, languages, implementation, integrations, support and total cost.
 

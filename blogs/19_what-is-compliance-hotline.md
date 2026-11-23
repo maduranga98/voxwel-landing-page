@@ -104,7 +104,7 @@ A compliance hotline that satisfies regulatory requirements and generates meanin
 
 ## VoxWel: A Modern Compliance Hotline Built for HR
 
-VoxWel provides all the components of a modern compliance hotline — anonymous digital reporting, mobile-first UX, two-way anonymous messaging, automated acknowledgment, case management, and audit trail — at $1 per employee per month.
+[VoxWel](/) is whistleblowing software that provides all the components of a modern compliance hotline — anonymous digital reporting, mobile-first UX, two-way anonymous messaging, automated acknowledgment, case management, and audit trail — at $1 per employee per month.
 
 For organizations currently spending $500–$2,000 per month on a phone-only hotline, VoxWel provides superior compliance infrastructure — higher report volumes, stronger technical anonymity, better documentation, full EU Directive compliance — at a fraction of the cost.
 

@@ -14,7 +14,7 @@ icon: "FiTrendingUp"
 color: "from-teal-500 to-teal-700"
 ---
 
-When organizations set out to purchase whistleblowing software, they usually encounter a frustrating reality: almost no one publishes their prices. In an industry built on transparency, pricing remains heavily guarded behind "Book a Demo" buttons.
+When organizations set out to purchase [whistleblowing software](/), they usually encounter a frustrating reality: almost no one publishes their prices. In an industry built on transparency, pricing remains heavily guarded behind "Book a Demo" buttons.
 
 The variance is enormous. A 500-employee company might be quoted $500 per year by one vendor and $15,000 per year by another for largely identical technical functionality. This price opacity makes budgeting for compliance unnecessarily difficult.
 

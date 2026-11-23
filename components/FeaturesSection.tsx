@@ -104,7 +104,7 @@ export default function FeaturesSection() {
           Three Channels. One Platform.
         </p>
         <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-          Everything your HR and compliance team needs
+          Whistleblowing software features your HR and compliance team needs
         </h2>
         <p className="text-slate-600 text-lg mb-16 max-w-2xl">
           Anonymous employee reporting software built for real anonymity, real

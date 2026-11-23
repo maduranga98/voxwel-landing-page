@@ -11,6 +11,7 @@ import SecuritySection from "@/components/SecuritySection";
 import SimplePricing from "@/components/SimplePricing";
 import { FAQSection } from "@/components/FAQSection";
 import BlogTeaseStrip from "@/components/BlogTeaseStrip";
+import WhistleblowingSoftwareOverview from "@/components/WhistleblowingSoftwareOverview";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 import ScrollAnimationObserver from "@/components/ScrollAnimationObserver";
@@ -20,23 +21,23 @@ import { WebVitals } from "./web-vitals";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: { absolute: "VoxWel: Anonymous Reporting & Whistleblowing Software" },
+  title: { absolute: "Whistleblowing Software for SMBs | Anonymous & EU-Ready | VoxWel" },
   description:
-    "VoxWel gives employees an encrypted, anonymous channel to report harassment, fraud and safety issues. GDPR compliant, EU Directive ready. $1/employee/month.",
+    "VoxWel is whistleblowing software for growing companies: encrypted anonymous reporting, case management and audit trail. EU Directive & GDPR ready. $1/employee/month.",
   alternates: {
     canonical: "https://voxwel.com",
   },
   openGraph: {
     url: "https://voxwel.com",
-    title: "VoxWel — Anonymous Employee Reporting Software",
+    title: "VoxWel — Whistleblowing Software for Growing Companies",
     description:
-      "Give every employee a safe voice. Anonymous encrypted workplace reporting. GDPR compliant. $1/employee/month.",
+      "Anonymous, encrypted whistleblowing software with case management. EU Directive & GDPR ready. Live in 24 hours, $1/employee/month.",
     images: [
       {
         url: "https://voxwel.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "VoxWel anonymous employee reporting platform dashboard",
+        alt: "VoxWel whistleblowing software dashboard",
       },
     ],
   },
@@ -47,11 +48,12 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     name: "VoxWel",
+    alternateName: "VoxWel Whistleblowing Software",
     url: "https://voxwel.com",
     description:
-      "VoxWel is an anonymous employee reporting platform designed for HR Directors and Compliance Officers. It gives employees a confidential, AES-256 encrypted channel to report workplace harassment, fraud, safety violations, and discrimination — completely anonymously. The platform includes a 7-stage resolution workflow, real-time analytics, audit trail, QR code onboarding, and role-based admin controls. GDPR compliant and EU Whistleblowing Directive ready.",
+      "VoxWel is whistleblowing software and an anonymous employee reporting platform designed for HR Directors and Compliance Officers. It gives employees a confidential, AES-256 encrypted channel to report workplace harassment, fraud, safety violations, and discrimination — completely anonymously. The platform includes a 7-stage resolution workflow, real-time analytics, audit trail, QR code onboarding, and role-based admin controls. GDPR compliant and EU Whistleblowing Directive ready.",
     applicationCategory: "BusinessApplication",
-    applicationSubCategory: "HR Software, Compliance Software, Whistleblower Platform",
+    applicationSubCategory: "Whistleblowing Software, Compliance Software, HR Software",
     operatingSystem: "Web Browser, iOS, Android",
     softwareVersion: "2.0",
     screenshot: "https://voxwel.com/screenshots/problems-wall.avif",
@@ -59,7 +61,7 @@ export default function Home() {
       "@type": "Offer",
       price: "1.00",
       priceCurrency: "USD",
-      priceValidUntil: "2026-12-31",
+      priceValidUntil: "2027-12-31",
       availability: "https://schema.org/InStock",
       url: "https://voxwel.com/#pricing",
       description: "$1 per employee per month. All features included. No hidden fees.",
@@ -116,6 +118,11 @@ export default function Home() {
       <FAQSchema
         faqs={[
           {
+            question: "What is whistleblowing software?",
+            answer:
+              "Whistleblowing software is a secure online channel where employees, contractors and suppliers can report misconduct such as harassment, fraud, bribery or safety risks without fear of retaliation, combined with a case management system that lets HR and compliance teams investigate, respond to reporters and keep an audit trail. VoxWel is whistleblowing software built for small and mid-sized organisations, priced at $1 per employee per month.",
+          },
+          {
             question: "How can VoxWel guarantee 100% anonymity for employees?",
             answer:
               "VoxWel uses AES-256 end-to-end encryption and a zero-knowledge architecture. When an employee submits a report, no identifying metadata is stored — not their IP address, device fingerprint, or session data. Even VoxWel administrators cannot identify who submitted a report. Anonymity is architectural, not just a policy promise.",
@@ -161,6 +168,8 @@ export default function Home() {
         <TrustBar />
         {/* Section 4 — Problem / Stats */}
         <ProblemSection />
+        {/* Section 4b — "What is whistleblowing software" (head-term SEO content) */}
+        <WhistleblowingSoftwareOverview />
         {/* Section 5 — How It Works */}
         <HowItWorks />
         {/* Section 6 — Product Tour */}

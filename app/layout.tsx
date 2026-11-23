@@ -12,7 +12,7 @@ const siteUrl = "https://voxwel.com";
 export const metadata: Metadata = {
   metadataBase: new URL("https://voxwel.com"),
   title: {
-    default: "VoxWel: Anonymous Reporting & Whistleblowing Software",
+    default: "Whistleblowing Software for SMBs | Anonymous & EU-Ready | VoxWel",
     template: "%s | VoxWel",
   },
   description:
