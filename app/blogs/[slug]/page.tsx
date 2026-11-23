@@ -124,6 +124,15 @@ export default async function BlogPost({
   }
 
   const relatedPosts = getRelatedPosts(slug);
+  // FAQPage schema must match visible content. Render any FAQ whose question
+  // is not already written into the article body as a visible FAQ block.
+  const normalise = (t: string) =>
+    t.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  const bodyText = normalise(post.content);
+  const faqs = blogFAQs[slug] ?? [];
+  const extraFaqs = faqs.filter(
+    (f) => !bodyText.includes(normalise(f.question).slice(0, 60))
+  );
   const IconComponent = iconMap[post.icon] || FiFileText;
 
   // Create JSON-LD structured data
@@ -131,23 +140,28 @@ export default async function BlogPost({
     "@context": "https://schema.org",
     "@type": "Article",
     headline: post.title.slice(0, 110),
-    description: post.excerpt,
+    description: post.metaDescription || post.excerpt,
     url: `https://voxwel.com/blogs/${post.slug}`,
     datePublished: new Date(post.date).toISOString(),
     dateModified: new Date(post.lastUpdated || post.date).toISOString(),
     author: {
       "@type": "Organization",
-      name: "VoxWel Team",
+      "@id": "https://voxwel.com/#organization",
+      name: "VoxWel",
       url: "https://voxwel.com",
     },
     publisher: {
       "@type": "Organization",
+      "@id": "https://voxwel.com/#organization",
       name: "VoxWel",
       logo: {
         "@type": "ImageObject",
         url: "https://voxwel.com/logo.png",
       },
     },
+    isPartOf: { "@id": "https://voxwel.com/#website" },
+    about: { "@id": "https://voxwel.com/#software" },
+    inLanguage: "en",
     image: getBlogImageUrl(post),
     keywords: post.tags.join(", "),
     articleSection: post.category,
@@ -395,6 +409,24 @@ export default async function BlogPost({
                         .map((cta, j) => <MidPostCTA key={j} cta={cta} />)}
                     </Fragment>
                   ))}
+
+                  {extraFaqs.length > 0 && (
+                    <section aria-labelledby="faq-heading" className="not-prose mt-12 border-t border-border-light pt-10">
+                      <h2 id="faq-heading" className="text-2xl md:text-3xl font-bold text-text-primary mb-6">
+                        Frequently asked questions
+                      </h2>
+                      <div className="space-y-6">
+                        {extraFaqs.map((f) => (
+                          <div key={f.question}>
+                            <h3 className="text-lg font-semibold text-text-primary mb-2">
+                              {f.question}
+                            </h3>
+                            <p className="text-text-secondary leading-relaxed">{f.answer}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </section>
+                  )}
                 </div>
               </div>
 
