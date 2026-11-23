@@ -238,7 +238,7 @@ export const blogPosts: BlogPost[] = [
     tags: ["eu hosting whistleblowing software","gdpr compliant whistleblowing software","whistleblower data residency","secure eu case management hosting","whistleblowing vendor due diligence"],
     icon: "FiLock",
     color: "from-emerald-500 to-emerald-700",
-    content: "When a company searches for EU-hosted whistleblowing software, it is usually trying to reduce legal, security and operational risk. Sensitive reports may contain allegations, witness details, employment information and documents. Buyers want to know where that information is stored, who can access it and whether it can be transferred outside the European Economic Area.\n\n**Direct answer:** EU hosting tells you something important about where a service stores or processes data, but it does not prove GDPR compliance by itself. Review the complete data flow, including backups, subprocessors, support access, telemetry, disaster recovery and international transfers. Confirm the arrangement in the contract and technical documentation.\n\n---\n\n## Does the GDPR require all whistleblowing data to stay in the EU?\n\nThe GDPR does not create a universal rule that every personal-data record must always be stored inside the EU. It regulates processing and sets conditions for transfers to third countries. Transfers must comply with Chapter V, which can involve an adequacy decision or appropriate safeguards and additional assessments, depending on the circumstances.\n\nThat does not mean location is unimportant. An organization may have contractual, sector-specific, national or internal requirements that make EU-only hosting preferable or necessary. The correct decision depends on the employer's activities, the data involved and the legal framework that applies.\n\n---\n\n## Map the whole data lifecycle\n\nAsk the vendor to identify where each category of data is handled:\n\n- Initial report submission and attachments\n- Main application database and document storage\n- Backups and disaster-recovery environments\n- Email, SMS and notification services\n- Customer support and troubleshooting tools\n- Security monitoring, analytics and error logs\n- Payment, identity and authentication services\n- Data exports and temporary files created by administrators\n\nA data centre address alone does not answer where support personnel can access information or which subprocessors receive it.\n\n---\n\n## Ten questions to ask the vendor\n\n1. Which countries host production data, backups and disaster-recovery copies?\n2. Which subprocessors process report content, attachments, notifications or account information?\n3. Can support staff located outside the EEA access customer data?\n4. What transfer mechanism is used when personal data is accessed or processed outside the EEA?\n5. Can the customer choose a hosting region, and is that choice contractually binding?\n6. Are encryption keys controlled by the vendor, the customer or another service provider?\n7. How are administrator access and privileged support sessions logged and reviewed?\n8. How are retention, deletion and backup expiry handled?\n9. What happens to data when the contract ends?\n10. How quickly will the vendor notify the customer of a security incident, and what information will be provided?\n\n---\n\n## Hosting is only one part of security\n\nThe GDPR's Article 32 calls for technical and organizational measures appropriate to risk. It identifies measures such as encryption and pseudonymisation where appropriate, as well as the ability to maintain confidentiality, integrity, availability and resilience. It also calls for processes to test and evaluate security measures.\n\nFor a reporting platform, review role-based access, separation of duties, secure authentication, audit trails, incident response, vulnerability management and evidence handling. Ask how the platform protects the identities of reporters and third parties named in a report. Encryption is important, but it does not correct excessive access rights or an unsafe investigation process. For more on protecting reporter identity, read our [anonymous employee reporting software guide](/blogs/anonymous-employee-reporting-software-guide).\n\n---\n\n## Confirm the contractual position\n\nThe data processing agreement should identify the parties, processing purposes, data categories, duration, security commitments, subprocessors, assistance obligations and deletion or return arrangements. Check whether the vendor can change subprocessors without meaningful notice and whether the customer has a practical objection process.\n\nCreate a short vendor file containing the data flow, hosting statement, subprocessor list, transfer mechanism, security overview and signed contractual documents. Review it when the vendor changes hosting providers, adds a subprocessor or expands support locations. Our [GDPR whistleblowing compliance guide](/blogs/gdpr-whistleblowing-compliance) covers the wider obligations, and [Best EU Directive-Compliant Whistleblowing Software](/blogs/best-eu-directive-compliant-whistleblowing-software) compares vendors.\n\nEU hosting can be a strong procurement requirement. The useful question is not simply \"Is the data in Europe?\" It is \"Can we explain and control every meaningful route by which this sensitive information is stored, accessed, transferred and deleted?\" To put these questions to VoxWel directly, [request a demo](/demo).\n\n---\n\n## Frequently asked questions\n\n### Does EU hosting automatically mean a whistleblowing platform is GDPR compliant?\nNo. GDPR compliance depends on all processing activities, legal bases, transparency, minimisation, security, processor contracts, retention and any international transfers.\n\n### Can EU-hosted software be accessed by support staff outside the EEA?\nPotentially, depending on the service design and contractual arrangements. Ask the vendor to disclose remote access and identify the applicable transfer safeguards.\n\n### What is more important: hosting location or encryption?\nBoth address different risks. Hosting location concerns where data is processed and transferred. Encryption helps protect data from unauthorized access. Neither replaces governance, access control and proper retention.\n\n---\n\n## References and verification sources\n\n- [GDPR, Articles 5, 28, 32 and Chapter V](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679)\n- [European Commission: Adequacy decisions](https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en)",
+    content: "When a company searches for EU-hosted whistleblowing software, it is usually trying to reduce legal, security and operational risk. Sensitive reports may contain allegations, witness details, employment information and documents. Buyers want to know where that information is stored, who can access it and whether it can be transferred outside the European Economic Area.\n\n**Direct answer:** EU hosting tells you something important about where a service stores or processes data, but it does not prove GDPR compliance by itself. Review the complete data flow, including backups, subprocessors, support access, telemetry, disaster recovery and international transfers. Confirm the arrangement in the contract and technical documentation.\n\n---\n\n## Does the GDPR require all whistleblowing data to stay in the EU?\n\nThe GDPR does not create a universal rule that every personal-data record must always be stored inside the EU. It regulates processing and sets conditions for transfers to third countries. Transfers must comply with Chapter V, which can involve an adequacy decision or appropriate safeguards and additional assessments, depending on the circumstances.\n\nThat does not mean location is unimportant. An organization may have contractual, sector-specific, national or internal requirements that make EU-only hosting preferable or necessary. The correct decision depends on the employer's activities, the data involved and the legal framework that applies.\n\n---\n\n## Map the whole data lifecycle\n\nAsk the vendor to identify where each category of data is handled:\n\n- Initial report submission and attachments\n- Main application database and document storage\n- Backups and disaster-recovery environments\n- Email, SMS and notification services\n- Customer support and troubleshooting tools\n- Security monitoring, analytics and error logs\n- Payment, identity and authentication services\n- Data exports and temporary files created by administrators\n\nA data centre address alone does not answer where support personnel can access information or which subprocessors receive it.\n\n---\n\n## Ten questions to ask the vendor\n\n1. Which countries host production data, backups and disaster-recovery copies?\n2. Which subprocessors process report content, attachments, notifications or account information?\n3. Can support staff located outside the EEA access customer data?\n4. What transfer mechanism is used when personal data is accessed or processed outside the EEA?\n5. Can the customer choose a hosting region, and is that choice contractually binding?\n6. Are encryption keys controlled by the vendor, the customer or another service provider?\n7. How are administrator access and privileged support sessions logged and reviewed?\n8. How are retention, deletion and backup expiry handled?\n9. What happens to data when the contract ends?\n10. How quickly will the vendor notify the customer of a security incident, and what information will be provided?\n\n---\n\n## Hosting is only one part of security\n\nThe GDPR's Article 32 calls for technical and organizational measures appropriate to risk. It identifies measures such as encryption and pseudonymisation where appropriate, as well as the ability to maintain confidentiality, integrity, availability and resilience. It also calls for processes to test and evaluate security measures.\n\nFor a reporting platform, review role-based access, separation of duties, secure authentication, audit trails, incident response, vulnerability management and evidence handling. Ask how the platform protects the identities of reporters and third parties named in a report. Encryption is important, but it does not correct excessive access rights or an unsafe investigation process. For more on protecting reporter identity, read our [anonymous employee reporting software guide](/blogs/anonymous-employee-reporting-software-guide).\n\n---\n\n## Confirm the contractual position\n\nThe data processing agreement should identify the parties, processing purposes, data categories, duration, security commitments, subprocessors, assistance obligations and deletion or return arrangements. Check whether the vendor can change subprocessors without meaningful notice and whether the customer has a practical objection process.\n\nCreate a short vendor file containing the data flow, hosting statement, subprocessor list, transfer mechanism, security overview and signed contractual documents. Review it when the vendor changes hosting providers, adds a subprocessor or expands support locations. Our [GDPR whistleblowing compliance guide](/blogs/gdpr-whistleblowing-compliance) covers the wider obligations, and [Best EU Directive-Compliant Whistleblowing Software](/blogs/best-eu-directive-compliant-whistleblowing-software) compares vendors.\n\nEU hosting can be a strong procurement requirement. The useful question is not simply \"Is the data in Europe?\" It is \"Can we explain and control every meaningful route by which this sensitive information is stored, accessed, transferred and deleted?\" **Where VoxWel stores data:** VoxWel runs on Google Firebase and stores data in the United States (Google Cloud region us-central1). Transfers of EU personal data rely on Google LLC's certification under the EU-U.S. Data Privacy Framework and on the EU Standard Contractual Clauses in Firebase's data processing terms. If your organisation requires EU-only hosting, raise it before signing. To put these questions to VoxWel directly, [request a demo](/demo).\n\n---\n\n## Frequently asked questions\n\n### Does EU hosting automatically mean a whistleblowing platform is GDPR compliant?\nNo. GDPR compliance depends on all processing activities, legal bases, transparency, minimisation, security, processor contracts, retention and any international transfers.\n\n### Can EU-hosted software be accessed by support staff outside the EEA?\nPotentially, depending on the service design and contractual arrangements. Ask the vendor to disclose remote access and identify the applicable transfer safeguards.\n\n### What is more important: hosting location or encryption?\nBoth address different risks. Hosting location concerns where data is processed and transferred. Encryption helps protect data from unauthorized access. Neither replaces governance, access control and proper retention.\n\n---\n\n## References and verification sources\n\n- [GDPR, Articles 5, 28, 32 and Chapter V](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679)\n- [European Commission: Adequacy decisions](https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en)",
   },
   {
     slug: "whistleblowing-software-implementation-plan",
@@ -882,7 +882,7 @@ When organizations purchase mid-tier platforms that rely on cheap API hooks into
 * If your whistleblowing software pings a U.S.-hosted translation service to auto-translate an unencrypted report containing a French employee's medical data, you have instantly triggered a cross-border GDPR transfer violation.
 * Machine translation models can cache or log snippets of text to train future algorithms, exposing highly confidential trade secrets.
 
-A high-quality multilingual platform utilizes strictly sandboxed, "Zero-Day Retention" neural translation architectures hosted wholly within the European Union.
+Ask any vendor where translation happens, whether translated text is retained by the translation provider, and in which region it is processed.
 
 ---
 
@@ -893,8 +893,8 @@ The intersection of language and data privacy is where most global enterprises s
 **Where is your report data stored?**
 If you are an American multinational utilizing an American compliance standard, but an employee in your Munich office submits a fraud report, that data cannot simply be routed to a server in Virginia without explicitly documented *Standard Contractual Clauses (SCCs)* and rigorous encryption. 
 
-**The EU Hosting Mandate:**
-The safest path to multi-country compliance is to ensure your vendor hosts its primary database infrastructure strictly within the European Economic Area (EEA), utilizing providers like AWS Frankfurt or Google Cloud Platform in Paris. 
+**Check data location and transfer safeguards:** Ask every vendor where report data is stored and which legal mechanism covers any transfer outside the EEA, such as the EU-U.S. Data Privacy Framework or Standard Contractual Clauses. Some organisations also require EU-only hosting as a procurement rule; confirm this before you shortlist vendors.
+If your organisation requires data to stay inside the European Economic Area, make that a written requirement and check it against each vendor's sub-processor list. 
 
 ---
 
@@ -916,7 +916,7 @@ Rolling out a unified whistleblowing channel across four different countries sim
 
 ## Für deutschsprachige Unternehmen
 
-*Unternehmen im DACH-Raum unterliegen dem Hinweiserschutzgesetz (HinSchG) sowie strengen Vorgaben des Betriebsrats und der DSGVO. VoxWel bietet eine vollständig lokalisierte, deutschsprachige Plattform, die auf europäischen Servern gehostet wird. Dank Ende-zu-Ende-Verschlüsselung und automatisierter Einhaltung von Meldefristen können HR-Teams Whistleblowing-Fälle rechtssicher und effizient bearbeiten.*
+*Unternehmen im DACH-Raum unterliegen dem Hinweiserschutzgesetz (HinSchG) sowie strengen Vorgaben des Betriebsrats und der DSGVO. VoxWel bietet eine vollständig lokalisierte, deutschsprachige Plattform. Dank Ende-zu-Ende-Verschlüsselung und automatisierter Einhaltung von Meldefristen können HR-Teams Whistleblowing-Fälle rechtssicher und effizient bearbeiten.*
 
 ---
 
@@ -924,9 +924,9 @@ Rolling out a unified whistleblowing channel across four different countries sim
 
 Scaling compliance globally should not require hiring an army of human translators or paying thousands of dollars for "Language Pack\n\n---\n\n## References and verification sources\n\n- [Directive (EU) 2019/1937 (EUR-Lex)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02019L1937-20240311)" add-ons. 
 
-VoxWel provides instantaneous, localized interface support in over **200+ languages**, natively built into every tier of our platform. We utilize advanced, GDPR-compliant neural translation infrastructure hosted strictly within the European Union to bridge the gap between reporters and HR administrators instantly--without logging data or compromising true anonymity.
+VoxWel provides instantaneous, localized interface support in over **200+ languages**, natively built into every tier of our platform. We use GDPR-compliant translation to bridge the gap between reporters and HR administrators instantly--without logging data or compromising true anonymity.
 
-Every language. Complete EU hosting. Total security.
+Every language. GDPR-ready data handling. Total security.
 **$1 per employee, per month.**
 
 **[Explore VoxWel's Multilingual Capabilities Today](/demo)** and launch your EU-wide compliance channel in under 24 hours.
@@ -2376,7 +2376,7 @@ Managers who are surprised by the launch may feel undermined or may inadvertentl
 - [ ] No employee training required
 - [ ] No data migration from existing systems
 - [ ] GDPR compliance documentation provided
-- [ ] EU data residency confirmed
+- [ ] Data location and transfer safeguards reviewed (data stored in the US; DPA and SCCs in place)
 - [ ] DPA (Data Processing Agreement) signed
 - [ ] Case handler accounts created and tested
 
@@ -2394,7 +2394,7 @@ After launch, verify your compliance status against the EU Whistleblowing Direct
 | Two-way anonymous communication | ✅ Enabled by default |
 | 3-month feedback SLA | ✅ Automated alerts configured |
 | Retaliation protection documentation | ✅ Audit trail active |
-| GDPR-compliant data handling | ✅ EU-hosted, DPA signed |
+| GDPR-compliant data handling | ✅ DPA signed, transfer safeguards documented |
 
 ---
 
@@ -2405,309 +2405,6 @@ After launch, verify your compliance status against the EU Whistleblowing Direct
 ---
 
 *VoxWel is an anonymous employee reporting platform. Learn more about [VoxWel whistleblowing software](/).*
-
-    `,
-  },
-  {
-    slug: "voxwel-security-architecture-ciso-whitepaper",
-    title:
-      "VoxWel Security Architecture: A Technical Whitepaper for CISOs and Security Teams",
-    metaTitle: "VoxWel Security Whitepaper for CISOs",
-    metaDescription:
-      "VoxWel security architecture for CISOs: AES-256 encryption, zero-knowledge design, GDPR compliance, EU data residency and threat model analysis.",
-    excerpt:
-      "A comprehensive technical whitepaper for CISOs and security teams evaluating VoxWel's architecture — covering encryption standards, data residency, threat models, compliance certifications, and integration with existing security infrastructure.",
-    category: "Security Whitepaper",
-    date: "2026-04-25",
-    readTime: "15 min",
-    author: {
-      name: "VoxWel Security Team",
-      role: "Chief Information Security Officer",
-    },
-    tags: [
-      "VoxWel security architecture",
-      "zero-knowledge encryption",
-      "CISO whitepaper",
-      "whistleblowing security",
-      "GDPR technical compliance",
-      "anonymous reporting security",
-    ],
-    icon: "FiShield",
-    color: "from-blue-500 to-blue-700",
-    leadMagnet: {
-      title: "VoxWel Security Architecture Datasheet",
-      description:
-        "A one-page technical datasheet summarizing encryption standards, data flows, compliance certifications, and threat model mitigations — designed for security review boards and vendor assessments.",
-      fileType: "PDF",
-      ctaText: "Download the Security Datasheet",
-      placement: "both",
-    },
-    midPostCTAs: [
-      {
-        position: 2,
-        type: "lead-magnet",
-        content:
-          "**📄 Download the one-page Security Architecture Datasheet** — encryption standards, data flows, compliance certifications, and threat mitigations for your security review board. [Get the datasheet →](/demo)",
-      },
-      {
-        position: 4,
-        type: "email-capture",
-        content:
-          "**Need a custom security assessment?** Our security team can provide a tailored threat model analysis, penetration test summary, or compliance mapping document specific to your organization's requirements. **[Request a security briefing →](/demo)**",
-      },
-    ],
-    content: `
-**Document Version:** 2.1
-**Last Updated:** April 2026
-**Classification:** Public
-**Intended Audience:** CISOs, Security Architects, Compliance Officers, IT Risk Managers
-
----
-
-## Executive Summary
-
-VoxWel is an anonymous employee reporting platform built on a zero-knowledge security architecture. This whitepaper provides a detailed technical analysis of the platform's encryption standards, data handling practices, threat model, and compliance posture for security teams evaluating the platform.
-
-**Key Security Properties:**
-- Client-side AES-256 encryption -- report content is encrypted before leaving the reporter's device
-- Zero-knowledge architecture -- VoxWel operators cannot access report plaintext or reporter identity
-- EU data residency -- all data stored exclusively on European infrastructure
-- No IP logging or metadata collection -- complete source anonymization
-- SOC 2 Type II certified -- independently audited controls
-
----
-
-## 1. Architecture Overview
-
-### 1.1 System Design Principles
-
-VoxWel's security architecture is built on three core principles:
-
-**1. Zero-Knowledge by Design**
-The platform operator (VoxWel) holds encrypted data but never holds the keys to decrypt it. Report content is encrypted on the reporter's device using keys derived from the organization's credentials. VoxWel cannot read reports, identify reporters, or comply with subpoenas for reporter identity -- because this data does not exist in our systems.
-
-**2. Minimal Data Collection**
-VoxWel collects only the data necessary to deliver the service. No IP addresses, no device fingerprints, no browser telemetry, no third-party analytics cookies, no advertising trackers.
-
-**3. Defense in Depth**
-Multiple independent security controls protect every layer: transport encryption, application-level encryption, database encryption, access controls, audit logging, and infrastructure hardening.
-
-### 1.2 High-Level Data Flow
-
-\`\`\`
-Reporter Device -> Client-Side Encryption -> TLS Tunnel -> VoxWel API -> Encrypted Database
-                     (AES-256-GCM)         (TLS 1.3)    (No plaintext)   (AES-256 at rest)
-\`\`\`
-
-**Critical security property:** The decryption key never leaves the organization's admin environment. VoxWel infrastructure handles only ciphertext.
-
----
-
-## 2. Encryption Standards
-
-### 2.1 Client-Side Encryption
-
-**Algorithm:** AES-256-GCM (Galois/Counter Mode)
-**Key Derivation:** PBKDF2-HMAC-SHA256 with 100,000 iterations
-**Key Length:** 256 bits
-**Nonce:** 96-bit IV, randomly generated per report
-**Authentication:** Built-in GMAC authentication tag
-
-**Implementation Details:**
-- Encryption occurs in the reporter's browser using the Web Crypto API
-- The encryption key is derived from a combination of the organization's unique identifier and a per-report random salt
-- Neither the key nor the plaintext is ever transmitted to VoxWel servers
-- The encrypted payload includes an authentication tag that prevents tampering
-
-### 2.2 Transport Security
-
-**Protocol:** TLS 1.3 (mandatory -- TLS 1.2 and below are rejected)
-**Certificate:** ECDSA P-256 with SHA-256
-**Perfect Forward Secrecy:** Yes -- ephemeral key exchange using X25519
-**HSTS:** Enabled with 1-year max-age
-**Cipher Suites:** TLS_AES_256_GCM_SHA384 only
-
-### 2.3 Data at Rest
-
-**Algorithm:** AES-256-XTS for database-level encryption
-**Key Management:** Hardware Security Module (HSM) backed
-**Key Rotation:** Automatic 90-day rotation cycle
-**Separation:** Each organization's data is encrypted with unique keys
-
----
-
-## 3. Zero-Knowledge Architecture Deep Dive
-
-### 3.1 What "Zero-Knowledge" Means in Practice
-
-In a zero-knowledge architecture, the service provider (VoxWel) operates the infrastructure but mathematically cannot access the content being transmitted through it. This is distinct from "end-to-end encryption" (where the provider could technically access data if they modified their software) and from "confidentiality" (where the provider has access but promises not to use it).
-
-### 3.2 Technical Implementation
-
-**Report Submission Flow:**
-
-1. Reporter opens the VoxWel reporting form (web link or QR code)
-2. The browser loads the encryption library from VoxWel's CDN
-3. Reporter completes the form and clicks "Submit"
-4. The browser generates a random 256-bit encryption key
-5. The form content is encrypted using AES-256-GCM
-6. The encrypted payload is transmitted to VoxWel's API
-7. VoxWel stores the ciphertext and returns a case token to the reporter
-8. The encryption key is discarded from browser memory
-
-**Report Retrieval Flow:**
-
-1. Admin logs into VoxWel dashboard
-2. Dashboard loads a decryption module in the admin's browser
-3. Decryption keys are derived from the organization's credentials
-4. Encrypted reports are fetched from VoxWel's database
-5. Decryption occurs in the admin's browser, not on VoxWel's servers
-6. Plaintext is displayed only in the authenticated admin session
-
-### 3.3 What VoxWel Cannot Do
-
-Because of this architecture, VoxWel is technically incapable of:
-- Reading the content of any report
-- Identifying the reporter of any anonymous report
-- Complying with subpoenas for reporter identity (the data does not exist)
-- Performing keyword analysis or content scanning on reports
-- Training AI models on report content
-- Sharing report data with any third party
-
----
-
-## 4. Data Residency and GDPR Compliance
-
-### 4.1 Infrastructure Location
-
-**Primary Region:** Frankfurt, Germany (AWS eu-central-1)
-**Backup Region:** Paris, France (AWS eu-west-3)
-**CDN Edge Locations:** Amsterdam, Dublin, Stockholm, Milan
-
-**No data is stored, processed, or backed up outside the European Economic Area.**
-
-### 4.2 GDPR Compliance Mapping
-
-| GDPR Article | VoxWel Implementation |
-| :--- | :--- |
-| Art. 5 -- Principles | Data minimization by design; purpose limitation enforced |
-| Art. 6 -- Lawful basis | Legitimate interest (compliance) + Legal obligation (EU Directive) |
-| Art. 25 -- PbD/PbD | Encryption by default; anonymity by default |
-| Art. 28 -- Processor | DPA available; sub-processors listed; SOC 2 certified |
-| Art. 30 -- Records of processing | RoPA maintained and available on request |
-| Art. 32 -- Security | AES-256, TLS 1.3, HSM key management, access controls |
-| Art. 33 -- Breach notification | 24-hour internal SLA; 72-hour supervisory authority notification |
-| Art. 35 -- DPIA | Template DPIA provided; platform designed for low residual risk |
-
-### 4.3 Data Retention
-
-**Default retention:** 3 years from case closure (configurable by organization)
-**Automated deletion:** Cases marked for deletion are purged within 30 days
-**Backup purge:** Deleted cases are removed from backups within 90 days
-**Audit logs:** Retained for 7 years (administrative actions only, no report content)
-
----
-
-## 5. Threat Model and Mitigations
-
-### 5.1 Threat Actor: External Attacker (Platform Breach)
-
-**Scenario:** An attacker gains unauthorized access to VoxWel's database.
-
-**Impact:** The attacker obtains encrypted ciphertext with no decryption keys.
-**Mitigation:** AES-256 encryption means the data is computationally infeasible to decrypt without the organization's keys, which are never stored on VoxWel's servers.
-
-### 5.2 Threat Actor: Malicious Insider (VoxWel Employee)
-
-**Scenario:** A VoxWel employee attempts to access customer report data.
-
-**Impact:** The employee can see encrypted data structures but cannot decrypt report content or identify reporters.
-**Mitigation:** Zero-knowledge architecture means no VoxWel employee has access to decryption keys or plaintext. Access controls and audit logging provide additional layers of defense.
-
-### 5.3 Threat Actor: Employer IT Administrator
-
-**Scenario:** An organization's IT admin attempts to trace who submitted an anonymous report.
-
-**Impact:** No identifying metadata exists. IP addresses are not logged. Device fingerprints are not collected.
-**Mitigation:** Complete source anonymization -- there is no technical mechanism to associate a report with a specific device, network, or individual.
-
-### 5.4 Threat Actor: Legal Subpoena
-
-**Scenario:** A court orders VoxWel to disclose the identity of an anonymous reporter.
-
-**Impact:** VoxWel can provide the encrypted report and the case metadata (timestamps, status). VoxWel cannot provide reporter identity because this data was never collected.
-**Mitigation:** Zero-knowledge architecture provides genuine legal protection -- there is nothing to disclose.
-
----
-
-## 6. Compliance Certifications and Audits
-
-| Certification | Status | Scope |
-| :--- | :--- | :--- |
-| SOC 2 Type II | ✅ Certified | Security, Availability, Confidentiality |
-| ISO 27001 | ✅ Certified | Information Security Management |
-| ISO 27017 | ✅ Certified | Cloud Security |
-| ISO 27018 | ✅ Certified | Personal Data Protection |
-| EU Cloud Code of Conduct | ✅ Adherent | GDPR compliance for cloud services |
-| CSA STAR Level 2 | ✅ Certified | Cloud Security Alliance |
-
----
-
-## 7. Integration with Enterprise Security Infrastructure
-
-### 7.1 Single Sign-On (SSO)
-
-VoxWel supports SAML 2.0 and OpenID Connect for admin authentication. Reporter-facing submission does not require authentication (by design, for anonymity).
-
-**Supported identity providers:** Azure AD, Okta, OneLogin, Google Workspace, custom SAML
-
-### 7.2 Security Information and Event Management (SIEM)
-
-Admin audit logs can be exported in real-time via webhook to:
-- Splunk
-- Datadog
-- Microsoft Sentinel
-- Custom SIEM via REST API
-
-**Note:** SIEM integration covers administrative actions only (logins, case status changes, assignments). Report content is never transmitted to SIEM systems.
-
-### 7.3 Data Loss Prevention (DLP)
-
-Because VoxWel does not collect or store plaintext report content, traditional DLP integration is not applicable to the reporter-facing channel. Admin dashboard access can be monitored through standard DLP tools.
-
----
-
-## 8. Security Assessment Questions
-
-For security teams conducting vendor assessments, here are the answers to the most common questions:
-
-**Q: Can VoxWel read our employees' reports?**
-A: No. Client-side encryption means report content is encrypted before reaching our servers. We hold ciphertext only.
-
-**Q: Can VoxWel identify anonymous reporters?**
-A: No. We do not log IP addresses, device fingerprints, or any metadata that could identify a reporter.
-
-**Q: What happens if VoxWel receives a subpoena?**
-A: We can provide the encrypted data we hold. We cannot provide reporter identity or report plaintext because we do not possess these.
-
-**Q: Where is our data stored?**
-A: Exclusively in the EU -- Frankfurt (primary) and Paris (backup). No data leaves the EEA.
-
-**Q: How are encryption keys managed?**
-A: Organization-specific keys are derived from your admin credentials. VoxWel never stores these keys. Key derivation occurs in your browser using PBKDF2.
-
-**Q: Has VoxWel undergone independent security audits?**
-A: Yes. SOC 2 Type II, ISO 27001, ISO 27017, and ISO 27018 certified. Penetration testing conducted annually by independent firms.
-
----
-
-*For a custom security assessment or to schedule a briefing with our security team, contact info@lumoraventures.com.*
-
-**[Download the one-page Security Architecture Datasheet ->](/demo)**
-
----
-
-*VoxWel -- Security by design, not by promise.*
 
     `,
   },
@@ -3536,7 +3233,7 @@ Start a 14-day free trial at [voxwel.com](/demo).
         position: 2,
         type: "trial",
         content:
-          "**EU operations? This comparison matters.** AllVoices is US-centric with limited EU Directive documentation. VoxWel is built for EU compliance from the ground up — automated SLAs, EU hosting, GDPR-native. [Start free trial →](/demo)",
+          "**EU operations? This comparison matters.** AllVoices is US-centric with limited EU Directive documentation. VoxWel is built for EU compliance from the ground up — automated SLAs and GDPR-ready data handling. [Start free trial →](/demo)",
       },
     ],
     content: `

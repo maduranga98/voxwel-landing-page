@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: baseUrl,
       lastModified: SITE_UPDATED,
+      alternates: { languages: { en: baseUrl, fr: `${baseUrl}/fr/logiciel-lancement-alerte`, "x-default": baseUrl } },
       changeFrequency: "weekly" as const,
       priority: 1,
     },
@@ -38,12 +39,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/de/hinweisgebersoftware-preise`,
       lastModified: SITE_UPDATED,
+      alternates: { languages: { de: `${baseUrl}/de/hinweisgebersoftware-preise`, en: `${baseUrl}/blogs/whistleblowing-software-pricing-comparison`, "x-default": `${baseUrl}/blogs/whistleblowing-software-pricing-comparison` } },
       changeFrequency: "monthly" as const,
       priority: 0.9,
     },
     {
       url: `${baseUrl}/fr/logiciel-lancement-alerte`,
       lastModified: SITE_UPDATED,
+      alternates: { languages: { fr: `${baseUrl}/fr/logiciel-lancement-alerte`, en: baseUrl, "x-default": baseUrl } },
       changeFrequency: "monthly" as const,
       priority: 0.9,
     },
@@ -81,6 +84,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Blog posts
   const blogPages = blogPosts.map((post) => ({
+    ...(post.slug === "whistleblowing-software-pricing-comparison" && {
+      alternates: {
+        languages: {
+          en: `${baseUrl}/blogs/${post.slug}`,
+          de: `${baseUrl}/de/hinweisgebersoftware-preise`,
+          "x-default": `${baseUrl}/blogs/${post.slug}`,
+        },
+      },
+    }),
     url: `${baseUrl}/blogs/${post.slug}`,
     lastModified: new Date(post.lastUpdated || post.date),
     changeFrequency: "monthly" as const,

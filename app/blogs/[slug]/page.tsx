@@ -26,6 +26,13 @@ import {
   getBlogImageUrl,
 } from "@/data/blogPosts";
 import { blogFAQs } from "@/data/blogFAQs";
+
+// English posts that have a translated counterpart (hreflang must be reciprocal).
+const LANGUAGE_ALTERNATES: Record<string, Record<string, string>> = {
+  "whistleblowing-software-pricing-comparison": {
+    de: "https://voxwel.com/de/hinweisgebersoftware-preise",
+  },
+};
 import FAQSchema from "@/components/FAQSchema";
 import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
@@ -84,6 +91,13 @@ export async function generateMetadata({
     authors: [{ name: post.author.name }],
     alternates: {
       canonical: `https://voxwel.com/blogs/${post.slug}`,
+      ...(LANGUAGE_ALTERNATES[post.slug] && {
+        languages: {
+          en: `https://voxwel.com/blogs/${post.slug}`,
+          ...LANGUAGE_ALTERNATES[post.slug],
+          "x-default": `https://voxwel.com/blogs/${post.slug}`,
+        },
+      }),
     },
     openGraph: {
       title: seoTitle,

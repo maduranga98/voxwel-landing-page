@@ -113,7 +113,7 @@ export const blogFAQs: Record<string, { question: string; answer: string }[]> = 
     },
     {
       question: "What are the 6 requirements of the EU Whistleblowing Directive?",
-      answer: "The Directive requires: (1) an anonymous reporting channel, (2) 7-day acknowledgment of receipt, (3) two-way communication with the reporter even if anonymous, (4) 3-month feedback on actions taken, (5) retaliation protection documentation via audit logs, and (6) GDPR-compliant data handling with EU data residency."
+      answer: "The Directive requires: (1) a secure, confidential reporting channel (anonymous reporting where national law requires or allows it), (2) acknowledgment of receipt within 7 days, (3) an impartial person or department to follow up, (4) feedback on actions taken within 3 months, (5) record keeping of reports, and (6) GDPR-compliant handling of personal data."
     },
     {
       question: "How quickly can EU-compliant whistleblowing software be set up?",
@@ -153,11 +153,11 @@ export const blogFAQs: Record<string, { question: string; answer: string }[]> = 
     },
     {
       question: "Was muss eine interne Meldestelle nach dem HinSchG leisten?",
-      answer: "Die Meldestelle muss anonyme Meldungen entgegennehmen, innerhalb von 7 Tagen den Eingang bestätigen, eine vertrauliche Zwei-Wege-Kommunikation ermöglichen und innerhalb von 3 Monaten Rückmeldung zu ergriffenen Maßnahmen geben."
+      answer: "Die Meldestelle muss Meldungen mündlich oder in Textform ermöglichen, innerhalb von 7 Tagen den Eingang bestätigen, mit der hinweisgebenden Person in Kontakt bleiben und innerhalb von 3 Monaten Rückmeldung zu ergriffenen Folgemaßnahmen geben. Anonyme Meldungen soll sie bearbeiten, eine Pflicht zu anonymen Meldekanälen besteht aber nicht."
     },
     {
       question: "Welche Software erfüllt die HinSchG-Anforderungen?",
-      answer: "Plattformen wie VoxWel ($1/Mitarbeiter/Monat), FaceUp und EQS Integrity Line erfüllen alle HinSchG-Anforderungen nativ: anonyme Meldung, Fristenverwaltung, Zwei-Wege-Kommunikation und DSGVO-konforme Datenhaltung auf EU-Servern."
+      answer: "Plattformen wie VoxWel ($1/Mitarbeiter/Monat), FaceUp und EQS Integrity Line decken den digitalen Meldekanal ab: anonyme Meldung, Fristenverwaltung, Zwei-Wege-Kommunikation und DSGVO-konforme Datenhaltung. Prüfen Sie, ob auch mündliche Meldungen abgedeckt sind; bei VoxWel organisiert die Meldestelle diesen Kanal zusätzlich."
     }
   ],
   "multilingual-whistleblowing-software-eu": [
