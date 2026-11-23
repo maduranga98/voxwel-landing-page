@@ -15,7 +15,7 @@ color: "from-blue-500 to-blue-700"
 image: "voxwel-whistleblowing-software-demo-checklist.webp"
 ---
 
-If three whistleblowing software demos look identical, the problem may be the demo script. Most vendors can show a reporting form and a case dashboard. A useful evaluation makes each platform handle the same difficult situations and asks the vendor to show exactly what the system records, restricts and automates.
+If three [whistleblowing software](/) demos look identical, the problem may be the demo script. Most vendors can show a reporting form and a case dashboard. A useful evaluation makes each platform handle the same difficult situations and asks the vendor to show exactly what the system records, restricts and automates.
 
 **Direct answer:** Ask vendors to demonstrate a complete sensitive case, not just the front-end form. Test anonymity, access restrictions, conflicts of interest, evidence, deadlines, audit history, language support, data location, integrations and contract exit. The questions below help expose the difference between a feature that exists and a feature your organization can actually use.
 

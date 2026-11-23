@@ -56,7 +56,7 @@ The growing category of web-based platforms that have largely replaced phone hot
 
 **Price tiers within this category:**
 
-**Budget tier ($50–$150/month for 100 employees):** VoxWel ($100/month at $1/employee), basic anonymous forms with core case management. Full compliance features, simple UI, fast setup. Best for SMBs and growing companies.
+**Budget tier ($50–$150/month for 100 employees):** [VoxWel whistleblowing software](/) ($100/month at $1/employee), basic anonymous forms with core case management. Full compliance features, simple UI, fast setup. Best for SMBs and growing companies.
 
 **Mid-market tier ($200–$500/month):** FaceUp, Elker, Whispli entry-level. Additional features including more granular workflow customization, enhanced analytics, third-party integrations.
 

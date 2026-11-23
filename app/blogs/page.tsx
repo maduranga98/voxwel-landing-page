@@ -466,7 +466,7 @@ export default function BlogsPage() {
                   </button>
                 </form>
                 <p className="text-xs sm:text-sm text-gray-500 mt-3 sm:mt-4">
-                  Join 5,000+ HR professionals and business leaders
+                  Practical guides for HR and compliance teams. Unsubscribe anytime.
                 </p>
               </div>
             </div>

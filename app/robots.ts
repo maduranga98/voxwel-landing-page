@@ -32,6 +32,10 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: [
           "GPTBot", // OpenAI ChatGPT
           "ChatGPT-User", // ChatGPT user-initiated requests
+          "OAI-SearchBot", // ChatGPT search results
+          "Claude-SearchBot", // Claude search indexing
+          "Claude-User", // Claude user-initiated fetches
+          "Perplexity-User", // Perplexity user-initiated fetches
           "Google-Extended", // Google Bard/Gemini AI
           "CCBot", // Common Crawl (used by many AI systems)
           "anthropic-ai", // Claude AI

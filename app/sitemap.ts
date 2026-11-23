@@ -4,7 +4,7 @@ import { blogPosts } from "@/data/blogPosts";
 export const dynamic = "force-static";
 
 // Fixed date: avoids reporting every static page as modified on each build.
-const SITE_UPDATED = new Date("2026-11-17");
+const SITE_UPDATED = new Date("2026-11-23");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://voxwel.com";

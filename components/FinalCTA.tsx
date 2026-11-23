@@ -646,11 +646,11 @@ export default function FinalCTA() {
                       <span>🇬🇧</span> United Kingdom
                     </p>
                     <p className="text-slate-500 text-sm leading-relaxed">
-                      Office 4157, 58 Peregrine Road
+                      61 Bridge Street
                       <br />
-                      Hainault, Ilford, Essex
+                      Kington, England
                       <br />
-                      United Kingdom, IG6 3SZ
+                      United Kingdom, HR5 3DJ
                     </p>
                   </div>
                 </div>

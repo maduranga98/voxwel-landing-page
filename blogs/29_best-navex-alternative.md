@@ -30,7 +30,7 @@ NAVEX does not list pricing publicly. Based on documented customer experiences a
 
 For a 200-employee organization using only the EthicsPoint reporting channel (not the full GRC suite), the realistic annual cost is $12,000–$30,000 including setup.
 
-For a 200-employee organization using VoxWel, the annual cost is $2,400. No setup fee.
+For a 200-employee organization using [VoxWel's whistleblowing software](/), the annual cost is $2,400. No setup fee.
 
 ---
 

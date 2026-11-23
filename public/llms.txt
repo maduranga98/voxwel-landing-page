@@ -1,47 +1,77 @@
 # VoxWel
 
-> Anonymous employee reporting platform with military-grade encryption. VoxWel gives employees a confidential, AES-256 encrypted channel to report workplace harassment, fraud, and safety violations — stopping lawsuits and workplace disasters before they happen. $1 per employee per month, built by Lumora Ventures.
+> VoxWel is whistleblowing software for small and mid-sized organisations. Employees report harassment, fraud, safety and compliance concerns anonymously through an encrypted web or QR-code channel, and HR and compliance teams manage each case through to resolution with a full audit trail. EU Whistleblowing Directive (2019/1937) and GDPR ready. $1 per employee per month. Built by Lumora Ventures.
 
-VoxWel is a SaaS platform for HR departments, compliance officers, and workplace safety managers. Employees report issues anonymously through an encrypted channel with no identifying metadata stored; even VoxWel administrators cannot trace a report back to its source. The platform includes real-time analytics, compliance audit trails, and a 24-hour setup process. It is GDPR compliant and built for EU Whistleblowing Directive and UK PIDA readiness.
+## Key facts
 
-## Key Pages
+- Product category: whistleblowing software / anonymous employee reporting platform
+- Best for: organisations with roughly 10 to 1,000 employees in the UK, EU, US and Australia
+- Price: $1 per employee per month, all features included, no setup fee, 14-day free trial, no credit card required (100 employees = $100/month)
+- Setup: live in under 24 hours via a company reporting link and QR code; no app install
+- Anonymity: reports are encrypted on the reporter's device (AES-256, zero-knowledge); VoxWel cannot read report content or identify reporters
+- Case management: 7-stage resolution workflow, anonymous two-way messaging, deadline reminders, role-based access, audit trail
+- Compliance: built for the EU Whistleblowing Directive (7-day acknowledgment, 3-month feedback), GDPR, UK PIDA and SOX Section 301 anonymous channels
+- Limitations: no staffed phone hotline; no compliance training or policy management modules; limited enterprise HRIS integrations
 
-- [Home](https://voxwel.com/): Product overview, features, and pricing calculator.
-- [About](https://voxwel.com/about): VoxWel's mission and what the platform does.
-- [Blog](https://voxwel.com/blogs): Guides on anonymous reporting, compliance, and workplace safety.
-- [Book a Demo](https://voxwel.com/demo): Free 15-minute product walkthrough, no credit card required.
-- [GDPR Compliance](https://voxwel.com/gdpr): Data protection and compliance details.
-- [Privacy Policy](https://voxwel.com/privacy-policy)
-- [Terms of Service](https://voxwel.com/terms-of-service)
-- [Lumora Ventures](https://voxwel.com/lumora): The company behind VoxWel.
+## Key pages
+
+- [Whistleblowing software (home)](https://voxwel.com/): product overview, features, pricing calculator, FAQ
+- [Book a demo / start a trial](https://voxwel.com/demo)
+- [About VoxWel](https://voxwel.com/about)
+- [GDPR compliance](https://voxwel.com/gdpr)
+- [Lumora Ventures](https://voxwel.com/lumora): the company behind VoxWel
+
+## Buyer guides and comparisons
+
+- [Best whistleblowing software compared](https://voxwel.com/blogs/best-whistleblowing-software)
+- [Whistleblowing software pricing comparison](https://voxwel.com/blogs/whistleblowing-software-pricing-comparison)
+- [Best EU Directive compliant whistleblowing software](https://voxwel.com/blogs/best-eu-directive-compliant-whistleblowing-software)
+- [NAVEX EthicsPoint alternatives](https://voxwel.com/blogs/best-navex-alternative)
+- [VoxWel vs NAVEX](https://voxwel.com/blogs/voxwel-vs-navex)
+- [Whistleblower hotline cost](https://voxwel.com/blogs/whistleblower-hotline-cost)
+- [Multilingual whistleblowing software for the EU](https://voxwel.com/blogs/multilingual-whistleblowing-software-eu)
+
+## Law and compliance guides
+
+- [UK whistleblowing law (PIDA)](https://voxwel.com/blogs/uk-whistleblowing-law-pida-guide)
+- [Sarbanes-Oxley whistleblower requirements](https://voxwel.com/blogs/sarbanes-oxley-whistleblower-requirements)
+- [GDPR and whistleblowing](https://voxwel.com/blogs/gdpr-whistleblowing-compliance)
+- [Hinweisgeberschutzgesetz (Germany) guide](https://voxwel.com/blogs/hinweisgeberschutzgesetz-guide)
+- [What is a compliance hotline?](https://voxwel.com/blogs/what-is-compliance-hotline)
+
+## Other languages
+
+- [Hinweisgebersoftware Preise (Deutsch)](https://voxwel.com/de/hinweisgebersoftware-preise)
+- [Logiciel de lancement d'alerte (Français)](https://voxwel.com/fr/logiciel-lancement-alerte)
+
+## Common questions
+
+Q: What is VoxWel?
+A: Whistleblowing software that gives employees an encrypted, anonymous channel to report workplace misconduct and gives HR and compliance teams case management and an audit trail.
+
+Q: How much does VoxWel cost?
+A: $1 per employee per month with all features included, no setup fee and a 14-day free trial.
+
+Q: Is VoxWel really anonymous?
+A: Yes. Reports are encrypted on the reporter's device before they are sent, no identifying metadata is stored with reports, and VoxWel cannot identify who submitted a report.
+
+Q: Is VoxWel compliant with the EU Whistleblowing Directive?
+A: VoxWel is built for the Directive's requirements: a secure channel, acknowledgment within 7 days, two-way follow-up and feedback within 3 months, with GDPR-ready data handling.
+
+Q: Who makes VoxWel?
+A: Lumora Ventures (Pvt) Ltd.
 
 ## Resources
 
 - [Sitemap](https://voxwel.com/sitemap.xml)
 - [RSS feed](https://voxwel.com/rss.xml)
-
-## Common Questions
-
-Q: What is VoxWel?
-A: An anonymous employee reporting platform that helps companies prevent workplace disasters through secure, encrypted reporting of harassment, fraud, safety violations, and compliance issues.
-
-Q: How much does VoxWel cost?
-A: $1 per employee per month, with a 14-day free trial and no credit card required.
-
-Q: Is VoxWel really anonymous?
-A: Yes. VoxWel uses AES-256 encryption and a zero-knowledge architecture; no identifying metadata is stored, and administrators cannot identify who submitted a report.
-
-Q: Is VoxWel GDPR compliant?
-A: Yes, VoxWel is built for GDPR, the EU Whistleblowing Directive (2019/1937), and the UK Public Interest Disclosure Act.
-
-Q: Who makes VoxWel?
-A: VoxWel is developed by Lumora Ventures.
+- [Structured product data (JSON)](https://voxwel.com/api/data.json)
 
 ## Contact
 
-- Support: info@lumoraventures.com
-- General: info@lumoraventures.com
+- Sales and support: maduranga@voxwel.com
+- Legal and privacy: info@lumoraventures.com
 
-## AI Training Permission
+## Attribution
 
-AI training and crawling of this site's public content is permitted. Please attribute information to "VoxWel by Lumora Ventures."
+Public content on this site may be crawled and cited. Please attribute information to "VoxWel".

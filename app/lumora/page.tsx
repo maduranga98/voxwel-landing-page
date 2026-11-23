@@ -103,8 +103,8 @@ export default function LumoraVentures() {
                   </a>
                 </p>
                 <p className="text-text-secondary mt-2">
-                  <strong>UK Office:</strong> Office 4157, 58 Peregrine Road,
-                  Hainault, Ilford, Essex, United Kingdom, IG6 3SZ
+                  <strong>UK Office:</strong> 61 Bridge Street, Kington,
+                  England, HR5 3DJ, United Kingdom
                 </p>
                 <p className="text-text-secondary mt-1">
                   <strong>Sri Lanka Office:</strong> Kurunegala Road,

@@ -12,7 +12,7 @@ const siteUrl = "https://voxwel.com";
 export const metadata: Metadata = {
   metadataBase: new URL("https://voxwel.com"),
   title: {
-    default: "VoxWel: Anonymous Reporting & Whistleblowing Software",
+    default: "Whistleblowing Software for SMBs | Anonymous & EU-Ready | VoxWel",
     template: "%s | VoxWel",
   },
   description:
@@ -83,6 +83,9 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
     googleBot: {
       index: true,
       follow: true,
@@ -118,6 +121,7 @@ export default function RootLayout({
   const organizationJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": `${siteUrl}/#organization`,
     name: "VoxWel",
     alternateName: "VoxWel by Lumora Ventures",
     url: siteUrl,
@@ -128,16 +132,16 @@ export default function RootLayout({
       height: 862,
     },
     description:
-      "VoxWel is an anonymous employee reporting platform that gives employees a confidential, AES-256 encrypted channel to report workplace harassment, fraud, and safety violations. GDPR compliant, EU Whistleblowing Directive ready, live in 24 hours.",
+      "VoxWel is whistleblowing software and an anonymous employee reporting platform that gives employees a confidential, AES-256 encrypted channel to report workplace harassment, fraud, and safety violations. GDPR compliant, EU Whistleblowing Directive ready, live in 24 hours.",
     email: "maduranga@voxwel.com",
     telephone: "+94766206555",
     foundingDate: "2024",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Office 4157, 58 Peregrine Road, Hainault",
-      addressLocality: "Ilford",
-      addressRegion: "Essex",
-      postalCode: "IG6 3SZ",
+      streetAddress: "61 Bridge Street",
+      addressLocality: "Kington",
+      addressRegion: "England",
+      postalCode: "HR5 3DJ",
       addressCountry: "GB",
     },
     contactPoint: {
@@ -163,26 +167,13 @@ export default function RootLayout({
   const websiteJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": `${siteUrl}/#website`,
     name: "VoxWel",
     url: siteUrl,
+    inLanguage: "en",
     description:
-      "Anonymous employee reporting platform with military-grade encryption. Stop lawsuits, fraud, and workplace disasters before they happen.",
-    publisher: {
-      "@type": "Organization",
-      name: "VoxWel",
-      logo: {
-        "@type": "ImageObject",
-        url: `${siteUrl}/logo.png`,
-      },
-    },
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: `${siteUrl}/blogs?q={search_term_string}`,
-      },
-      "query-input": "required name=search_term_string",
-    },
+      "VoxWel is whistleblowing software for small and mid-sized organisations: encrypted anonymous reporting, case management and audit trail, EU Whistleblowing Directive and GDPR ready.",
+    publisher: { "@id": `${siteUrl}/#organization` },
   };
 
   return (
@@ -295,10 +286,6 @@ export default function RootLayout({
           title="VoxWel Data API"
         />
         <meta name="ai-content-declaration" content="partially-ai-assisted" />
-        <meta
-          name="robots"
-          content="max-image-preview:large, max-snippet:-1, max-video-preview:-1"
-        />
 
         {/* Structured Data */}
         <script

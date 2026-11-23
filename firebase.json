@@ -130,6 +130,11 @@
           "source": "/blogs/best-whistleblower-hotline-software",
           "destination": "/blogs/best-whistleblowing-software",
           "type": 301
+        },
+        {
+          "source": "/blogs/case-study-manufacturing-fraud-detection",
+          "destination": "/blogs/types-employee-fraud-red-flags-detection",
+          "type": 301
         }
       ],
       "rewrites": []

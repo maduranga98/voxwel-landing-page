@@ -8,7 +8,7 @@ export async function GET() {
       name: "VoxWel",
       tagline: "Where Every Voice Matters",
       description:
-        "Anonymous employee reporting platform with military-grade encryption. Stop lawsuits, fraud, and workplace disasters before they happen.",
+        "VoxWel is whistleblowing software for small and mid-sized organisations: encrypted anonymous employee reporting, case management and audit trail. EU Whistleblowing Directive and GDPR ready. $1 per employee per month.",
       url: "https://voxwel.com",
       company: "Lumora Ventures",
       version: "1.0.0",
@@ -16,8 +16,8 @@ export async function GET() {
     },
     product: {
       name: "VoxWel",
-      type: "SaaS - Workplace Safety & Compliance Platform",
-      category: "Employee Reporting & Workplace Safety",
+      type: "SaaS - Whistleblowing Software",
+      category: "Whistleblowing & Anonymous Employee Reporting Software",
       pricing: {
         model: "Per Employee",
         amount: 1,
@@ -108,8 +108,8 @@ export async function GET() {
       ],
     },
     contact: {
-      general: "info@lumoraventures.com",
-      support: "info@lumoraventures.com",
+      general: "maduranga@voxwel.com",
+      support: "maduranga@voxwel.com",
       security: "info@lumoraventures.com",
       privacy: "info@lumoraventures.com",
       dpo: "info@lumoraventures.com",

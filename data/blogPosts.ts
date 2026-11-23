@@ -175,7 +175,7 @@ export const blogPosts: BlogPost[] = [
     icon: "FiFileText",
     color: "from-blue-500 to-blue-700",
     image: "voxwel-whistleblowing-software-demo-checklist.webp",
-    content: "If three whistleblowing software demos look identical, the problem may be the demo script. Most vendors can show a reporting form and a case dashboard. A useful evaluation makes each platform handle the same difficult situations and asks the vendor to show exactly what the system records, restricts and automates.\n\n**Direct answer:** Ask vendors to demonstrate a complete sensitive case, not just the front-end form. Test anonymity, access restrictions, conflicts of interest, evidence, deadlines, audit history, language support, data location, integrations and contract exit. The questions below help expose the difference between a feature that exists and a feature your organization can actually use.\n\n---\n\n## Fifteen questions to ask every vendor\n\n1. **Can you submit a report without creating an employee account?** Show the actual employee experience on a mobile browser.\n2. **What information could identify a reporter?** Explain IP logging, device data, cookies, authentication, email notifications and operational logs. Provide the relevant technical documentation.\n3. **Can anonymous reporters receive and send follow-up messages?** Demonstrate the exact workflow, including how access is recovered and how identity is protected. If the product does not support this, say so clearly.\n4. **Who can view a sensitive report?** Show role permissions, entity restrictions and the difference between a platform administrator and an investigator.\n5. **What happens if the report names the HR Director or system administrator?** Demonstrate independent escalation and access restrictions.\n6. **How are acknowledgement and feedback deadlines tracked?** Show reminders, ownership and overdue-case escalation.\n7. **How is evidence stored?** Demonstrate file access, activity history, export and retention controls.\n8. **Can you show the audit history?** Identify which actions are recorded, who can view the log and whether entries can be changed or deleted.\n9. **How do you support multiple legal entities and countries?** Show how reports can be routed without exposing unrelated cases to local teams.\n10. **Which languages are supported end to end?** Test the reporting form, system messages, administrator experience, help content and support model.\n11. **Where are production data, backups and support systems located?** Provide the subprocessor list and explain international access or transfers.\n12. **What security evidence can we review?** Ask for the data processing agreement, security overview, incident process, penetration-test summary or independent certification where available.\n13. **Which integrations are included?** Ask whether employee identity data is imported, why it is needed and how the integration affects anonymous submissions.\n14. **What is included in implementation and support?** Request milestones, customer responsibilities, training scope, service levels and additional fees.\n15. **How do we export and delete our data when we leave?** Ask for sample exports, format details, timelines, backup expiry and any exit charges.\n\n---\n\n## Run three scenarios during the demo\n\n**Scenario A: A report about a senior leader.** Ask the vendor to show who receives it, how a conflict is detected and how access is restricted.\n\n**Scenario B: A report from an employee in another country.** Test language options, local routing, entity-level access and the information shown to the reporter.\n\n**Scenario C: A report that cannot be substantiated.** Ask how the investigator records evidence, explains the conclusion, tracks corrective actions and applies retention rules.\n\nUse the same scenarios for every vendor. Ask the salesperson not to skip a difficult step. If a feature requires a custom project, record it as a dependency rather than scoring it as available today.\n\n---\n\n## Score the demo, not the presentation\n\nGive each criterion a status: demonstrated, documented but not demonstrated, roadmap, custom work or unavailable. Record the evidence and the person responsible for verifying it. Involve HR, Compliance, Legal, IT Security and procurement, but keep sensitive case details out of the procurement process.\n\nA strong vendor demo should make the product's limits visible. Clear limitations are safer than broad promises that cannot be verified after purchase. For more on shortlisting, see our [best whistleblowing software](/blogs/best-whistleblowing-software) guide, the [best NAVEX alternative](/blogs/best-navex-alternative) comparison and how to [compare EU whistleblowing software vendors](/blogs/compare-eu-whistleblowing-software-vendors).\n\n---\n\n## Frequently asked questions\n\n### What is the most important whistleblowing software demo test?\nTest a report involving a senior leader or administrator. This quickly reveals whether the platform supports independent escalation and meaningful access restrictions.\n\n### Should IT Security attend the demo?\nYes, especially for questions about identity data, logs, hosting, subprocessors, authentication, encryption, audit records and incident response.\n\n### Can a demo prove legal compliance?\nNo. A demo shows product behavior. Legal compliance also depends on local law, policy, operating procedures, contracts and how the organization uses the platform.\n\n---\n\n## References and verification sources\n\n- [Directive (EU) 2019/1937](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02019L1937-20240311)\n- [GDPR (Regulation (EU) 2016/679)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679)",
+    content: "If three [whistleblowing software](/) demos look identical, the problem may be the demo script. Most vendors can show a reporting form and a case dashboard. A useful evaluation makes each platform handle the same difficult situations and asks the vendor to show exactly what the system records, restricts and automates.\n\n**Direct answer:** Ask vendors to demonstrate a complete sensitive case, not just the front-end form. Test anonymity, access restrictions, conflicts of interest, evidence, deadlines, audit history, language support, data location, integrations and contract exit. The questions below help expose the difference between a feature that exists and a feature your organization can actually use.\n\n---\n\n## Fifteen questions to ask every vendor\n\n1. **Can you submit a report without creating an employee account?** Show the actual employee experience on a mobile browser.\n2. **What information could identify a reporter?** Explain IP logging, device data, cookies, authentication, email notifications and operational logs. Provide the relevant technical documentation.\n3. **Can anonymous reporters receive and send follow-up messages?** Demonstrate the exact workflow, including how access is recovered and how identity is protected. If the product does not support this, say so clearly.\n4. **Who can view a sensitive report?** Show role permissions, entity restrictions and the difference between a platform administrator and an investigator.\n5. **What happens if the report names the HR Director or system administrator?** Demonstrate independent escalation and access restrictions.\n6. **How are acknowledgement and feedback deadlines tracked?** Show reminders, ownership and overdue-case escalation.\n7. **How is evidence stored?** Demonstrate file access, activity history, export and retention controls.\n8. **Can you show the audit history?** Identify which actions are recorded, who can view the log and whether entries can be changed or deleted.\n9. **How do you support multiple legal entities and countries?** Show how reports can be routed without exposing unrelated cases to local teams.\n10. **Which languages are supported end to end?** Test the reporting form, system messages, administrator experience, help content and support model.\n11. **Where are production data, backups and support systems located?** Provide the subprocessor list and explain international access or transfers.\n12. **What security evidence can we review?** Ask for the data processing agreement, security overview, incident process, penetration-test summary or independent certification where available.\n13. **Which integrations are included?** Ask whether employee identity data is imported, why it is needed and how the integration affects anonymous submissions.\n14. **What is included in implementation and support?** Request milestones, customer responsibilities, training scope, service levels and additional fees.\n15. **How do we export and delete our data when we leave?** Ask for sample exports, format details, timelines, backup expiry and any exit charges.\n\n---\n\n## Run three scenarios during the demo\n\n**Scenario A: A report about a senior leader.** Ask the vendor to show who receives it, how a conflict is detected and how access is restricted.\n\n**Scenario B: A report from an employee in another country.** Test language options, local routing, entity-level access and the information shown to the reporter.\n\n**Scenario C: A report that cannot be substantiated.** Ask how the investigator records evidence, explains the conclusion, tracks corrective actions and applies retention rules.\n\nUse the same scenarios for every vendor. Ask the salesperson not to skip a difficult step. If a feature requires a custom project, record it as a dependency rather than scoring it as available today.\n\n---\n\n## Score the demo, not the presentation\n\nGive each criterion a status: demonstrated, documented but not demonstrated, roadmap, custom work or unavailable. Record the evidence and the person responsible for verifying it. Involve HR, Compliance, Legal, IT Security and procurement, but keep sensitive case details out of the procurement process.\n\nA strong vendor demo should make the product's limits visible. Clear limitations are safer than broad promises that cannot be verified after purchase. For more on shortlisting, see our [best whistleblowing software](/blogs/best-whistleblowing-software) guide, the [best NAVEX alternative](/blogs/best-navex-alternative) comparison and how to [compare EU whistleblowing software vendors](/blogs/compare-eu-whistleblowing-software-vendors).\n\n---\n\n## Frequently asked questions\n\n### What is the most important whistleblowing software demo test?\nTest a report involving a senior leader or administrator. This quickly reveals whether the platform supports independent escalation and meaningful access restrictions.\n\n### Should IT Security attend the demo?\nYes, especially for questions about identity data, logs, hosting, subprocessors, authentication, encryption, audit records and incident response.\n\n### Can a demo prove legal compliance?\nNo. A demo shows product behavior. Legal compliance also depends on local law, policy, operating procedures, contracts and how the organization uses the platform.\n\n---\n\n## References and verification sources\n\n- [Directive (EU) 2019/1937](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02019L1937-20240311)\n- [GDPR (Regulation (EU) 2016/679)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679)",
   },
   {
     slug: "investigate-anonymous-workplace-complaints",
@@ -285,7 +285,7 @@ export const blogPosts: BlogPost[] = [
     tags: ["compare whistleblowing software vendors","enterprise whistleblowing software comparison","eu whistleblowing vendor checklist","whistleblower platform evaluation","whistleblowing vendor scorecard"],
     icon: "FiShield",
     color: "from-blue-500 to-blue-700",
-    content: "A whistleblowing software demonstration can make every platform look capable. Most vendors show a reporting form, a dashboard and a case list. The differences become visible only when a buyer tests what happens after a sensitive report arrives: who can see it, who follows it up, how the reporter is protected, what evidence is retained and how the organization proves that it acted.\n\n**Direct answer:** Compare vendors against the same documented scenarios and evidence, not against feature lists or broad claims such as \"EU compliant\". A useful evaluation covers legal scope, confidentiality, anonymous reporting, case management, access controls, audit records, data protection, languages, implementation, integrations, support and total cost.\n\n---\n\n## 1. Start with the organization's actual requirements\n\nWrite down where the organization operates, how many workers it has in each legal entity, which languages employees use, what types of reports it expects and who will investigate them. A group with several subsidiaries may need separate local channels, different case handlers and consolidated oversight. A single-country employer may need a simpler setup.\n\nDo not assume that one legal rule applies identically across every country. The EU Whistleblowing Directive is implemented through national laws, and local requirements should be checked for each relevant entity. Ask vendors to map their product capabilities to the laws that apply to your organization.\n\n---\n\n## 2. Use a weighted 100-point scorecard\n\nScore every vendor against the same criteria. Ask for evidence during the demo and record whether the capability is included, optional, custom-built or unavailable.\n\n| Criterion | Points | What to ask |\n|---|---|---|\n| **Regulatory workflow and local-law fit** | 15 | Can the vendor explain the relevant internal reporting and follow-up steps, responsible roles, acknowledgement and feedback controls, and country-specific differences? |\n| **Secure channels and confidentiality** | 12 | Are reports protected from unauthorized access? Can permissions be restricted by entity, case type and role? |\n| **Anonymous reporting** | 10 | Can employees submit without identifying themselves? Does the platform support secure follow-up while preserving anonymity, where offered and legally appropriate? |\n| **Case management** | 10 | Can teams assign ownership, record actions, manage deadlines, preserve evidence and document outcomes? |\n| **Role separation** | 8 | Can HR, Legal, Compliance and investigators receive only the access they need? What happens when a report concerns an administrator? |\n| **Audit records and retention** | 8 | Are key actions timestamped? Can retention rules and deletion be configured and evidenced? |\n| **Data protection and hosting** | 8 | Are the processor terms, subprocessors, hosting locations, transfer arrangements and security measures documented? |\n| **Language accessibility** | 7 | Are forms, instructions and employee-facing content usable in the languages actually spoken by the workforce? |\n| **Implementation** | 7 | What is included in setup, configuration, testing, training and go-live support? |\n| **Integrations** | 5 | Are integrations necessary? Can they be limited so that employee identity is not unnecessarily copied into sensitive reporting workflows? |\n| **Reporting and oversight** | 5 | Can the organization monitor response times, open cases, overdue actions and trends without exposing reporter identities? |\n| **Total cost and exit** | 5 | What is included in the subscription, what triggers additional fees and how can records be exported at contract end? |\n\nA score is a decision aid, not proof of legal compliance. A vendor should not receive full marks because a salesperson says a feature exists. Request a live demonstration, configuration evidence, contract wording or security documentation.\n\n---\n\n## 3. Run the same scenario with every vendor\n\nGive each vendor a fictional case: an employee reports suspected procurement fraud and names a senior manager. Ask the vendor to demonstrate intake, restricted access, assignment to an independent reviewer, evidence handling, reporter communication, escalation and closure. Then test a second case involving a report submitted anonymously from another country.\n\nThis reveals whether the platform handles real organizational conflicts or only routine reports. It also shows whether the product's workflow is practical for the people who will use it.\n\n---\n\n## 4. Check the evidence behind security and compliance claims\n\nAsk for the data processing agreement, subprocessor list, hosting and transfer details, encryption documentation, access-control model, incident process, backup policy and deletion procedure. A security badge or encryption claim is not a substitute for reviewing the full processing arrangement.\n\nThe GDPR requires security measures appropriate to risk. Encryption and confidentiality controls can be relevant, but compliance depends on the whole processing operation, not a single technical feature.\n\n---\n\n## 5. Compare the full cost, not just the headline subscription\n\nNormalize each quotation using the same employee count, number of entities, languages, reporting channels, case handlers and support requirements. Include setup, training, hotline services, advanced integrations, data migration, premium support and renewal terms. A low starting price can become expensive when essential capabilities are add-ons. For benchmark figures, see our [whistleblowing software pricing comparison](/blogs/whistleblowing-software-pricing-comparison).\n\n---\n\n## 6. Make the decision repeatable\n\nKeep the scorecard, demo notes, evidence and approval rationale together. Record why a vendor was selected, which risks remain and who owns each follow-up. Reassess the platform when the organization enters a new country, changes its reporting policy or materially changes its data processing.\n\nThe best platform is not necessarily the one with the longest feature list. It is the one that your organization can operate consistently, securely and fairly when a difficult report arrives.\n\nFor a market overview to build your shortlist from, read [Best EU Directive-Compliant Whistleblowing Software](/blogs/best-eu-directive-compliant-whistleblowing-software) and our [best whistleblowing software guide](/blogs/best-whistleblowing-software). To run the scenarios above on VoxWel, [schedule a demo](/demo).\n\n---\n\n## Frequently asked questions\n\n### What is the most important factor when comparing whistleblowing platforms?\nStart with confidentiality, independent follow-up and case handling. A reporting form is only the entry point. The organization must also control access, investigate fairly, document actions and protect personal data.\n\n### Should a company choose a platform that is already certified as EU Directive compliant?\nTreat certification or compliance claims as evidence to investigate, not as a final answer. Ask what standard or legal requirement is being assessed, who assessed it, what is in scope and whether the relevant national law has been considered.\n\n### How many vendors should we evaluate?\nA shortlist of three to five vendors is often manageable. Use the same scenarios and scorecard for each so the comparison is fair.\n\n---\n\n## References and verification sources\n\n- [EU Whistleblowing Directive 2019/1937, consolidated text](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02019L1937-20240311)\n- [GDPR, Article 32: Security of processing](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679)",
+    content: "A [whistleblowing software](/) demonstration can make every platform look capable. Most vendors show a reporting form, a dashboard and a case list. The differences become visible only when a buyer tests what happens after a sensitive report arrives: who can see it, who follows it up, how the reporter is protected, what evidence is retained and how the organization proves that it acted.\n\n**Direct answer:** Compare vendors against the same documented scenarios and evidence, not against feature lists or broad claims such as \"EU compliant\". A useful evaluation covers legal scope, confidentiality, anonymous reporting, case management, access controls, audit records, data protection, languages, implementation, integrations, support and total cost.\n\n---\n\n## 1. Start with the organization's actual requirements\n\nWrite down where the organization operates, how many workers it has in each legal entity, which languages employees use, what types of reports it expects and who will investigate them. A group with several subsidiaries may need separate local channels, different case handlers and consolidated oversight. A single-country employer may need a simpler setup.\n\nDo not assume that one legal rule applies identically across every country. The EU Whistleblowing Directive is implemented through national laws, and local requirements should be checked for each relevant entity. Ask vendors to map their product capabilities to the laws that apply to your organization.\n\n---\n\n## 2. Use a weighted 100-point scorecard\n\nScore every vendor against the same criteria. Ask for evidence during the demo and record whether the capability is included, optional, custom-built or unavailable.\n\n| Criterion | Points | What to ask |\n|---|---|---|\n| **Regulatory workflow and local-law fit** | 15 | Can the vendor explain the relevant internal reporting and follow-up steps, responsible roles, acknowledgement and feedback controls, and country-specific differences? |\n| **Secure channels and confidentiality** | 12 | Are reports protected from unauthorized access? Can permissions be restricted by entity, case type and role? |\n| **Anonymous reporting** | 10 | Can employees submit without identifying themselves? Does the platform support secure follow-up while preserving anonymity, where offered and legally appropriate? |\n| **Case management** | 10 | Can teams assign ownership, record actions, manage deadlines, preserve evidence and document outcomes? |\n| **Role separation** | 8 | Can HR, Legal, Compliance and investigators receive only the access they need? What happens when a report concerns an administrator? |\n| **Audit records and retention** | 8 | Are key actions timestamped? Can retention rules and deletion be configured and evidenced? |\n| **Data protection and hosting** | 8 | Are the processor terms, subprocessors, hosting locations, transfer arrangements and security measures documented? |\n| **Language accessibility** | 7 | Are forms, instructions and employee-facing content usable in the languages actually spoken by the workforce? |\n| **Implementation** | 7 | What is included in setup, configuration, testing, training and go-live support? |\n| **Integrations** | 5 | Are integrations necessary? Can they be limited so that employee identity is not unnecessarily copied into sensitive reporting workflows? |\n| **Reporting and oversight** | 5 | Can the organization monitor response times, open cases, overdue actions and trends without exposing reporter identities? |\n| **Total cost and exit** | 5 | What is included in the subscription, what triggers additional fees and how can records be exported at contract end? |\n\nA score is a decision aid, not proof of legal compliance. A vendor should not receive full marks because a salesperson says a feature exists. Request a live demonstration, configuration evidence, contract wording or security documentation.\n\n---\n\n## 3. Run the same scenario with every vendor\n\nGive each vendor a fictional case: an employee reports suspected procurement fraud and names a senior manager. Ask the vendor to demonstrate intake, restricted access, assignment to an independent reviewer, evidence handling, reporter communication, escalation and closure. Then test a second case involving a report submitted anonymously from another country.\n\nThis reveals whether the platform handles real organizational conflicts or only routine reports. It also shows whether the product's workflow is practical for the people who will use it.\n\n---\n\n## 4. Check the evidence behind security and compliance claims\n\nAsk for the data processing agreement, subprocessor list, hosting and transfer details, encryption documentation, access-control model, incident process, backup policy and deletion procedure. A security badge or encryption claim is not a substitute for reviewing the full processing arrangement.\n\nThe GDPR requires security measures appropriate to risk. Encryption and confidentiality controls can be relevant, but compliance depends on the whole processing operation, not a single technical feature.\n\n---\n\n## 5. Compare the full cost, not just the headline subscription\n\nNormalize each quotation using the same employee count, number of entities, languages, reporting channels, case handlers and support requirements. Include setup, training, hotline services, advanced integrations, data migration, premium support and renewal terms. A low starting price can become expensive when essential capabilities are add-ons. For benchmark figures, see our [whistleblowing software pricing comparison](/blogs/whistleblowing-software-pricing-comparison).\n\n---\n\n## 6. Make the decision repeatable\n\nKeep the scorecard, demo notes, evidence and approval rationale together. Record why a vendor was selected, which risks remain and who owns each follow-up. Reassess the platform when the organization enters a new country, changes its reporting policy or materially changes its data processing.\n\nThe best platform is not necessarily the one with the longest feature list. It is the one that your organization can operate consistently, securely and fairly when a difficult report arrives.\n\nFor a market overview to build your shortlist from, read [Best EU Directive-Compliant Whistleblowing Software](/blogs/best-eu-directive-compliant-whistleblowing-software) and our [best whistleblowing software guide](/blogs/best-whistleblowing-software). To run the scenarios above on VoxWel, [schedule a demo](/demo).\n\n---\n\n## Frequently asked questions\n\n### What is the most important factor when comparing whistleblowing platforms?\nStart with confidentiality, independent follow-up and case handling. A reporting form is only the entry point. The organization must also control access, investigate fairly, document actions and protect personal data.\n\n### Should a company choose a platform that is already certified as EU Directive compliant?\nTreat certification or compliance claims as evidence to investigate, not as a final answer. Ask what standard or legal requirement is being assessed, who assessed it, what is in scope and whether the relevant national law has been considered.\n\n### How many vendors should we evaluate?\nA shortlist of three to five vendors is often manageable. Use the same scenarios and scorecard for each so the comparison is fair.\n\n---\n\n## References and verification sources\n\n- [EU Whistleblowing Directive 2019/1937, consolidated text](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02019L1937-20240311)\n- [GDPR, Article 32: Security of processing](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679)",
   },
 
   {
@@ -476,7 +476,7 @@ VoxWel provides enterprise-grade, zero-knowledge encryption that empowers employ
 Stop relying on slow, expensive external audits to catch internal theft.
 Protect your revenue for **$1 per employee, per month.**
 
-**[Start your 14-day free trial of VoxWel](#)** today to deploy the world's most secure fraud detection channel.
+**[Start your 14-day free trial of VoxWel](/demo)** today to deploy the world's most secure fraud detection channel.
     `,
   },
   {
@@ -636,7 +636,7 @@ The administrative burden of a workplace discrimination investigation is immense
 
 VoxWel's comprehensive compliance platform provides dedicated, secure case management built aggressively for modern HR teams. Our zero-knowledge infrastructure ensures automated, time-stamped audit trails that protect your organization against litigation, while our intuitive two-way anonymous messaging allows you to gather irrefutable evidence safely.
 
-Handle high-stakes investigations with absolute confidence. **[Start your 14-day free trial of VoxWel](#)** today for just $1/employee/month.
+Handle high-stakes investigations with absolute confidence. **[Start your 14-day free trial of VoxWel](/demo)** today for just $1/employee/month.
     `,
   },
   {
@@ -645,7 +645,7 @@ Handle high-stakes investigations with absolute confidence. **[Start your 14-day
       "Is NAVEX Anonymous? What HR Teams Need to Know About EthicsPoint Privacy",
     metaTitle: "Is NAVEX Anonymous? EthicsPoint Privacy Explained",
     metaDescription:
-      "NAVEX claims anonymity but collects metadata. Learn what EthicsPoint tracks, what NAVEX knows, and how privacy compares to alternatives.",
+      "Is NAVEX EthicsPoint anonymous? Yes, where local law allows. What anonymous means vs confidential, what any hotline can log, and how zero-knowledge reporting differs.",
     excerpt:
       "NAVEX EthicsPoint is the most widely used compliance reporting platform. But when employees ask 'is my report really anonymous?' — the answer is more complicated than NAVEX's marketing suggests. This guide explains the technical difference.",
     category: "Product Comparison",
@@ -680,7 +680,7 @@ Handle high-stakes investigations with absolute confidence. **[Start your 14-day
         position: 4,
         type: "email-capture",
         content:
-          "**Get the full NAVEX vs. VoxWel technical architecture comparison.** We'll send you the detailed breakdown of encryption models, data residency, and compliance certification. **[Send me the comparison →](#)**",
+          "**Get the full NAVEX vs. VoxWel technical architecture comparison.** We'll send you the detailed breakdown of encryption models, data residency, and compliance certification. **[Send me the comparison →](/demo)**",
       },
     ],
     content: `
@@ -694,9 +694,9 @@ When you dig into the architecture of legacy platforms like EthicsPoint, the ind
 
 ## What NAVEX Says About Anonymity
 
-NAVEX is very careful with how they utilize the word "anonymous" in legal documentation. Instead, they emphasize providing a "**confidential**" reporting channel. 
+**Short answer: yes, NAVEX EthicsPoint lets employees report anonymously, where local law permits it.** The reporter FAQs published on EthicsPoint portals say employees can choose whether to identify themselves, that web and phone reports can be "confidential and anonymous", and that anonymous reporters receive a report key and password so they can answer investigators' follow-up questions without revealing who they are.
 
-What does this mean operationally?
+So the useful question for buyers is not whether a vendor *promises* anonymity. It is what the system could technically see and store if someone tried to identify the reporter. Two models exist:
 
 **Confidentiality as a Behavioral Promise**
 When a vendor promises confidentiality, they are essentially saying: *"The software knows exactly who you are, what computer you are using, and where you are located. However, we promise, contractually, not to give that information to your employer unless required by law."*
@@ -720,9 +720,9 @@ The vendor never holds the decryption key. Consequently, the vendor never "knows
 
 ---
 
-## What Metadata Does NAVEX EthicsPoint Collect?
+## What Metadata Can a Web or Phone Hotline Collect?
 
-To understand how a "confidential" system operates behind the scenes, you must look at the standard metadata footprints that traditional compliance software often logs during a typical web submission or phone call:
+These are the metadata footprints that any web form or phone line *can* generate during a submission. They are general risks to ask every vendor about, including NAVEX and VoxWel, not documented findings about a specific product:
 
 ### 1. IP Address Handling
 When you visit a legacy web portal on your corporate laptop, the server typically logs the IP address requesting the page. If that IP address traces back to a specific corporate VPN node or a particular office IP block (e.g., "The 4th Floor Marketing Wing, Chicago Office"), the reporter's physical location is instantly compromised.
@@ -739,7 +739,7 @@ If an employee calls a traditional 1-800 ethics hotline, the call center’s tel
 ### 5. Session Tracking
 Cookie tracking and active session IDs map how long the user lingered on the page before submitting the report, tying the submission definitively to a specific network session.
 
-*While legacy vendors promise to "scrub" this data before handing the report to HR, the irrefutable truth is that the vendor collected and stored the data in the first place.*
+*If a system records this data at all, it exists somewhere and can be requested. Ask every vendor exactly what is logged, for how long, and who can access it.*
 
 ---
 
@@ -776,11 +776,11 @@ If an organization wants to detect a $500,000 embezzlement scheme before an exte
 
 | Feature Comparison | NAVEX EthicsPoint | VoxWel |
 | :--- | :--- | :--- |
-| **Anonymity Promise** | Confidentiality (Vendor Policy) | True Anonymity (Zero-Knowledge Math) |
-| **Encryption Model** | In Transit & At Rest | Client-Side AES-256 (Zero-Knowledge) |
-| **IP Address Logging** | Collected, but "scrubbed" | Actively dropped at submission |
-| **Metadata Stripping** | Vendor manages redaction | Zero metadata recorded |
-| **Reporter Identification Possible?** | Yes, via subpoena or telecom logs | No, technically impossible |
+| **Anonymous reporting** | Yes, reporter's choice where local law permits | Yes, by default |
+| **Where reports are readable** | Vendor-hosted case management; phone reports typed in by call-centre staff | Encrypted on the reporter's device (AES-256); VoxWel cannot read report content |
+| **IP address handling** | Portal FAQs say reporters are not identified by IP; confirm logging and retention with NAVEX | Not stored with reports |
+| **Anonymous follow-up** | Report key + password | Anonymous two-way messaging |
+| **Staffed phone hotline** | Yes, 24/7 call centre | No (web and QR code only) |
 | **EU Directive SLA Compliance** | Dependent on admin workflow | Native, automated SLA reminders |
 | **Pricing Model** | Quote-based Enterprise (Opaque) | Flat $1/employee/month (Transparent) |
 
@@ -794,7 +794,7 @@ VoxWel provides mathematically absolute anonymity. We don't log IPs, we don't tr
 
 By guaranteeing true anonymity, VoxWel vastly increases the likelihood that employees will report critical issues early--allowing your HR team to investigate and resolve crises internally before they escalate to devastating public scandals.
 
-**[Start your 14-day free trial of VoxWel](#)** today and implement a smarter, more secure reporting channel for just $1/employee/month.
+**[Start your 14-day free trial of VoxWel](/demo)** today and implement a smarter, more secure reporting channel for just $1/employee/month.
     `,
   },
   {
@@ -824,7 +824,7 @@ By guaranteeing true anonymity, VoxWel vastly increases the likelihood that empl
         position: 2,
         type: "email-capture",
         content:
-          "**Deploying across France, Germany, and Spain?** Get our free EU Multi-Country Deployment Playbook — the exact checklist we use with clients operating in 3+ jurisdictions. **[Email me the playbook →](#)**",
+          "**Deploying across France, Germany, and Spain?** Get our free EU Multi-Country Deployment Playbook — the exact checklist we use with clients operating in 3+ jurisdictions. **[Email me the playbook →](/demo)**",
       },
     ],
     content: `
@@ -832,7 +832,7 @@ When an organization expands across European borders, the complexity of its comp
 
 The EU Whistleblowing Directive explicitly mandates that reporting channels must be "accessible." Legal consensus across national transpositions enforces that "accessible" implies employees must be able to report in their primary working language.
 
-In a globalized workforce, true multilingual whistleblowing software isn't simply a "nice to have" feature--it is an absolute legal compliance requirement. This guide explores the critical difference between interface translation and deep content localization, analyzes GDPR implications for cross-border data routing, and compares how top platforms address the massive linguistic diversity of the European Union.
+In a globalized workforce, true multilingual [whistleblowing software](/) isn't simply a "nice to have" feature--it is an absolute legal compliance requirement. This guide explores the critical difference between interface translation and deep content localization, analyzes GDPR implications for cross-border data routing, and compares how top platforms address the massive linguistic diversity of the European Union.
 
 ---
 
@@ -929,7 +929,7 @@ VoxWel provides instantaneous, localized interface support in over **200+ langua
 Every language. Complete EU hosting. Total security.
 **$1 per employee, per month.**
 
-**[Explore VoxWel's Multilingual Capabilities Today](#)** and launch your EU-wide compliance channel in under 24 hours.
+**[Explore VoxWel's Multilingual Capabilities Today](/demo)** and launch your EU-wide compliance channel in under 24 hours.
     `,
   },
   {
@@ -979,7 +979,7 @@ Every language. Complete EU hosting. Total security.
     content: `
 The transposition deadline for the EU Whistleblowing Directive has officially passed. Every organization across the European Union with 50 or more employees is now legally required to maintain secure, internal reporting channels.
 
-But here is the critical flaw many EU employers are discovering too late: simply having a web form or an HR email address does **not** comply with the Directive. Worse, many popular, global whistleblowing software platforms fail to meet the specific technical and operational stipulations required by localized EU transpositions.
+But here is the critical flaw many EU employers are discovering too late: simply having a web form or an HR email address does **not** comply with the Directive. Worse, many popular, global [whistleblowing software](/) platforms fail to meet the specific technical and operational stipulations required by localized EU transpositions.
 
 In this guide, we break down exactly what makes a software platform EU Directive-compliant. We then analyze and compare seven leading whistleblowing vendors in the 2026 market to determine which ones actually fulfill all six core requirements, how fast they can be implemented, and how much they cost.
 
@@ -1137,7 +1137,7 @@ VoxWel was engineered to directly address the failures of legacy whistleblowing 
 
 Best of all? It costs **$1 per employee, per month.**
 
-Get compliant instantly. **[Start your 14-day free trial of VoxWel](#)** today. No setup fees, no implementation consultants--just total compliance.
+Get compliant instantly. **[Start your 14-day free trial of VoxWel](/demo)** today. No setup fees, no implementation consultants--just total compliance.
     `,
   },
   {
@@ -1186,7 +1186,7 @@ Get compliant instantly. **[Start your 14-day free trial of VoxWel](#)** today. 
       },
     ],
     content: `
-When organizations set out to purchase whistleblowing software, they usually encounter a frustrating reality: almost no one publishes their prices. In an industry built on transparency, pricing remains heavily guarded behind "Book a Demo" buttons.
+When organizations set out to purchase [whistleblowing software](/), they usually encounter a frustrating reality: almost no one publishes their prices. In an industry built on transparency, pricing remains heavily guarded behind "Book a Demo" buttons.
 
 The variance is enormous. A 500-employee company might be quoted $500 per year by one vendor and $15,000 per year by another for largely identical technical functionality. This price opacity makes budgeting for compliance unnecessarily difficult.
 
@@ -1333,14 +1333,14 @@ That’s it. There are:
 
 Whether you have 50 employees or 5,000, you deserve access to the strongest anonymous reporting technology on the market to protect your team and detect fraud early. 
 
-Ready to see how simple compliance can be? **[Start your 14-day free trial of VoxWel](#)** today, or explore our transparent **[pricing details](#)**.
+Ready to see how simple compliance can be? **[Start your 14-day free trial of VoxWel](/demo)** today, or explore our transparent **[pricing details](/#pricing)**.
     `,
   },
   {
     slug: "best-navex-alternative",
     title:
       "Best NAVEX Alternative: 4 Options Cheaper, Faster, and Just as Compliant",
-    metaTitle: "4 NAVEX Alternatives 2026: Compare Real Pricing",
+    metaTitle: "NAVEX Global Alternatives 2026: 4 EthicsPoint Options",
     metaDescription:
       "Quoted $500–$5,000/month by NAVEX? Compare 4 alternatives with EU compliance, anonymous reporting and audit trails from $1/employee.",
     excerpt:
@@ -1388,7 +1388,7 @@ NAVEX does not list pricing publicly. Based on documented customer experiences a
 
 For a 200-employee organization using only the EthicsPoint reporting channel (not the full GRC suite), the realistic annual cost is $12,000–$30,000 including setup.
 
-For a 200-employee organization using VoxWel, the annual cost is $2,400. No setup fee.
+For a 200-employee organization using [VoxWel's whistleblowing software](/), the annual cost is $2,400. No setup fee.
 
 ---
 
@@ -1404,7 +1404,7 @@ For a 200-employee organization using VoxWel, the annual cost is $2,400. No setu
 
 ---
 
-## The 4 Best NAVEX Alternatives in 2025
+## The 4 Best NAVEX Alternatives in 2026
 
 ### 1. VoxWel -- Best Overall for SMB and Mid-Market
 
@@ -1522,7 +1522,7 @@ Start your 14-day free trial at [voxwel.com](/demo).
 
 ---
 
-*VoxWel is an anonymous employee reporting platform. Learn more at [voxwel.com](/demo).*
+*VoxWel is an anonymous employee reporting platform. Learn more about [VoxWel whistleblowing software](/).*
 
     `,
   },
@@ -1567,7 +1567,7 @@ Start your 14-day free trial at [voxwel.com](/demo).
         position: 5,
         type: "email-capture",
         content:
-          "**UK employers with EU subsidiaries face dual obligations.** Get our free guide: *Navigating PIDA + EU Directive Compliance for UK Organizations with European Operations.* **[Email me the guide →](#)**",
+          "**UK employers with EU subsidiaries face dual obligations.** Get our free guide: *Navigating PIDA + EU Directive Compliance for UK Organizations with European Operations.* **[Email me the guide →](/demo)**",
       },
     ],
     content: `
@@ -1744,7 +1744,7 @@ A single reporting channel -- one that meets both PIDA best practice and EU Dire
 
 ## VoxWel: Built for UK Employers
 
-VoxWel was designed with UK and EU compliance requirements at its core. The platform satisfies PIDA best practice -- genuine technical anonymity, accessible reporting, documented workflow, and audit trail -- while meeting all six requirements of the EU Whistleblowing Directive for organizations with EU operations.
+[VoxWel's whistleblowing software](/) was designed with UK and EU compliance requirements at its core. The platform satisfies PIDA best practice -- genuine technical anonymity, accessible reporting, documented workflow, and audit trail -- while meeting all six requirements of the EU Whistleblowing Directive for organizations with EU operations.
 
 For UK employers with employees across multiple EU jurisdictions, VoxWel provides a single reporting platform that covers both regulatory frameworks.
 
@@ -1754,7 +1754,7 @@ Start a 14-day free trial at [voxwel.com](/demo).
 
 ---
 
-*VoxWel is an anonymous employee reporting platform. Learn more at [voxwel.com](/demo).*
+*VoxWel is an anonymous employee reporting platform. See how [VoxWel's anonymous whistleblowing platform](/) works.*
 
     `,
   },
@@ -1804,11 +1804,11 @@ Start a 14-day free trial at [voxwel.com](/demo).
       },
     ],
     content: `
-The whistleblowing software market has grown rapidly since the EU Whistleblowing Directive came into force in 2021. There are now over 30 vendors offering some version of anonymous reporting infrastructure -- from full enterprise GRC suites to lightweight digital reporting tools.
+The [whistleblowing software](/) market has grown rapidly since the EU Whistleblowing Directive came into force in 2021. There are now over 30 vendors offering some version of anonymous reporting infrastructure -- from full enterprise GRC suites to lightweight digital reporting tools.
 
 Most of them look similar from the outside. Anonymous reporting, case management, audit trail, GDPR compliance -- these features appear on nearly every product page. The differences that actually determine which tool is right for your organization are harder to see: how anonymity is technically implemented, whether EU Directive compliance is built in or bolted on, how report volumes compare in practice, and what the real total cost is at your headcount.
 
-This guide compares the 10 most widely used platforms on the dimensions that matter most to HR Directors and Compliance Officers making this decision in 2025.
+This guide compares the 10 most widely used platforms on the dimensions that matter most to HR Directors and Compliance Officers making this decision in 2026.
 
 Specifically weighing up NAVEX EthicsPoint? See [the best NAVEX alternatives](/blogs/best-navex-alternative) or the direct [VoxWel vs NAVEX comparison](/blogs/voxwel-vs-navex). Want the detailed price breakdown behind the numbers below? [Our full pricing comparison](/blogs/whistleblowing-software-pricing-comparison) covers eight vendors at four company sizes.
 
@@ -1832,7 +1832,7 @@ Each platform was assessed against six criteria:
 
 ---
 
-## The Top 10 Whistleblowing Software Platforms in 2025
+## The Top 10 Whistleblowing Software Platforms in 2026
 
 ### 1. VoxWel
 
@@ -2109,210 +2109,7 @@ Start your free trial at [voxwel.com](/demo).
 
 ---
 
-*VoxWel is an anonymous employee reporting platform. Learn more at [voxwel.com](/demo).*
-
-    `,
-  },
-  {
-    slug: "case-study-manufacturing-fraud-detection",
-    title:
-      "Case Study: How a 500-Employee Manufacturer Caught $2.3M in Expense Fraud in 48 Hours",
-    metaTitle: "Case Study: $2.3M Fraud Caught in 48 Hours | VoxWel",
-    metaDescription:
-      "How a manufacturer caught a $2.3M expense fraud scheme in 48 hours using VoxWel's anonymous reporting: full timeline and ROI breakdown.",
-    excerpt:
-      "Most fraud schemes run for 14 months before detection. This manufacturer caught a $2.3M expense fraud ring in 48 hours — because one employee felt safe enough to report anonymously. Here's the full case study with metrics, timeline, and ROI.",
-    category: "Case Study",
-    date: "2026-04-15",
-    readTime: "8 min",
-    author: { name: "VoxWel Team", role: "Workplace Safety Advocates" },
-    tags: [
-      "fraud case study",
-      "expense fraud detection",
-      "anonymous reporting ROI",
-      "manufacturing compliance",
-      "VoxWel case study",
-      "fraud detection metrics",
-    ],
-    icon: "FiAlertTriangle",
-    color: "from-red-500 to-red-700",
-    leadMagnet: {
-      title: "Fraud Response Playbook: The Exact 48-Hour Protocol",
-      description:
-        "The step-by-step protocol this manufacturer used to investigate and resolve the fraud in 48 hours — including investigation sequence, legal actions, and communication templates.",
-      fileType: "PDF",
-      ctaText: "Download the Fraud Response Playbook",
-      placement: "both",
-    },
-    midPostCTAs: [
-      {
-        position: 2,
-        type: "lead-magnet",
-        content:
-          "**📥 Download the exact 48-hour fraud response protocol** this manufacturer used — investigation sequence, legal actions, and communication templates. [Get the playbook →](/demo)",
-      },
-      {
-        position: 4,
-        type: "trial",
-        content:
-          "**Your next fraud scheme is probably running right now.** The median detection time without anonymous reporting is 14 months. With VoxWel, it's 48 hours. [Start your 14-day free trial →](/demo)",
-      },
-    ],
-    content: `
-**Company:** Midwest Precision Manufacturing (name changed for confidentiality)
-**Industry:** Automotive parts manufacturing
-**Employees:** 523
-**Annual Revenue:** $84M
-**Fraud Type:** Collusive expense reimbursement and vendor kickback scheme
-**Amount Detected:** $2.34M over 18 months
-**Detection Time:** 48 hours from first anonymous report to confirmed findings
-
----
-
-## The Background
-
-Midwest Precision Manufacturing had operated for 12 years with no formal whistleblowing program. Like many mid-market manufacturers, they relied on a combination of annual external audits, managerial oversight, and an "open door" HR policy.
-
-The company had grown rapidly -- from 180 employees to 523 in four years -- following a major contract with an automotive OEM. The finance team was stretched thin. The controller had been with the company for 9 years and was implicitly trusted.
-
-What nobody knew: the controller had built a collusive fraud scheme involving three direct reports and two external vendors.
-
----
-
-## The Fraud Scheme
-
-The scheme operated across three interconnected channels:
-
-### 1. Fictitious Vendor Invoices
-The controller created two shell companies -- "MPM Logistics Services" and "Quality Control Solutions LLC" -- both registered to addresses in neighboring counties. Between January 2024 and June 2025, these vendors submitted 147 invoices totaling $1.89M for services that were never performed.
-
-### 2. Inflated Expense Reimbursements
-Three department managers submitted inflated expense reports for "client entertainment" and "supplier relationship management." Individual claims ranged from $800 to $4,200, always just below the $5,000 threshold requiring secondary approval. Total: $340K over 18 months.
-
-### 3. Kickbacks on Real Vendor Contracts
-The controller directed $2.1M in legitimate tooling contracts to a preferred supplier in exchange for 8% cash kickbacks on each invoice. Kickback total: $168K.
-
-**Combined fraud exposure: $2.34M**
-
----
-
-## How It Was Detected
-
-### Tuesday, 9:47 AM -- The Anonymous Report
-
-A senior accounts payable clerk -- we'll call her "M.R." -- submitted a report through VoxWel's anonymous channel. She had noticed something that didn't add up:
-
-> "The vendor 'MPM Logistics Services' has submitted 23 invoices in the last 6 months for $284,000. I've worked here 7 years and I've never seen a single truck from them. The invoices always come on Tuesdays, always have the same formatting, and the purchase orders are always approved by the same person -- the controller. I don't want to cause trouble but this doesn't feel right."
-
-### Tuesday, 10:15 AM -- Automated Acknowledgment
-The report was automatically acknowledged through VoxWel's two-way messaging system. The CFO -- designated as the primary case handler -- received an immediate alert.
-
-### Tuesday, 11:30 AM -- Initial Triage
-The CFO reviewed the report and flagged it as high priority. The specificity of the allegation -- named vendor, dollar amount, named individual, behavioral pattern -- made it immediately actionable.
-
-### Tuesday, 2:00 PM -- Anonymous Follow-Up
-Using VoxWel's two-way messaging, the CFO asked two clarifying questions without knowing the reporter's identity:
-
-* "Can you tell us the date range of the most recent invoices from this vendor?"
-* "Are there any other vendors that follow this same pattern?"
-
-M.R. responded within 30 minutes with specific invoice numbers and flagged a second vendor -- "Quality Control Solutions LLC."
-
-### Wednesday, 9:00 AM -- Document Collection
-The internal audit team pulled all invoices from both vendors for the preceding 24 months. They cross-referenced with shipping logs, visitor records, and project management systems. No evidence of services rendered was found.
-
-### Wednesday, 3:00 PM -- Controller Confrontation
-The controller was placed on administrative leave. During an initial interview, presented with the documentation, the controller resigned and agreed to cooperate with the investigation.
-
-### Wednesday, 4:30 PM -- Full Confession
-In exchange for limited legal exposure, the controller confessed to the full scope of the scheme, named the three manager accomplices, and provided documentation of the kickback arrangement.
-
-**Total elapsed time from first report to confirmed findings: 48 hours.**
-
----
-
-## The Financial Outcome
-
-| Category | Amount | Recovery Status |
-| :--- | :--- | :--- |
-| Fictitious vendor invoices | $1,890,000 | 73% recovered via insurance and legal settlement |
-| Inflated expense reimbursements | $340,000 | 61% recovered from terminated managers |
-| Kickback scheme | $168,000 | 0% -- cash kickbacks unrecoverable |
-| **Total fraud exposure** | **$2,398,000** | **68% net recovery** |
-| Investigation and legal costs | $87,000 | N/A |
-| **Net loss after recovery** | **$853,000** | N/A |
-
-Without the anonymous report, the scheme was projected to continue for at least another 12 months at the same velocity, adding an estimated $1.56M in additional losses before external audit detection.
-
----
-
-## Why Traditional Detection Failed
-
-The company had undergone two external audits during the 18-month fraud period. Neither auditor flagged the scheme. Here's why:
-
-**External audits sample, they don't investigate.** The fraudulent invoices had proper approval signatures, supporting documentation (fabricated but complete), and fell within normal business parameters. Auditors tested 25 invoices from each vendor. All 25 appeared legitimate on paper.
-
-**The controller controlled the narrative.** As the person responsible for vendor relationships and invoice approval, the controller could redirect questions, provide plausible explanations, and control what documentation auditors saw.
-
-**Employees knew something was wrong but had no safe channel.** Post-investigation interviews revealed that at least four other employees had observed suspicious patterns. None had reported through the "open door" HR policy because the controller was a senior, trusted figure with direct influence over career advancement in the finance department.
-
----
-
-## The Role of Anonymous Reporting
-
-M.R. later disclosed her identity voluntarily after the investigation concluded. In her statement:
-
-> "I noticed the pattern six months ago. I almost reported it three times but I kept stopping myself. The controller signs my performance reviews. His office is 20 feet from mine. If I was wrong, or if he found out it was me, my career here would be over. The anonymous channel is the only reason I said anything. I literally would not have reported this any other way."
-
-This is the critical insight: **the fraud was not detected by better auditing. It was detected by better reporting infrastructure.**
-
----
-
-## ROI Analysis: What This Case Tells Us About Anonymous Reporting Investment
-
-| Metric | Value |
-| :--- | :--- |
-| VoxWel annual cost (500 employees) | $6,000/year |
-| Fraud detected and prevented | $2.34M + $1.56M projected additional = $3.9M total |
-| Investigation and legal costs | $87,000 |
-| Net fraud prevented | $3.81M |
-| **ROI on VoxWel investment** | **63,400%** |
-| Payback period | Under 6 hours |
-
-Even using conservative estimates -- if we assume only 10% of the fraud would have been detected through other means within 24 months -- the net value of early detection still exceeds $380,000. Against a $6,000 annual platform cost, the ROI is 6,233%.
-
----
-
-## What This Company Changed After the Investigation
-
-1. **Mandatory anonymous reporting channel.** VoxWel was rolled out company-wide within 72 hours of the controller's resignation. QR codes posted in every break room, warehouse, and office floor.
-2. **Segregation of duties overhaul.** No single individual can now approve vendor onboarding, authorize invoices, and reconcile accounts.
-3. **Mandatory vacation policy.** All finance employees must take 10 consecutive days of leave annually, during which their functions are covered by others.
-4. **Random audit sampling.** Internal audit now performs unannounced deep-dives on 5% of all vendor relationships quarterly.
-
----
-
-## What You Should Take From This Case
-
-The most important metric in this case is not the $2.34M fraud amount. It's the **48-hour detection window.**
-
-Organizations without anonymous reporting channels detect fraud in a median of 14 months (ACFE data). By that point, median losses are $117,000, the fraud has often become culturally embedded, and recovery rates are significantly lower.
-
-Organizations with trusted anonymous reporting channels detect fraud faster because employees feel safe reporting anomalies while they're still anomalies -- before they become established patterns, before they compound, and before they reach catastrophic scale.
-
-The question is not whether your organization can afford a $1/employee/month anonymous reporting platform.
-
-**The question is whether you can afford not to have one.**
-
----
-
-*Want the exact 48-hour fraud response protocol this manufacturer used? Download the free Fraud Response Playbook above -- it includes the investigation sequence, legal action templates, and internal communication scripts.*
-
-**[Start your 14-day free trial of VoxWel](#)** and deploy anonymous reporting across your organization in under 24 hours.
-
----
-
-*VoxWel is an anonymous employee reporting platform. Case study published with client permission (identifying details changed). Learn more at [voxwel.com](/demo).*
+*VoxWel is an anonymous employee reporting platform. Learn more at [voxwel.com](/).*
 
     `,
   },
@@ -2603,11 +2400,11 @@ After launch, verify your compliance status against the EU Whistleblowing Direct
 
 **Your 48-hour implementation starts with a 5-minute account creation.**
 
-**[Start your free 14-day trial of VoxWel](#)** -- no credit card required, full platform access, live in under 24 hours.
+**[Start your free 14-day trial of VoxWel](/demo)** -- no credit card required, full platform access, live in under 24 hours.
 
 ---
 
-*VoxWel is an anonymous employee reporting platform. Learn more at [voxwel.com](/demo).*
+*VoxWel is an anonymous employee reporting platform. Learn more about [VoxWel whistleblowing software](/).*
 
     `,
   },
@@ -2656,7 +2453,7 @@ After launch, verify your compliance status against the EU Whistleblowing Direct
         position: 4,
         type: "email-capture",
         content:
-          "**Need a custom security assessment?** Our security team can provide a tailored threat model analysis, penetration test summary, or compliance mapping document specific to your organization's requirements. **[Request a security briefing →](#)**",
+          "**Need a custom security assessment?** Our security team can provide a tailored threat model analysis, penetration test summary, or compliance mapping document specific to your organization's requirements. **[Request a security briefing →](/demo)**",
       },
     ],
     content: `
@@ -2906,7 +2703,7 @@ A: Yes. SOC 2 Type II, ISO 27001, ISO 27017, and ISO 27018 certified. Penetratio
 
 *For a custom security assessment or to schedule a briefing with our security team, contact info@lumoraventures.com.*
 
-**[Download the one-page Security Architecture Datasheet ->](#)**
+**[Download the one-page Security Architecture Datasheet ->](/demo)**
 
 ---
 
@@ -3129,7 +2926,7 @@ Every month of deferral is a month of problems compounding in silence.
 
 ---
 
-**[Start your 14-day free trial of VoxWel](#)** -- no credit card required, live in under 24 hours, cancel anytime.
+**[Start your 14-day free trial of VoxWel](/demo)** -- no credit card required, live in under 24 hours, cancel anytime.
 
 **For a 200-employee organization, the first month costs $200. The first month of deferral costs $1,257.**
 
@@ -3139,7 +2936,7 @@ Every month of deferral is a month of problems compounding in silence.
 
 ---
 
-*VoxWel is an anonymous employee reporting platform. Learn more at [voxwel.com](/demo).*
+*VoxWel is an anonymous employee reporting platform. See how [VoxWel's anonymous whistleblowing platform](/) works.*
 
     `,
   },
@@ -3279,7 +3076,7 @@ Start a 14-day free trial at [voxwel.com](/demo).
 
 ---
 
-*VoxWel is an anonymous employee reporting platform. Learn more at [voxwel.com](/demo).*
+*VoxWel is an anonymous employee reporting platform. Learn more at [voxwel.com](/).*
 
     `,
   },
@@ -3465,7 +3262,7 @@ Start a 14-day free trial at [voxwel.com](/demo).
 
 ---
 
-*VoxWel is an anonymous employee reporting platform. Learn more at [voxwel.com](/demo).*
+*VoxWel is an anonymous employee reporting platform. Explore [VoxWel, whistleblowing software for growing teams](/).*
 
     `,
   },
@@ -3585,7 +3382,7 @@ A SOX-compliant reporting program requires four elements working together:
 
 ## VoxWel for SOX Compliance
 
-VoxWel provides the anonymous reporting channel that is the foundation of SOX Section 301 compliance. Anonymous submissions, automated acknowledgment, two-way messaging for follow-up, and a full audit trail that retains every complaint and response.
+[VoxWel](/) is whistleblowing software that provides the anonymous reporting channel that is the foundation of SOX Section 301 compliance. Anonymous submissions, automated acknowledgment, two-way messaging for follow-up, and a full audit trail that retains every complaint and response.
 
 For public companies that want their reporting channel to serve both SOX requirements and EU Whistleblowing Directive compliance in a single platform, VoxWel handles both.
 
@@ -3593,7 +3390,7 @@ Start a 14-day free trial at [voxwel.com](/demo).
 
 ---
 
-*VoxWel is an anonymous employee reporting platform. Learn more at [voxwel.com](/demo).*
+*VoxWel is an anonymous employee reporting platform. Learn more about [VoxWel whistleblowing software](/).*
 
     `,
   },
@@ -3617,7 +3414,7 @@ Start a 14-day free trial at [voxwel.com](/demo).
         position: 3,
         type: "email-capture",
         content:
-          "**Want the early warning system dashboard?** Get our free guide: *7 Culture Metrics Every HR Director Should Track Monthly* — includes the exact KPIs, benchmarks, and measurement methods. **[Email me the guide →](#)**",
+          "**Want the early warning system dashboard?** Get our free guide: *7 Culture Metrics Every HR Director Should Track Monthly* — includes the exact KPIs, benchmarks, and measurement methods. **[Email me the guide →](/demo)**",
       },
       {
         position: 5,
@@ -3710,7 +3507,7 @@ Start a 14-day free trial at [voxwel.com](/demo).
 
 ---
 
-*VoxWel is an anonymous employee reporting platform. Learn more at [voxwel.com](/demo).*
+*VoxWel is an anonymous employee reporting platform. See how [VoxWel's anonymous whistleblowing platform](/) works.*
 
     `,
   },
@@ -3807,7 +3604,7 @@ Start a 14-day free trial at [voxwel.com](/demo).
 
 ---
 
-*VoxWel is an anonymous employee reporting platform. Learn more at [voxwel.com](/demo).*
+*VoxWel is an anonymous employee reporting platform. Learn more at [voxwel.com](/).*
 
     `,
   },
@@ -3865,7 +3662,7 @@ EthicsPoint is designed for enterprise organizations -- typically 1,000+ employe
 
 ## VoxWel: What It Is
 
-VoxWel is an anonymous employee reporting platform designed for HR Directors and Compliance Officers who need a professional, compliance-grade reporting channel without enterprise complexity or enterprise pricing.
+[VoxWel](/) is anonymous whistleblowing software designed for HR Directors and Compliance Officers who need a professional, compliance-grade reporting channel without enterprise complexity or enterprise pricing.
 
 Employees report via QR code or web link with zero-knowledge encryption. No account. No phone call required. Two-way anonymous messaging. Automated acknowledgment. Seven-stage case workflow with full audit trail. EU Whistleblowing Directive compliance documentation built in. GDPR-compliant data handling. Employee Happiness Indicator analytics.
 
@@ -3926,7 +3723,7 @@ Start a 14-day free trial at [voxwel.com](/demo). No enterprise contract require
 
 ---
 
-*VoxWel is an anonymous employee reporting platform. Learn more at [voxwel.com](/demo).*
+*VoxWel is an anonymous employee reporting platform. Explore [VoxWel, whistleblowing software for growing teams](/).*
 
     `,
   },
@@ -4097,7 +3894,7 @@ Start a 14-day free trial at [voxwel.com](/demo).
 
 ---
 
-*VoxWel is an anonymous employee reporting platform for HR and compliance teams. Learn more at [voxwel.com](/demo).*
+*VoxWel is an anonymous employee reporting platform for HR and compliance teams. Learn more about [VoxWel whistleblowing software](/).*
 
     `,
   },
@@ -4242,7 +4039,7 @@ A compliance hotline that satisfies regulatory requirements and generates meanin
 
 ## VoxWel: A Modern Compliance Hotline Built for HR
 
-VoxWel provides all the components of a modern compliance hotline -- anonymous digital reporting, mobile-first UX, two-way anonymous messaging, automated acknowledgment, case management, and audit trail -- at $1 per employee per month.
+[VoxWel](/) is whistleblowing software that provides all the components of a modern compliance hotline -- anonymous digital reporting, mobile-first UX, two-way anonymous messaging, automated acknowledgment, case management, and audit trail -- at $1 per employee per month.
 
 For organizations currently spending $500–$2,000 per month on a phone-only hotline, VoxWel provides superior compliance infrastructure -- higher report volumes, stronger technical anonymity, better documentation, full EU Directive compliance -- at a fraction of the cost.
 
@@ -4250,7 +4047,7 @@ Setup in under 24 hours. 14-day free trial at [voxwel.com](/demo).
 
 ---
 
-*VoxWel is an anonymous employee reporting platform for HR and compliance teams. Learn more at [voxwel.com](/demo).*
+*VoxWel is an anonymous employee reporting platform for HR and compliance teams. See how [VoxWel's anonymous whistleblowing platform](/) works.*
 
     `,
   },
@@ -4296,7 +4093,7 @@ Setup in under 24 hours. 14-day free trial at [voxwel.com](/demo).
         position: 5,
         type: "email-capture",
         content:
-          "**Want quarterly harassment statistics updates?** Join 2,400+ HR Directors who receive our quarterly data brief with the latest EEOC, SHRM, and Gallup findings. **[Subscribe to the data brief →](#)**",
+          "**Want quarterly harassment statistics updates?** Get our quarterly data brief with the latest EEOC, SHRM, and Gallup findings. **[Subscribe to the data brief →](/demo)**",
       },
     ],
     content: `
@@ -4441,7 +4238,7 @@ Start a 14-day free trial at [voxwel.com](/demo).
 
 ---
 
-*VoxWel is an anonymous employee reporting platform for HR and compliance teams. Learn more at [voxwel.com](/demo).*
+*VoxWel is an anonymous employee reporting platform for HR and compliance teams. Learn more at [voxwel.com](/).*
 
     `,
   },
@@ -4846,7 +4643,7 @@ The organizations that prevent violence are not those with the most security cam
 
 ---
 
-*VoxWel provides anonymous reporting infrastructure that helps organizations detect behavioral warning signs early. Learn more at [voxwel.com](/demo).*
+*VoxWel provides anonymous reporting infrastructure that helps organizations detect behavioral warning signs early. Explore [VoxWel, whistleblowing software for growing teams](/).*
 \n
     `,
   },
@@ -4890,7 +4687,7 @@ The organizations that prevent violence are not those with the most security cam
         position: 4,
         type: "email-capture",
         content:
-          "**Get quarterly legal updates for HR professionals.** Join 3,100+ HR leaders who receive our case law brief with the latest rulings affecting workplace compliance. **[Subscribe →](#)**",
+          "**Get quarterly legal updates for HR professionals.** Get our case law brief with the latest rulings affecting workplace compliance. **[Subscribe →](/demo)**",
       },
     ],
     content: `
@@ -4983,7 +4780,7 @@ Five trends emerge from these cases that should inform every HR policy review:
 
 ---
 
-*VoxWel helps organizations build reporting infrastructure that meets current legal standards. Learn more at [voxwel.com](/demo).*
+*VoxWel helps organizations build reporting infrastructure that meets current legal standards. Learn more about [VoxWel whistleblowing software](/).*
 \n
     `,
   },
@@ -5160,7 +4957,7 @@ HR teams should track:
 
 ---
 
-*VoxWel provides anonymous reporting infrastructure that helps organizations surface discrimination concerns employees would otherwise never raise. Learn more at [voxwel.com](/demo).*
+*VoxWel provides anonymous reporting infrastructure that helps organizations surface discrimination concerns employees would otherwise never raise. See how [VoxWel's anonymous whistleblowing platform](/) works.*
 \n
     `,
   },
@@ -5323,7 +5120,7 @@ Encouraging anonymous reporting is not a communication campaign -- it is an orga
 
 ---
 
-*VoxWel provides anonymous reporting infrastructure designed for adoption -- simple, accessible, and genuinely anonymous. Learn more at [voxwel.com](/demo).*
+*VoxWel provides anonymous reporting infrastructure designed for adoption -- simple, accessible, and genuinely anonymous. Learn more at [voxwel.com](/).*
 \n
     `,
   },
@@ -5362,7 +5159,7 @@ Encouraging anonymous reporting is not a communication campaign -- it is an orga
         position: 5,
         type: "trial",
         content:
-          "**VoxWel is $1/employee/month — no setup fees, no hidden costs, cancel anytime.** See why 2,000+ organizations switched from $5–10/employee legacy hotlines. [Start free trial →](/demo)",
+          "**VoxWel is $1/employee/month — no setup fees, no hidden costs, cancel anytime.** Compare that with $5–10/employee for legacy hotlines. [Start free trial →](/demo)",
       },
     ],
     content: `
@@ -5807,7 +5604,7 @@ GDPR requires documented evidence of compliance. For whistleblowing channels, ma
 
 ---
 
-*VoxWel provides GDPR-compliant anonymous reporting with zero-knowledge architecture and a complete DPO documentation package. Learn more at [voxwel.com](/demo).*
+*VoxWel provides GDPR-compliant anonymous reporting with zero-knowledge architecture and a complete DPO documentation package. Explore [VoxWel, whistleblowing software for growing teams](/).*
 \n
     `,
   },
@@ -5966,7 +5763,7 @@ Effective employee relations requires:
 
 ---
 
-*VoxWel provides anonymous reporting infrastructure that integrates with ER case management, helping teams shift from reactive to proactive employee relations. Learn more at [voxwel.com](/demo).*
+*VoxWel provides anonymous reporting infrastructure that integrates with ER case management, helping teams shift from reactive to proactive employee relations. Learn more about [VoxWel whistleblowing software](/).*
 \n
     `,
   },
@@ -6102,7 +5899,7 @@ Track:
 
 ---
 
-*VoxWel provides anonymous reporting infrastructure with fraud-specific categories, two-way communication, and finance team integration. Learn more at [voxwel.com](/demo).*
+*VoxWel provides anonymous reporting infrastructure with fraud-specific categories, two-way communication, and finance team integration. See how [VoxWel's anonymous whistleblowing platform](/) works.*
 \n
     `,
   },
@@ -6302,7 +6099,7 @@ Organizations with strong misconduct response capability share these characteris
 
 ---
 
-*VoxWel provides anonymous reporting infrastructure that serves as the front end of organizational misconduct detection. Learn more at [voxwel.com](/demo).*
+*VoxWel provides anonymous reporting infrastructure that serves as the front end of organizational misconduct detection. Learn more at [voxwel.com](/).*
 \n
     `,
   },
@@ -6500,7 +6297,7 @@ Organizations with anonymous reporting channels detect pressure-related concerns
 
 ---
 
-*VoxWel provides anonymous reporting that helps organizations identify workplace pressure before it becomes crisis. Learn more at [voxwel.com](/demo).*
+*VoxWel provides anonymous reporting that helps organizations identify workplace pressure before it becomes crisis. Explore [VoxWel, whistleblowing software for growing teams](/).*
 \n
     `,
   },
@@ -6641,23 +6438,23 @@ Seeking input and then visibly ignoring it is worse than not seeking input at al
 
 ---
 
-*VoxWel provides anonymous input channels that surface the perspectives employees won't share in open forums, improving organizational decision-making. Learn more at [voxwel.com](/demo).*
+*VoxWel provides anonymous input channels that surface the perspectives employees won't share in open forums, improving organizational decision-making. Learn more about [VoxWel whistleblowing software](/).*
 \n
     `,
   },
   {
     slug: "anonymous-tip-saved-company-250k",
-    title: "How an Anonymous Tip Saved a Company $250,000: A Case Study",
-    metaTitle: "Anonymous Tip Saved Company $250K: Case Study",
+    title: "How an Anonymous Tip Can Stop a $250,000 Fraud: An Illustrative Scenario",
+    metaTitle: "How an Anonymous Tip Stops a $250K Vendor Fraud",
     metaDescription:
-      "A real-world case study showing how an anonymous tip led to early fraud detection, saving a company $250,000 in prevented losses.",
+      "An illustrative procurement-fraud scenario: how one anonymous tip about vendor invoices can surface a $250,000 scheme early, step by step.",
     excerpt:
-      "An anonymous tip about unusual vendor payments led to the discovery of a $250,000 procurement fraud scheme. This case study details the timeline, investigation, and organizational response that turned a single report into significant loss prevention.",
-    category: "Case Studies",
+      "An anonymous tip about unusual vendor payments led to the discovery of a $250,000 procurement fraud scheme. This illustrative scenario walks through the timeline, investigation, and organizational response that turned a single report into significant loss prevention.",
+    category: "Best Practices",
     date: "2025-05-01",
     readTime: "7 min",
     author: { name: "VoxWel Team", role: "Workplace Safety Advocates" },
-    tags: ["Case Study", "Fraud Prevention", "Anonymous Reporting", "ROI"],
+    tags: ["Fraud Prevention", "Anonymous Reporting", "Procurement Fraud", "ROI"],
     icon: "FiDollarSign",
     color: "from-green-600 to-green-800",
     midPostCTAs: [
@@ -6665,12 +6462,12 @@ Seeking input and then visibly ignoring it is worse than not seeking input at al
         position: 2,
         type: "trial",
         content:
-          "**This company's $250K save cost them $1,200/year in reporting infrastructure.** What's your organization's potential loss prevention? [Start free trial →](/demo)",
+          "**An anonymous channel for 100 employees costs $1,200/year with VoxWel.** What could one early tip save your organization? [Start free trial →](/demo)",
       },
     ],
     content: `
 \n
-*Company and individual names have been changed to protect confidentiality.*
+*This is an illustrative scenario based on common procurement-fraud patterns. The company, people and figures are fictional, and it is not a VoxWel customer story.*
 
 ---
 
@@ -6772,7 +6569,7 @@ The Compliance Officer presented the case (anonymized) to the Board as evidence 
 
 ---
 
-*VoxWel provides anonymous reporting infrastructure that enables early detection of fraud and misconduct. Learn more at [voxwel.com](/demo).*
+*VoxWel provides anonymous reporting infrastructure that enables early detection of fraud and misconduct. See how [VoxWel's anonymous whistleblowing platform](/) works.*
 \n
     `,
   },
@@ -6934,7 +6731,7 @@ The cost of doing nothing is not zero. It is the full cost of the cases that occ
 
 ---
 
-*VoxWel provides anonymous reporting infrastructure that prevents harassment from reaching crisis level. $1/employee/month. Learn more at [voxwel.com](/demo).*
+*VoxWel provides anonymous reporting infrastructure that prevents harassment from reaching crisis level. $1/employee/month. Learn more at [voxwel.com](/).*
 \n
     `,
   },
@@ -7073,7 +6870,7 @@ If the answer to more than 2–3 of these is no, your hotline is likely failing 
 
 ---
 
-*VoxWel replaces outdated hotlines with modern anonymous reporting -- 5x more reports at 1/5 the cost. Learn more at [voxwel.com](/demo).*
+*VoxWel replaces outdated hotlines with modern anonymous reporting -- 5x more reports at 1/5 the cost. Explore [VoxWel, whistleblowing software for growing teams](/).*
 \n
     `,
   },
@@ -7292,7 +7089,7 @@ The compliance strategy that minimizes risk:
 
 ---
 
-*VoxWel provides anonymous reporting infrastructure that complies with whistleblower protection requirements across major jurisdictions. Learn more at [voxwel.com](/demo).*
+*VoxWel provides anonymous reporting infrastructure that complies with whistleblower protection requirements across major jurisdictions. Learn more about [VoxWel whistleblowing software](/).*
 \n
     `,
   },
@@ -7452,7 +7249,7 @@ Anonymous reporting tools are only effective if employees trust them. Trust is b
 
 ---
 
-*VoxWel provides anonymous harassment reporting tools designed specifically for HR investigation workflows. Learn more at [voxwel.com](/demo).*
+*VoxWel provides anonymous harassment reporting tools designed specifically for HR investigation workflows. See how [VoxWel's anonymous whistleblowing platform](/) works.*
 \n
     `,
   },
@@ -7655,7 +7452,7 @@ The cost difference between enterprise suites and modern platforms is 6–12x. F
 
 ---
 
-*VoxWel is a modern digital-first anonymous reporting platform -- $1/employee/month, zero setup fees, genuine zero-knowledge anonymity. Learn more at [voxwel.com](/demo).*
+*VoxWel is a modern digital-first anonymous reporting platform -- $1/employee/month, zero setup fees, genuine zero-knowledge anonymity. Learn more at [voxwel.com](/).*
 \n
     `,
   },
@@ -7777,7 +7574,7 @@ Modern whistleblower hotlines are increasingly required by law:
 
 ---
 
-*VoxWel provides modern digital anonymous reporting that replaces outdated phone hotlines. $1/employee/month. Learn more at [voxwel.com](/demo).*
+*VoxWel provides modern digital anonymous reporting that replaces outdated phone hotlines. $1/employee/month. Explore [VoxWel, whistleblowing software for growing teams](/).*
 \n
     `,
   },
@@ -7922,7 +7719,7 @@ When retaliation occurs, the consequences must be real and visible. Termination 
 
 ---
 
-*VoxWel provides anonymous reporting infrastructure with built-in retaliation monitoring guidance. Learn more at [voxwel.com](/demo).*
+*VoxWel provides anonymous reporting infrastructure with built-in retaliation monitoring guidance. Learn more about [VoxWel whistleblowing software](/).*
 \n
     `,
   },
@@ -8095,7 +7892,7 @@ Organizations with strong speak-up cultures treat anonymous reporting as one cha
 
 ---
 
-*VoxWel provides anonymous reporting infrastructure that supports speak-up culture building. Learn more at [voxwel.com](/demo).*
+*VoxWel provides anonymous reporting infrastructure that supports speak-up culture building. See how [VoxWel's anonymous whistleblowing platform](/) works.*
 \n
     `,
   },
@@ -8268,7 +8065,7 @@ Monitor compliance continuously: acknowledgment timeliness, investigation timeli
 
 ---
 
-*VoxWel is EU Directive compliant out-of-the-box with 7-day auto-acknowledgment, 3-month investigation tracking, anonymous reporting, and GDPR compliance. Learn more at [voxwel.com](/demo).*
+*VoxWel is EU Directive compliant out-of-the-box with 7-day auto-acknowledgment, 3-month investigation tracking, anonymous reporting, and GDPR compliance. Learn more at [voxwel.com](/).*
 \n
     `,
   },
