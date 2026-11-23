@@ -27,6 +27,11 @@ export const metadata: Metadata = {
     "VoxWel is whistleblowing software for growing companies: encrypted anonymous reporting, case management and audit trail. EU Directive & GDPR ready. $1/employee/month.",
   alternates: {
     canonical: "https://voxwel.com",
+    languages: {
+      en: "https://voxwel.com",
+      fr: "https://voxwel.com/fr/logiciel-lancement-alerte",
+      "x-default": "https://voxwel.com",
+    },
   },
   openGraph: {
     url: "https://voxwel.com",

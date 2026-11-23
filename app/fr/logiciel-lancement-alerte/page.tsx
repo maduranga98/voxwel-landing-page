@@ -4,310 +4,249 @@ import Footer from "@/components/Footer";
 
 const siteUrl = "https://voxwel.com";
 const pageUrl = `${siteUrl}/fr/logiciel-lancement-alerte`;
+// Closest English equivalent: the homepage ("whistleblowing software").
+const enUrl = siteUrl;
+
+const title = "Logiciel d'alerte conforme : prix et obligations 2026";
+const description =
+  "Logiciel de lancement d'alerte pour les entreprises de 50 salariés et plus : obligations (loi Waserman, Directive 2019/1937), prix moyens 2026 et canal anonyme dès 1 USD par salarié.";
 
 export const metadata: Metadata = {
-  title: "Logiciel de Lancement d'Alerte Conforme 2019/1937",
-  description:
-    "Logiciel de lancement d'alerte conforme à la Directive 2019/1937 et à la Loi Sapin II, RGPD/CNIL. Mise en place en 24 h, dès 0,92 €/employé/mois.",
-  keywords: [
-    "logiciel lancement alerte",
-    "logiciel alerte professionnelle",
-    "conformité directive 2019/1937",
-    "loi sapin II logiciel",
-    "logiciel signalement conforme RGPD",
-    "canal de signalement interne",
-    "logiciel alerte conformité CNIL",
-    "whistleblowing software france",
-    "protection lanceurs alerte france",
-    "plateforme signalement anonyme france",
-  ],
+  title,
+  description,
   alternates: {
     canonical: pageUrl,
-    languages: {
-      fr: pageUrl,
-    },
+    languages: { fr: pageUrl, en: enUrl, "x-default": enUrl },
   },
   openGraph: {
-    title:
-      "Logiciel de Lancement d'Alerte Conforme 2019/1937 | VoxWel",
-    description:
-      "Conforme Directive 2019/1937, Loi Sapin II et CNIL/RGPD. Canal de signalement interne sécurisé pour PME françaises. Mise en place en 24 h.",
+    title: `${title} | VoxWel`,
+    description,
     url: pageUrl,
     locale: "fr_FR",
-    images: [{ url: "https://voxwel.com/og-image.png", width: 1200, height: 630, alt: "VoxWel anonymous employee reporting platform" }],
+    images: [
+      {
+        url: "https://voxwel.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "VoxWel logiciel de lancement d'alerte",
+      },
+    ],
     type: "website",
     siteName: "VoxWel",
   },
 };
 
-export default function FrenchWhistleblowingPage() {
+/* ── Contenu ─────────────────────────────────────────────────────────────
+ * Faits juridiques vérifiés auprès de service-public, Lefebvre Dalloz et
+ * CMS (nov. 2026). Faire relire toute modification par une personne
+ * francophone connaissant le droit des lanceurs d'alerte.
+ */
+
+const obligations = [
+  {
+    ref: "Loi Sapin II, art. 8",
+    title: "Procédure interne obligatoire dès 50 salariés",
+    law: "Toute entreprise d'au moins 50 salariés doit établir une procédure interne de recueil et de traitement des signalements, après consultation du CSE. Les entreprises de moins de 250 salariés peuvent la mutualiser.",
+    voxwel: "Fournit le canal de signalement numérique et la gestion des dossiers. Vous désignez les personnes chargées du traitement.",
+  },
+  {
+    ref: "Décret n° 2022-1284",
+    title: "Accusé de réception sous 7 jours ouvrés",
+    law: "L'auteur du signalement reçoit un accusé de réception écrit dans un délai de sept jours ouvrés.",
+    voxwel: "Accusé de réception automatique dès la soumission, avec rappels de délais pour les gestionnaires.",
+  },
+  {
+    ref: "Décret n° 2022-1284",
+    title: "Retour d'information sous 3 mois",
+    law: "L'auteur du signalement est informé, dans un délai raisonnable n'excédant pas trois mois à compter de l'accusé de réception, des mesures envisagées ou prises.",
+    voxwel: "Workflow en 7 étapes avec suivi automatique des échéances et messagerie anonyme bidirectionnelle.",
+  },
+  {
+    ref: "Directive 2019/1937, art. 9 et 16",
+    title: "Confidentialité de l'identité",
+    law: "Le canal doit garantir la confidentialité de l'identité de l'auteur du signalement, des personnes visées et des tiers mentionnés.",
+    voxwel: "Signalements chiffrés sur l'appareil (AES-256), signalement anonyme possible, accès par rôle et journal d'audit horodaté.",
+  },
+  {
+    ref: "Directive 2019/1937, art. 18",
+    title: "Conservation et traçabilité",
+    law: "Les signalements doivent être enregistrés et conservés de manière à respecter la confidentialité, sans être gardés plus longtemps que nécessaire.",
+    voxwel: "Historique complet de chaque dossier et durées de conservation paramétrables, conformément au RGPD.",
+  },
+  {
+    ref: "Code du travail, art. L1321-2",
+    title: "Règlement intérieur",
+    law: "Depuis le 1er septembre 2022, le règlement intérieur des entreprises d'au moins 50 salariés doit mentionner le dispositif de protection des lanceurs d'alerte.",
+    voxwel: "Le lien et le QR code VoxWel peuvent être référencés directement dans votre procédure et votre règlement intérieur.",
+  },
+];
+
+const pricingRows = [
+  { name: "VoxWel", note: "Canal numérique + gestion des dossiers", monthly: "100 USD", channel: "Écrit (web, QR code)", highlight: true },
+  { name: "Plateformes de milieu de gamme", note: "ex. FaceUp, Whistlelink", monthly: "env. 150–400 €", channel: "Écrit, parfois message vocal" },
+  { name: "Hotline téléphonique externalisée", note: "avec centre d'appels", monthly: "env. 500–2 000 €", channel: "Oral" },
+  { name: "Suites enterprise", note: "ex. EQS, NAVEX", monthly: "sur devis, souvent 1 000 €+", channel: "Écrit et oral" },
+];
+
+const sanctions = [
+  { metric: "1 an + 15 000 €", label: "d'amende pour toute personne faisant obstacle à la transmission d'un signalement", source: "Loi Sapin II, art. 13" },
+  { metric: "60 000 €", label: "d'amende civile en cas de procédure abusive ou dilatoire contre un lanceur d'alerte", source: "Loi Waserman (2022)" },
+  { metric: "43 %", label: "des fraudes internes sont détectées grâce à un signalement (perte médiane : 145 000 USD par cas)", source: "ACFE, Occupational Fraud 2024" },
+];
+
+const faqs = [
+  {
+    q: "Quel est le prix moyen d'un logiciel d'alerte conforme à la directive européenne ?",
+    a: "Il n'existe pas de prix moyen officiel, car beaucoup d'éditeurs ne publient pas leurs tarifs. À titre indicatif, pour 100 salariés, comptez environ 100 à 400 € par mois pour une solution numérique et davantage pour une suite enterprise. VoxWel coûte 1 USD par salarié et par mois, soit 100 USD pour 100 salariés, sans frais d'installation.",
+  },
+  {
+    q: "Combien coûte une plateforme d'alerte pour une grande entreprise ?",
+    a: "Les suites enterprise sont généralement vendues sur devis, avec des frais de mise en place et un engagement annuel ou pluriannuel. Selon notre observation du marché, le budget annuel dépasse souvent 12 000 €. Demandez toujours un devis écrit pour votre effectif.",
+  },
+  {
+    q: "Quelles entreprises doivent mettre en place un canal de signalement ?",
+    a: "Toute entreprise employant au moins 50 salariés doit disposer d'une procédure interne de recueil et de traitement des signalements. L'obligation existe depuis la loi Sapin II et a été renforcée par la loi Waserman du 21 mars 2022, entrée en vigueur le 1er septembre 2022, puis précisée par le décret du 3 octobre 2022.",
+  },
+  {
+    q: "Quelles sanctions en cas d'obstacle au signalement ?",
+    a: "Faire obstacle à la transmission d'un signalement est puni d'un an d'emprisonnement et de 15 000 € d'amende. Une procédure abusive ou dilatoire contre un lanceur d'alerte peut entraîner une amende civile pouvant atteindre 60 000 €.",
+  },
+  {
+    q: "Les signalements anonymes sont-ils autorisés ?",
+    a: "Oui. Les signalements anonymes peuvent être reçus et traités. Une personne ayant signalé anonymement puis identifiée ultérieurement bénéficie de la protection prévue pour les lanceurs d'alerte (Directive 2019/1937, art. 6).",
+  },
+  {
+    q: "Quels fournisseurs proposent des canaux de signalement multilingues ?",
+    a: "La plupart des plateformes numériques proposent un formulaire en plusieurs langues. Vérifiez aussi que les échanges avec l'auteur du signalement et les rappels de délais fonctionnent dans chaque langue. Le formulaire VoxWel est disponible dans plus de 200 langues.",
+  },
+  {
+    q: "Un logiciel de signalement doit-il être certifié par la CNIL ?",
+    a: "Non, la CNIL ne délivre pas de certification pour ces logiciels. Elle publie un référentiel sur les dispositifs d'alerte professionnelle. Le dispositif doit respecter le RGPD : minimisation des données, durées de conservation limitées, sécurité et droits des personnes concernées.",
+  },
+  {
+    q: "VoxWel couvre-t-il tous les canaux de signalement ?",
+    a: "VoxWel couvre le canal écrit (web et QR code, 24 h/24), le signalement anonyme, l'accusé de réception, les échanges anonymes et le suivi des délais. Si votre procédure prévoit des signalements oraux (téléphone ou entretien), organisez-les en complément, par exemple avec la ligne directe de la personne référente.",
+  },
+  {
+    q: "En combien de temps VoxWel est-il opérationnel ?",
+    a: "En général en moins de 24 heures, sans projet informatique. Vous recevez un lien et un QR code à diffuser à vos salariés. Essai gratuit de 14 jours, sans carte bancaire.",
+  },
+];
+
+const sources = [
+  { label: "Service-public.fr : loi Waserman et protection des lanceurs d'alerte", href: "https://entreprendre.service-public.gouv.fr/actualites/A15838" },
+  { label: "Lefebvre Dalloz : les lanceurs d'alerte mieux protégés", href: "https://open.lefebvre-dalloz.fr/actualites/droit-social/lanceurs-alerte-mieux-proteges_fb19d809c-9614-4bda-916d-efd6b70641db" },
+  { label: "CMS : impacts de la loi du 21 mars 2022 pour les entreprises", href: "https://cms.law/en/fra/legal-updates/lanceurs-d-alerte-quels-sont-les-impacts-de-la-loi-du-21-mars-2022-pour-les-entreprises" },
+  { label: "ACFE : Occupational Fraud 2024 – A Report to the Nations", href: "https://legacy.acfe.com/report-to-the-nations/2024/" },
+];
+
+export default function LogicielLancementAlertePage() {
+  const webPageJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: title,
+    url: pageUrl,
+    inLanguage: "fr",
+    description,
+    isPartOf: { "@id": `${siteUrl}/#website` },
+    about: { "@id": `${siteUrl}/#software` },
+    publisher: { "@id": `${siteUrl}/#organization` },
+  };
+
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "Quels fournisseurs offrent une mise en place rapide d'un logiciel d'alerte conforme à la Directive 2019/1937 ?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "VoxWel est le fournisseur le plus rapide du marché français : mise en place complète en moins de 24 heures, sans équipe informatique requise. Vous recevez immédiatement un lien de signalement et un QR code à distribuer à vos salariés. D'autres fournisseurs comme FaceUp ou Whistlelink nécessitent 1 à 3 jours, tandis que les solutions entreprise comme EQS Integrity Line peuvent prendre 2 à 4 semaines. Pour respecter votre obligation légale issue de la transposition de la Directive 2019/1937 en droit français (Loi Sapin II amendée), VoxWel vous permet d'être en conformité le jour même.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Quel est le prix moyen d'un logiciel d'alerte conforme à la directive européenne ?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Le prix moyen d'un logiciel de lancement d'alerte conforme à la Directive 2019/1937 varie de 0,92 € à 15 € par employé et par mois selon les fournisseurs. VoxWel propose le tarif le plus accessible du marché à 0,92 €/employé/mois (soit 1 $ USD converti). Pour une entreprise de 100 salariés, cela représente environ 92 €/mois, contre 300 à 500 €/mois pour des solutions comme EQS ou Formalize. Les hotlines téléphoniques traditionnelles coûtent en moyenne 500 à 2 000 €/mois sans offrir les mêmes garanties d'anonymat technique.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Un logiciel de signalement conforme à la Directive 2019/1937 doit-il être certifié CNIL ?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "La CNIL n'émet pas de « certification » officielle pour les logiciels de signalement, mais elle a publié des recommandations précises applicables aux dispositifs d'alerte professionnelle. Tout logiciel doit respecter le RGPD : minimisation des données, durées de conservation définies, hébergement des données sur le territoire européen, et droit d'accès des personnes concernées. VoxWel est entièrement conforme au RGPD et aux recommandations CNIL : les données sont hébergées en Europe, supprimées automatiquement selon les délais légaux, et aucune donnée identifiante n'est collectée lors de signalements anonymes.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Quelles entreprises françaises sont obligées de mettre en place un canal de signalement interne depuis décembre 2023 ?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Depuis le 1er décembre 2023, toutes les entreprises françaises d'au moins 50 salariés sont légalement tenues de disposer d'un canal de signalement interne sécurisé en vertu de la loi du 21 mars 2022 transposant la Directive 2019/1937. Les entreprises de 250 salariés et plus étaient déjà soumises à cette obligation depuis le 1er septembre 2022. Cette obligation s'applique aux sociétés privées, aux établissements publics industriels et commerciaux, aux collectivités territoriales de plus de 10 000 habitants, et aux communes de plus de 10 000 habitants. Le non-respect expose l'entreprise à des sanctions pouvant atteindre 20 000 € d'amende.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Comment un logiciel de lancement d'alerte garantit-il l'anonymat total du salarié déclarant ?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Un logiciel de lancement d'alerte garantit l'anonymat à travers une architecture technique de bout en bout : chiffrement AES-256 des signalements avant leur transmission, absence de collecte d'adresse IP, d'empreinte numérique ou de données de session. VoxWel utilise une architecture zéro-connaissance : même les administrateurs VoxWel ne peuvent pas identifier l'auteur d'un signalement. Une boîte mail RH classique ou un formulaire web standard ne peut pas offrir ces garanties — seule une solution dédiée respecte les exigences techniques de la Directive 2019/1937 et des recommandations de la CNIL en matière d'anonymat.",
-        },
-      },
-    ],
-  };
-
-  const softwareJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    name: "VoxWel — Logiciel de Lancement d'Alerte",
-    url: pageUrl,
-    applicationCategory: "BusinessApplication",
-    operatingSystem: "Navigateur Web",
-    offers: {
-      "@type": "Offer",
-      price: "0.92",
-      priceCurrency: "EUR",
-      priceValidUntil: "2026-12-31",
-      availability: "https://schema.org/InStock",
-      description:
-        "0,92 € par employé par mois. Toutes fonctionnalités incluses. Sans frais cachés.",
-    },
-    description:
-      "Logiciel de lancement d'alerte conforme Directive 2019/1937, Loi Sapin II et RGPD/CNIL. Canal de signalement anonyme sécurisé pour PME françaises. Mise en place en 24 h.",
     inLanguage: "fr",
-  };
-
-  const breadcrumbJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Accueil",
-        item: siteUrl,
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Logiciel de Lancement d'Alerte — France",
-        item: pageUrl,
-      },
-    ],
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
   };
 
   return (
     <>
       <script
         type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
       <Navigation />
 
       <main className="pt-16">
-        {/* ── COMPLIANCE ALERT BANNER ── */}
+        {/* ── RAPPEL ── */}
         <div className="bg-amber-50 border-b border-amber-200">
           <div className="max-w-5xl mx-auto px-6 py-3 flex items-start gap-3">
-            <span className="text-amber-600 text-lg mt-0.5 shrink-0">⚠️</span>
+            <span className="text-amber-600 text-lg mt-0.5 shrink-0">⚠</span>
             <p className="text-sm text-amber-800 leading-relaxed">
-              <strong>
-                Obligation légale en vigueur depuis le 1er décembre 2023 :
-              </strong>{" "}
-              Toute entreprise française d&apos;au moins 50 salariés doit
-              disposer d&apos;un canal de signalement interne sécurisé (Loi du
-              21 mars 2022 — transposition Directive 2019/1937). Pénalité
-              jusqu&apos;à <strong>20 000 € d&apos;amende</strong>.
+              <strong>Obligation légale :</strong> toute entreprise d&apos;au moins 50
+              salariés doit disposer d&apos;une procédure interne de recueil des
+              signalements (loi Sapin II, renforcée par la loi Waserman depuis le
+              1er septembre 2022).
             </p>
           </div>
         </div>
 
         {/* ── HERO ── */}
-        <section className="bg-gradient-to-b from-slate-900 to-slate-800 text-white py-20 px-6">
+        <section className="bg-primary-navy text-white py-20 px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-primary-teal-600/20 border border-primary-teal-500/30 text-primary-teal-300 text-xs font-semibold px-4 py-2 rounded-full mb-6 uppercase tracking-wider">
-              🇫🇷 Conforme Directive 2019/1937 · Loi Sapin II · CNIL/RGPD
+            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white text-xs font-semibold px-4 py-2 rounded-full mb-6 uppercase tracking-wider">
+              France · Loi Waserman · Directive 2019/1937 · RGPD
             </div>
             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6 text-white">
-              Logiciel de Lancement d&apos;Alerte Conforme pour les Entreprises
-              Françaises
+              Logiciel de lancement d&apos;alerte conforme pour les entreprises françaises
             </h1>
-            <p className="text-xl text-slate-300 leading-relaxed mb-8 max-w-2xl mx-auto">
-              Canal de signalement interne anonyme et sécurisé. Conforme à la
-              Directive 2019/1937, la Loi Sapin II et au RGPD. Mise en place
-              en&nbsp;<strong className="text-white">moins de 24 heures</strong>
-              . À partir de{" "}
-              <strong className="text-primary-teal-300">
-                0,92 €/employé/mois
-              </strong>
-              .
+            <p className="text-xl text-white/80 leading-relaxed mb-8 max-w-2xl mx-auto">
+              Un canal de signalement anonyme et chiffré, avec accusé de réception,
+              échanges anonymes et suivi des délais. Opérationnel en moins de 24
+              heures, à partir de <strong className="text-white">1 USD par salarié et par mois</strong>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/demo"
-                className="bg-primary-teal-600 hover:bg-primary-teal-700 text-white font-bold px-8 py-4 rounded-xl transition-all shadow-lg hover:shadow-primary-teal-500/25 text-lg"
+                className="bg-primary-teal hover:opacity-90 text-white font-bold px-8 py-4 rounded-xl transition-all shadow-lg text-lg"
               >
-                📅 Planifier une Démonstration
+                Planifier une démonstration
               </a>
               <a
-                href="/#pricing"
+                href="#tarifs"
                 className="bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-4 rounded-xl border border-white/20 transition-all text-lg"
               >
                 Voir les tarifs →
               </a>
             </div>
-            <p className="mt-4 text-slate-400 text-sm">
-              Mise en place aujourd&apos;hui · Sans frais d&apos;installation ·
-              Sans équipe informatique
-            </p>
           </div>
         </section>
 
-        {/* ── TRUST BAR ── */}
-        <section className="bg-white border-b border-slate-100 py-6">
-          <div className="max-w-5xl mx-auto px-6">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-              {[
-                { stat: "24 h", label: "Mise en place garantie" },
-                { stat: "0,92 €", label: "par employé / mois" },
-                { stat: "AES-256", label: "Chiffrement militaire" },
-                { stat: "100 %", label: "Anonymat garanti" },
-              ].map((item) => (
-                <div key={item.stat} className="flex flex-col items-center">
-                  <span className="text-2xl font-extrabold text-primary-teal-600">
-                    {item.stat}
-                  </span>
-                  <span className="text-sm text-slate-500 mt-1">
-                    {item.label}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ── CHECKLIST CONFORMITÉ ── */}
-        <section className="py-20 bg-slate-50 px-6">
-          <div className="max-w-4xl mx-auto">
+        {/* ── OBLIGATIONS ── */}
+        <section className="section-padding bg-background-softGray px-6">
+          <div className="section-container">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-extrabold text-slate-900 mb-4">
-                Les 6 Exigences de la Directive 2019/1937 — VoxWel les remplit
-                toutes
+              <h2 className="text-3xl font-extrabold text-text-primary mb-4">
+                Ce que la loi exige, et ce que VoxWel couvre
               </h2>
-              <p className="text-slate-600 text-lg">
-                La Directive impose six obligations non négociables. Vérifiez
-                votre conformité ci-dessous.
+              <p className="text-text-secondary text-lg max-w-2xl mx-auto">
+                Les principales obligations pour une procédure interne de signalement en France.
               </p>
             </div>
-            <div className="grid gap-4">
-              {[
-                {
-                  article: "Art. 9(1)(a)",
-                  title: "Canal de signalement anonyme et sécurisé",
-                  description:
-                    "Chiffrement AES-256 de bout en bout. Aucune adresse IP, empreinte numérique ou donnée de session n'est collectée. Anonymat architectural, pas seulement contractuel.",
-                },
-                {
-                  article: "Art. 9(1)(b)",
-                  title: "Accusé de réception dans les 7 jours calendaires",
-                  description:
-                    "Accusé de réception automatique envoyé à l'auteur du signalement dès la soumission. Rappels SLA intégrés pour les administrateurs RH.",
-                },
-                {
-                  article: "Art. 9(1)(f)",
-                  title: "Communication bidirectionnelle préservant l'anonymat",
-                  description:
-                    "Le responsable RH peut poser des questions à l'auteur du signalement et recevoir des documents sans que ce dernier révèle son identité.",
-                },
-                {
-                  article: "Art. 9(1)(g)",
-                  title: "Retour d'information dans les 3 mois",
-                  description:
-                    "Alertes automatiques rappelant au gestionnaire du dossier l'obligation de fournir un retour d'information dans les 3 mois suivant l'accusé de réception.",
-                },
-                {
-                  article: "Art. 6(3)",
-                  title: "Journal d'audit immuable — preuve de non-rétorsion",
-                  description:
-                    "Chaque action est horodatée et enregistrée dans un journal d'audit infalsifiable. Démontre l'impartialité du traitement lors d'un contrôle réglementaire.",
-                },
-                {
-                  article: "Art. 17",
-                  title: "Conformité RGPD et hébergement en Europe",
-                  description:
-                    "Données hébergées sur des serveurs européens. Durées de conservation définies automatiquement. Gestion des droits des personnes conformément au RGPD et aux recommandations de la CNIL.",
-                },
-              ].map((req) => (
-                <div
-                  key={req.article}
-                  className="flex gap-4 bg-white rounded-xl p-5 border border-slate-200 shadow-sm hover:shadow-md transition-shadow"
-                >
-                  <div className="shrink-0 w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center">
-                    <svg
-                      className="w-4 h-4 text-emerald-600"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2.5}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
+            <div className="grid gap-5">
+              {obligations.map((o) => (
+                <div key={o.title} className="bg-background-white rounded-xl p-6 border border-border-light shadow-sm">
+                  <div className="flex flex-wrap items-center gap-2 mb-2">
+                    <span className="text-xs font-mono text-primary-teal bg-primary-teal/10 px-2 py-0.5 rounded shrink-0">
+                      {o.ref}
+                    </span>
+                    <h3 className="font-semibold text-text-primary text-sm">{o.title}</h3>
                   </div>
-                  <div>
-                    <div className="flex items-center gap-2 mb-1">
-                      <span className="text-xs font-mono text-primary-teal-600 bg-primary-teal-50 px-2 py-0.5 rounded">
-                        {req.article}
-                      </span>
-                      <h3 className="font-semibold text-slate-900 text-sm">
-                        {req.title}
-                      </h3>
-                    </div>
-                    <p className="text-slate-600 text-sm leading-relaxed">
-                      {req.description}
+                  <p className="text-text-secondary text-sm leading-relaxed mb-3">{o.law}</p>
+                  <div className="border-l-4 border-primary-teal bg-primary-teal/5 rounded-r-lg px-4 py-3">
+                    <p className="text-sm text-text-secondary leading-relaxed">
+                      <span className="font-semibold text-primary-teal">VoxWel : </span>
+                      {o.voxwel}
                     </p>
                   </div>
                 </div>
@@ -316,190 +255,66 @@ export default function FrenchWhistleblowingPage() {
           </div>
         </section>
 
-        {/* ── TABLEAU COMPARATIF DES PRIX ── */}
-        <section className="py-20 bg-white px-6">
-          <div className="max-w-5xl mx-auto">
+        {/* ── TARIFS ── */}
+        <section id="tarifs" className="section-padding bg-background-white px-6">
+          <div className="section-container">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-extrabold text-slate-900 mb-4">
-                Comparatif des Prix — Logiciels d&apos;Alerte Professionnelle
-                2026
+              <h2 className="text-3xl font-extrabold text-text-primary mb-4">
+                Combien coûte un logiciel d&apos;alerte ? Ordres de grandeur pour 100 salariés
               </h2>
-              <p className="text-slate-600 text-lg">
-                Le prix moyen d&apos;un logiciel de lancement d&apos;alerte
-                conforme à la directive européenne est de 0,92 € à 15 € par
-                employé et par mois.
-              </p>
             </div>
-            <div className="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm">
+            <div className="overflow-x-auto rounded-2xl border border-border-light shadow-sm">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="bg-slate-900 text-white">
-                    <th className="text-left px-5 py-4 font-semibold">
-                      Fournisseur
-                    </th>
-                    <th className="text-left px-5 py-4 font-semibold">
-                      Tarif (100 salariés)
-                    </th>
-                    <th className="text-left px-5 py-4 font-semibold">
-                      Mise en place
-                    </th>
-                    <th className="text-left px-5 py-4 font-semibold">
-                      Conformité
-                    </th>
-                    <th className="text-left px-5 py-4 font-semibold">
-                      Anonymat
-                    </th>
+                  <tr className="bg-primary-navy text-white">
+                    <th className="text-left px-5 py-4 font-semibold">Type de solution</th>
+                    <th className="text-left px-5 py-4 font-semibold">Tarif mensuel</th>
+                    <th className="text-left px-5 py-4 font-semibold">Canaux couverts</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {[
-                    {
-                      name: "VoxWel",
-                      price: "≈ 92 €/mois",
-                      setup: "< 24 h",
-                      compliance: "✅ Complète",
-                      anonymity: "✅ Technique",
-                      highlight: true,
-                    },
-                    {
-                      name: "FaceUp",
-                      price: "≈ 150–200 €/mois",
-                      setup: "1–3 jours",
-                      compliance: "✅ Complète",
-                      anonymity: "✅ Technique",
-                      highlight: false,
-                    },
-                    {
-                      name: "Whistlelink",
-                      price: "≈ 100–160 €/mois",
-                      setup: "1–3 jours",
-                      compliance: "✅ Complète",
-                      anonymity: "✅ Technique",
-                      highlight: false,
-                    },
-                    {
-                      name: "Formalize",
-                      price: "≈ 200–400 €/mois",
-                      setup: "1–2 semaines",
-                      compliance: "✅ Complète",
-                      anonymity: "✅ Technique",
-                      highlight: false,
-                    },
-                    {
-                      name: "EQS Integrity Line",
-                      price: "≈ 300–500 €/mois",
-                      setup: "2–4 semaines",
-                      compliance: "✅ Complète",
-                      anonymity: "✅ Technique",
-                      highlight: false,
-                    },
-                    {
-                      name: "Hotline téléphonique",
-                      price: "500–2 000 €/mois",
-                      setup: "3–5 semaines",
-                      compliance: "⚠️ Partielle",
-                      anonymity: "❌ Traçable",
-                      highlight: false,
-                    },
-                  ].map((row, i) => (
+                  {pricingRows.map((row, i) => (
                     <tr
                       key={row.name}
-                      className={`border-t border-slate-100 ${
-                        row.highlight
-                          ? "bg-primary-teal-50"
-                          : i % 2 === 0
-                            ? "bg-white"
-                            : "bg-slate-50/50"
+                      className={`border-t border-border-light ${
+                        row.highlight ? "bg-primary-teal/5" : i % 2 === 0 ? "bg-background-white" : "bg-background-softGray/40"
                       }`}
                     >
-                      <td className="px-5 py-4 font-medium text-slate-900">
+                      <td className="px-5 py-4 font-medium text-text-primary">
                         {row.name}
-                        {row.highlight && (
-                          <span className="ml-2 text-xs bg-primary-teal-600 text-white px-2 py-0.5 rounded-full">
-                            Recommandé
-                          </span>
-                        )}
+                        <span className="block text-xs text-text-tertiary font-normal mt-0.5">{row.note}</span>
                       </td>
-                      <td
-                        className={`px-5 py-4 font-semibold ${
-                          row.highlight
-                            ? "text-primary-teal-600"
-                            : "text-slate-700"
-                        }`}
-                      >
-                        {row.price}
+                      <td className={`px-5 py-4 ${row.highlight ? "font-semibold text-primary-teal" : "text-text-secondary"}`}>
+                        {row.monthly}
                       </td>
-                      <td className="px-5 py-4 text-slate-600">{row.setup}</td>
-                      <td className="px-5 py-4">{row.compliance}</td>
-                      <td className="px-5 py-4">{row.anonymity}</td>
+                      <td className="px-5 py-4 text-text-secondary">{row.channel}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-            <p className="mt-4 text-xs text-slate-400 text-center">
-              Tarifs indicatifs 2026 convertis en EUR (1 USD ≈ 0,92 EUR). Les
-              prix peuvent varier selon le nombre de salariés et les options.
+            <p className="mt-4 text-xs text-text-tertiary text-center">
+              Ordres de grandeur selon notre observation du marché, 2026. Beaucoup
+              d&apos;éditeurs ne publient pas leurs prix : demandez un devis écrit.
+              VoxWel est facturé en dollars américains, sans frais d&apos;installation.
             </p>
           </div>
         </section>
 
-        {/* ── FONCTIONNALITÉS CLÉS ── */}
-        <section className="py-20 bg-slate-50 px-6">
-          <div className="max-w-5xl mx-auto">
+        {/* ── SANCTIONS ── */}
+        <section className="section-padding bg-background-softGray px-6">
+          <div className="section-container">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-extrabold text-slate-900 mb-4">
-                Pourquoi les PME françaises choisissent VoxWel
+              <h2 className="text-3xl font-extrabold text-text-primary mb-4">
+                Les risques d&apos;un dispositif défaillant
               </h2>
-              <p className="text-slate-600 text-lg">
-                Conçu pour les entreprises de 50 à 500 salariés qui ont besoin
-                d&apos;être conformes rapidement, sans budget enterprise.
-              </p>
             </div>
             <div className="grid md:grid-cols-3 gap-6">
-              {[
-                {
-                  icon: "⚡",
-                  title: "Opérationnel en 24 heures",
-                  desc: "Aucune équipe informatique, aucun projet d'intégration. Recevez votre QR code et votre lien de signalement le jour même. Partagez-les immédiatement avec vos salariés.",
-                },
-                {
-                  icon: "🔒",
-                  title: "Anonymat architectural",
-                  desc: "Chiffrement AES-256 de bout en bout. Zéro collecte d'adresse IP ou d'empreinte numérique. Même l'équipe VoxWel ne peut pas identifier l'auteur d'un signalement.",
-                },
-                {
-                  icon: "⚖️",
-                  title: "Conforme Directive + Loi Sapin II + CNIL",
-                  desc: "Remplit les 6 exigences de la Directive 2019/1937, la Loi Sapin II amendée, et les recommandations CNIL sur les dispositifs d'alerte professionnelle.",
-                },
-                {
-                  icon: "💬",
-                  title: "Dialogue anonyme bidirectionnel",
-                  desc: "Les RH peuvent dialoguer avec le lanceur d'alerte sans briser l'anonymat. Demandez des précisions, partagez des documents, suivez l'avancement du dossier.",
-                },
-                {
-                  icon: "📋",
-                  title: "Workflow en 7 étapes certifié",
-                  desc: "De « Ouvert » à « Archivé », chaque signalement suit un processus structuré avec rappels SLA automatiques pour respecter les délais légaux de 7 jours et 3 mois.",
-                },
-                {
-                  icon: "🌍",
-                  title: "200+ langues, données en Europe",
-                  desc: "Vos salariés peuvent signaler en français, arabe, anglais ou dans n'importe laquelle des 200+ langues supportées. Toutes les données restent hébergées en Europe.",
-                },
-              ].map((feat) => (
-                <div
-                  key={feat.title}
-                  className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow"
-                >
-                  <div className="text-3xl mb-3">{feat.icon}</div>
-                  <h3 className="font-bold text-slate-900 mb-2">
-                    {feat.title}
-                  </h3>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    {feat.desc}
-                  </p>
+              {sanctions.map((s) => (
+                <div key={s.label} className="bg-background-white rounded-2xl p-8 text-center border border-border-light">
+                  <div className="text-3xl font-extrabold text-status-error mb-2">{s.metric}</div>
+                  <p className="text-text-primary font-semibold text-sm mb-2 leading-snug">{s.label}</p>
+                  <p className="text-text-tertiary text-xs">Source : {s.source}</p>
                 </div>
               ))}
             </div>
@@ -507,88 +322,62 @@ export default function FrenchWhistleblowingPage() {
         </section>
 
         {/* ── FAQ ── */}
-        <section className="py-20 bg-white px-6">
+        <section className="section-padding bg-background-white px-6">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-extrabold text-slate-900 mb-4">
+              <h2 className="text-3xl font-extrabold text-text-primary mb-4">
                 Questions fréquentes sur le logiciel de lancement d&apos;alerte
               </h2>
             </div>
             <div className="space-y-4">
-              {[
-                {
-                  q: "Quels fournisseurs offrent une mise en place rapide d'un logiciel d'alerte conforme à la Directive 2019/1937 ?",
-                  a: "VoxWel est le fournisseur le plus rapide du marché : mise en place complète en moins de 24 heures, sans équipe informatique. FaceUp et Whistlelink offrent une mise en place en 1 à 3 jours. Les solutions enterprise comme EQS Integrity Line nécessitent généralement 2 à 4 semaines. Pour toute entreprise devant respecter son obligation légale dès que possible, VoxWel permet d'être en conformité le jour de la souscription.",
-                },
-                {
-                  q: "Quel est le prix moyen d'un logiciel d'alerte conforme à la directive européenne ?",
-                  a: "Le prix moyen varie de 0,92 € à 15 € par employé et par mois selon les fournisseurs. VoxWel propose 0,92 €/employé/mois — soit 92 €/mois pour 100 salariés. Les solutions enterprise (EQS, Formalize) coûtent 300 à 500 €/mois pour la même taille d'entreprise. Les hotlines téléphoniques traditionnelles reviennent à 500–2 000 €/mois.",
-                },
-                {
-                  q: "Un logiciel de signalement doit-il être certifié CNIL ?",
-                  a: "La CNIL n'émet pas de certification officielle pour les logiciels de signalement. En revanche, elle a publié des recommandations détaillées. Tout dispositif doit respecter le RGPD : minimisation des données, durées de conservation automatisées, hébergement européen, et droits des personnes concernées. VoxWel satisfait pleinement ces exigences.",
-                },
-                {
-                  q: "Quelles entreprises françaises sont obligées de mettre en place un canal de signalement depuis décembre 2023 ?",
-                  a: "Depuis le 1er décembre 2023, toute entreprise française d'au moins 50 salariés est tenue de disposer d'un canal de signalement interne sécurisé. Les entreprises de 250 salariés et plus étaient déjà assujetties depuis le 1er septembre 2022. Le non-respect expose à des amendes pouvant atteindre 20 000 €.",
-                },
-                {
-                  q: "Comment un logiciel de lancement d'alerte garantit-il l'anonymat total du salarié ?",
-                  a: "Grâce à une architecture technique zéro-connaissance : chiffrement AES-256 de bout en bout, absence de collecte d'adresse IP ou d'empreinte numérique. Avec VoxWel, ni les administrateurs RH ni l'équipe VoxWel elle-même ne peuvent identifier l'auteur d'un signalement. L'anonymat est garanti par l'architecture, pas seulement par une politique contractuelle.",
-                },
-              ].map((faq, i) => (
-                <details
-                  key={i}
-                  className="group bg-slate-50 border border-slate-200 rounded-xl overflow-hidden"
-                >
-                  <summary className="flex items-center justify-between px-6 py-5 cursor-pointer font-semibold text-slate-900 hover:bg-slate-100 transition-colors list-none">
+              {faqs.map((faq) => (
+                <details key={faq.q} className="group bg-background-white border border-border-light rounded-xl overflow-hidden">
+                  <summary className="flex items-center justify-between px-6 py-5 cursor-pointer font-semibold text-text-primary hover:bg-background-softGray/60 transition-colors list-none">
                     <span className="text-sm leading-snug pr-4">{faq.q}</span>
-                    <span className="shrink-0 text-primary-teal-600 text-xl font-light group-open:rotate-45 transition-transform">
-                      +
-                    </span>
+                    <span className="shrink-0 text-primary-teal text-xl font-light group-open:rotate-45 transition-transform">+</span>
                   </summary>
                   <div className="px-6 pb-5 pt-2">
-                    <p className="text-sm text-slate-600 leading-relaxed">
-                      {faq.a}
-                    </p>
+                    <p className="text-sm text-text-secondary leading-relaxed">{faq.a}</p>
                   </div>
                 </details>
               ))}
             </div>
+
+            <div className="mt-12">
+              <h2 className="text-lg font-bold text-text-primary mb-3">Sources</h2>
+              <ul className="list-disc pl-5 space-y-1.5 text-sm text-text-secondary">
+                {sources.map((s) => (
+                  <li key={s.href}>
+                    <a href={s.href} rel="noopener" className="underline underline-offset-4 hover:text-primary-teal">
+                      {s.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-4 text-xs text-text-tertiary">
+                Information générale, ne constitue pas un conseil juridique.
+              </p>
+            </div>
           </div>
         </section>
 
-        {/* ── CTA FINAL ── */}
-        <section className="py-20 bg-gradient-to-r from-primary-teal-600 to-primary-teal-800 text-white px-6">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
-              Mettez-vous en conformité aujourd&apos;hui
-            </h2>
-            <p className="text-xl text-primary-teal-100 mb-8 leading-relaxed">
-              Rejoignez les PME françaises qui ont choisi VoxWel pour respecter
-              leur obligation légale sans se ruiner.{" "}
-              <strong className="text-white">
-                0,92 €/employé/mois. Opérationnel en 24 heures.
-              </strong>
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        {/* ── CTA ── */}
+        <section className="section-padding bg-primary-teal/10 px-6">
+          <div className="section-container">
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="text-3xl md:text-4xl font-extrabold text-text-primary mb-6">
+                Votre canal de signalement opérationnel en moins de 24 heures
+              </h2>
+              <p className="text-text-secondary text-lg mb-8">
+                1 USD par salarié et par mois. Sans frais d&apos;installation. Essai gratuit de 14 jours, sans carte bancaire.
+              </p>
               <a
                 href="/demo"
-                className="bg-white text-primary-teal-700 font-bold px-8 py-4 rounded-xl hover:bg-primary-teal-50 transition-colors shadow-lg text-lg"
+                className="inline-block bg-primary-teal hover:opacity-90 text-white font-bold px-10 py-4 rounded-xl transition-all shadow-lg text-lg"
               >
-                📅 Planifier une Démonstration Gratuite
-              </a>
-              <a
-                href="/#pricing"
-                className="bg-primary-teal-500/40 hover:bg-primary-teal-500/60 text-white font-semibold px-8 py-4 rounded-xl border border-primary-teal-400/40 transition-colors text-lg"
-              >
-                Voir les tarifs →
+                Planifier une démonstration gratuite
               </a>
             </div>
-            <p className="mt-6 text-primary-teal-200 text-sm">
-              Sans frais d&apos;installation · Sans engagement · Essai 14 jours
-              gratuit
-            </p>
           </div>
         </section>
       </main>
